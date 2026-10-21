@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Webcamoid
+Comment=Take photos and record videos with your webcam
+
+Keywords=photo;video;webcam;
+Exec=webcamoid
+Icon=/home/thefrog/.local/share/themes/Christmas/icons/webcamoid.png
+Terminal=false
+Type=Application
+Categories=AudioVideo;Player;Qt;
+StartupNotify=true

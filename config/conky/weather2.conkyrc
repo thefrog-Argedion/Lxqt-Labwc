@@ -1,0 +1,137 @@
+--[[
+#=====================================================================================
+#
+# Date    : package-date
+# Author  : Adhi Pambudi - https://plus.google.com/u/0/+AdhiPambudi
+# Editor  : Erik Dubois
+# Version : package-version
+# License : Distributed under the terms of GNU GPL version 2 or later
+#=====================================================================================
+# CONKY
+# For commands in conky.config section:
+# http://conky.sourceforge.net/config_settings.html
+#
+# For commands in conky.text section:
+# http://conky.sourceforge.net/variables.html
+#
+# A PDF with all variables is provided
+#=====================================================================================
+# FONTS
+# To avoid copyright infringements you will have to download
+# and install the fonts yourself sometimes.
+#=====================================================================================
+# GENERAL INFO ABOUT FONTS
+# Go and look for a nice font on sites like http://www.dafont.com/
+# Download and unzip - double click the font to install it (font-manager must be installed)
+# No font-manager then put fonts in ~/.fonts
+# Change the font name in the conky
+# The name can be known with a command in the terminal: fc-list | grep "part of name"
+# Change width and height of the conky according to font
+# Reboot your system or fc-cache -fv in terminal
+# Enjoy
+#=====================================================================================
+# FONTS FOR THIS CONKY
+# no extra font(s) needed
+#======================================================================================
+#
+# Readme from Adhi Pambudi
+#
+# These conky configs tested in arcolinux (Conky version 1.10)
+
+# How to use
+# edit one of the conky files that you want to use, replace the variables.
+# to get an API Key, first you have to sign up here https://openweathermap.org/appid
+# find your city id here http://openweathermap.org/help/city_list.txt
+# after you replace those variables with your own, save.
+# open the conky chooser, tick your edited conkyrc, then press OK.
+
+# Credits
+#1. zagortenay333 for Jelly Conky
+#2. Kestrel8891 for BARS Conky
+#3. aresgon for Workspace Indicator Conky
+#4. Classic Crunchbang Conky (I can't find who wrote that code)
+#======================================================================================
+
+]]
+
+
+conky.config = {
+
+-------------------------------------
+--  Generic Settings
+-------------------------------------
+background=true,
+update_interval=1,
+double_buffer=true,
+no_buffers=true,
+imlib_cache_size=10,
+
+draw_shades=false,
+draw_outline=false,
+draw_borders=false,
+
+use_xft = true,
+font = 'Roboto:size=11',
+total_run_times = 0,
+mpd_port = 6600,
+
+
+-------------------------------------
+--  Window Specifications
+-------------------------------------
+gap_x=05,
+gap_y=05,
+
+minimum_height=90,
+minimum_width=50,
+
+alignment = 'bottom_left',
+
+own_window=true,
+own_window_type="normal",
+own_window_transparent=false,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+own_window_class = 'Conky',
+own_window_argb_visual=true,
+own_window_argb_value=100,
+double_buffer = true,
+draw_shades = false,
+default_shade_color = '#000000',
+draw_borders = false,
+border_width = 0,
+
+-------------------------------------
+--  Text Settings
+-------------------------------------
+use_xft=true,
+xftalpha=1,
+font="Hack:size=12:antialias=true",
+text_buffer_size=256,
+override_utf8_locale=true,
+draw_graph_borders = false,
+draw_outline = false,
+default_outline_color = '#828282',
+no_buffers = true,
+uppercase = false,
+cpu_avg_samples = 4,
+pad_percents = 2,
+-------------------------------------
+--  Color Scheme
+-------------------------------------
+default_color="ffffff",
+
+color0="02FF00",  --  green
+color1="b58bf0", -- purple
+color2="ffffff",  --  white
+color3 = 'e8ab49', -- orange
+color4="ffffff",  --  white
+
+-------------------------------------
+-------------------------------------
+}
+
+conky.text = [[
+${color3}${texeci 900 curl -s wttr.in/.?format=%l:+%C+%t+%w+%p}${color}
+#${texeci 900 curl -s wttr.in/Sydney?format=%l:+%C+%t+%w+%p}
+#${texeci 900 curl -s wttr.in/Savannah?format=%l:+%C+%t+%w+%p}
+]]

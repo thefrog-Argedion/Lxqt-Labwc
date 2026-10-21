@@ -1,0 +1,7 @@
+[Plasma-Monocrome]
+{
+ln -s ./Thunar.svg ./org.xfce.thunar.svg
+ln -s ./xterm.svg ./xterm-color_48x48.svg
+ln -s ./preferences-desktop-display.svg /home/thefrog/.local/share/icons/plasma-monochrome-icons/apps/scalable/display.svg
+
+{

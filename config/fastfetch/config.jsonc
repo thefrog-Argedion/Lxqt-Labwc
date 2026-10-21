@@ -1,0 +1,188 @@
+// Inspired by Coffee and Kush
+{ "$schema":
+    "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "auto",
+        "width": 40,
+        "source":  "/home/thefrog/Pictures/Logos/Misc/moonview.png",
+        "padding": {
+            "top": 3,
+            "left": 2,
+            "right": 2
+        }
+     },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        {
+            "key": "{#31}  󰮯               System              󰊠",
+            "type": "custom"
+        },
+        {
+            "key": "{#31}   {#31} OS       ",
+            "type": "os"
+        },
+        {
+            "key": "{#31}  {#31}  Kernel   ",
+            "type": "kernel"
+        },
+        {
+            "key": "{#31}  󰏖{#31}  Packages ",
+            "type": "packages"
+        },
+        {
+            "type": "disk",
+            "key": "{#31}  󰥔{#31}  OS Age   ",
+                        "folders": "/",                                   // Check root filesystem
+            "format": "{create-time:10} [{days} days]"        // Show creation time and age in days
+        },
+        {
+            "key": "{#31}  󰥔{#31}  Uptime   ",
+            "type": "uptime"
+        },
+        {
+            "key": "{#31}  󰮯            Needfull Things            󰊠",
+            "type": "custom"
+        },
+        {
+            "key": "{#31}  {#31}  DE       ",
+            "type": "de"
+        },
+        {
+            "key": "{#31}  󰔃 {#31} WM       ",
+            "type": "wm"
+        },
+        {
+            "key": "{#31}  󰍂{#31}  LM       ",
+            "type": "lm"
+        },
+        {
+            "key": "{#31}  {#31}  Terminal ",
+            "type": "terminal"
+        },
+        {
+            "key": "{#31}  {#31}  TermFont ",
+            "type": "terminalfont"    
+        },
+        {
+            "key": "{#31}   {#31} Shell    ",
+            "type": "shell"
+        },
+        {
+            "key": "{#31}  󱐋{#31}  BootMgr  ",
+            "type": "bootmgr"
+        },
+        {
+            "key": "{#34}  󰮯              Hardware              󰊠",
+            "type": "custom"
+        },
+        {
+            "key": "{#34}  󰇅{#34}  Machine  ",
+            "type": "host",
+        },
+        {
+            "key": "{#34}   {#34} Board    ",
+            "type": "board"
+        },
+        {
+            "key": "{#34}   {#34} Bios     ",
+            "type": "bios"
+        },
+        {
+            "key": "{#34}  󰍛{#34}  CPU      ",
+            "type": "cpu",
+            "showPeCoreCount": true
+        },
+        {
+            "key": "{#34}  󰍛{#34}  GFX      ",
+            "type": "gpu",
+            "format": "{1}"
+        },
+        {
+            "key": "{#34}  󰍛{#34}  Vulkan   ",
+            "type": "vulkan",
+        },
+        {
+            "key": "{#34}  󰍹 {#34} Monitor  ",
+            "type": "monitor",
+            "format": "{2}x{3}"
+        },
+        {
+            "key": "{#34}  󰤢{#34}  WiFi     ",
+            "type": "wifi",
+        },
+        {
+            "key": "{#34}  󰖠{#34}  Camera   ",
+            "type": "camera",
+        },
+        {
+            "key": "{#34}  󰜟{#34}  Sound    ",
+            "type": "sound",
+            "format": "{name:38} ({3})"
+        },
+        {
+            "key": "{#34}  {#34}  Media    ",
+            "type": "media",
+        },
+        {
+            "key": "{#34}  󰮯              Graphs               󰊠",
+            "type": "custom"
+        },
+        {
+            "type": "disk",
+            "key": "{#34}  {#34}  Disk    ",
+            "percent": {
+        "type": 3,           // 3 = show number + bar + percentage
+        "green": 30,         // Below 30% usage is green
+        "yellow": 70         // 30-70% is yellow, >70% is red
+      },
+      "bar": {
+        "width": 20,         // Number of characters for the bar
+        "charElapsed": "■",  // Used bar character
+        "charTotal": "-",    // Unused bar character
+        "borderLeft": "[",
+        "borderRight": "]"
+      }
+        },
+         {
+            "type": "memory",
+            "key": "{#34}  {#34}  Memory  ",
+            "percent": {
+        "type": 3, // 3 = show number + bar + percentage
+        "green": 30, // <30% is green
+        "yellow": 70 // 30-70% is yellow, >70% is red
+      },
+      "bar": {
+        "width": 20, // number of characters in the bar
+        "charElapsed": "■", // used part of the bar
+        "charTotal": "-", // unused part of the bar
+        "borderLeft": "[",
+        "borderRight": "]"
+      }
+        },
+        {
+            "type": "swap",
+            "key": "{#34}  󰯍{#34}  Swap    ",
+             "percent": {
+        "type": 3,
+        "green": 30,
+        "yellow": 70
+      },
+      "bar": {
+        "width": 20,
+        "charElapsed": "■",
+        "charTotal": "-",
+        "borderLeft": "[",
+        "borderRight": "]"
+      }
+        },
+        "break",
+        {
+            "key": "{#31}    Palette",
+            "type": "terminal",
+            "format": "         {#31}󰮯 {#37}   󰊠 {#34} 󰊠 {#34} 󰊠 {#34} 󰊠 {#34} 󰊠 {#34} 󰊠 {#38;5;234} 󰊠 "
+        },
+        
+    ]
+}

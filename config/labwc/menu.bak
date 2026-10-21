@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+<menu id="root-menu" label="root-menu">
+  <menu id="Accessories" label="Accessories">
+    <item label="About Xfce">
+      <action name="Execute"><command>xfce4-about</command></action>
+    </item>
+    <item label="Bulk Rename">
+      <action name="Execute"><command>thunar --bulk-rename</command></action>
+    </item>
+    <item label="Crystal Dock">
+      <action name="Execute"><command>/usr/bin/crystal-dock</command></action>
+    </item>
+    <item label="Disks">
+      <action name="Execute"><command>gnome-disks</command></action>
+    </item>
+    <item label="FeatherPad">
+      <action name="Execute"><command>featherpad</command></action>
+    </item>
+    <item label="Galculator">
+      <action name="Execute"><command>galculator</command></action>
+    </item>
+    <item label="Hardinfo2">
+      <action name="Execute"><command>hardinfo2</command></action>
+    </item>
+    <item label="LibreOffice">
+      <action name="Execute"><command>libreoffice</command></action>
+    </item>
+    <item label="LXQt File Archiver">
+      <action name="Execute"><command>lxqt-archiver</command></action>
+    </item>
+    <item label="pacseek">
+      <action name="Execute"><command>alacritty 'pacseek'</command></action>
+    </item>
+    <item label="PCManFM-Qt File Manager">
+      <action name="Execute"><command>pcmanfm-qt</command></action>
+    </item>
+    <item label="Software Token">
+      <action name="Execute"><command>stoken-gui</command></action>
+    </item>
+    <item label="Software Token (small)">
+      <action name="Execute"><command>stoken-gui --small</command></action>
+    </item>
+    <item label="Thunar File Manager">
+      <action name="Execute"><command>thunar</command></action>
+    </item>
+    <item label="Vim">
+      <action name="Execute"><command>alacritty 'vim'</command></action>
+    </item>
+  </menu> <!-- Accessories -->
+  <menu id="Development" label="Development">
+    <item label="CMake">
+      <action name="Execute"><command>cmake-gui</command></action>
+    </item>
+    <item label="Geany">
+      <action name="Execute"><command>geany</command></action>
+    </item>
+    <item label="Icon Browser">
+      <action name="Execute"><command>yad-icon-browser</command></action>
+    </item>
+    <item label="Meld">
+      <action name="Execute"><command>meld</command></action>
+    </item>
+  </menu> <!-- Development -->
+  <menu id="Graphics" label="Graphics">
+    <item label="GNU Image Manipulation Program">
+      <action name="Execute"><command>gimp-3.2</command></action>
+    </item>
+    <item label="LXImage-Qt">
+      <action name="Execute"><command>lximage-qt</command></action>
+    </item>
+    <item label="ScreenGrab">
+      <action name="Execute"><command>screengrab</command></action>
+    </item>
+    <item label="Viewnior">
+      <action name="Execute"><command>viewnior</command></action>
+    </item>
+  </menu> <!-- Graphics -->
+  <menu id="Internet" label="Internet">
+    <item label="Advanced Network Configuration">
+      <action name="Execute"><command>nm-connection-editor</command></action>
+    </item>
+    <item label="Avahi SSH Server Browser">
+      <action name="Execute"><command>/usr/bin/bssh</command></action>
+    </item>
+    <item label="Avahi VNC Server Browser">
+      <action name="Execute"><command>/usr/bin/bvnc</command></action>
+    </item>
+    <item label="Firefox">
+      <action name="Execute"><command>/usr/lib/firefox/firefox</command></action>
+    </item>
+    <item label="Zen Browser">
+      <action name="Execute"><command>/opt/zen-browser-bin/zen-bin</command></action>
+    </item>
+  </menu> <!-- Internet -->
+  <menu id="Multimedia" label="Multimedia">
+    <item label="mpv Media Player">
+      <action name="Execute"><command>mpv --player-operation-mode=pseudo-gui --</command></action>
+    </item>
+    <item label="PulseAudio Volume Control">
+      <action name="Execute"><command>pavucontrol-qt</command></action>
+    </item>
+    <item label="Qt V4L2 test Utility">
+      <action name="Execute"><command>qv4l2</command></action>
+    </item>
+    <item label="Qt V4L2 video capture utility">
+      <action name="Execute"><command>qvidcap</command></action>
+    </item>
+    <item label="Volume Control">
+      <action name="Execute"><command>pavucontrol</command></action>
+    </item>
+  </menu> <!-- Multimedia -->
+  <menu id="Office" label="Office">
+    <item label="LibreOffice">
+      <action name="Execute"><command>libreoffice</command></action>
+    </item>
+    <item label="LibreOffice Writer">
+      <action name="Execute"><command>libreoffice --writer</command></action>
+    </item>
+  </menu> <!-- Office -->
+  <menu id="Settings" label="Settings">
+    <item label="Advanced Network Configuration">
+      <action name="Execute"><command>nm-connection-editor</command></action>
+    </item>
+    <item label="Appearance">
+      <action name="Execute"><command>lxqt-config-appearance</command></action>
+    </item>
+    <item label="Brightness">
+      <action name="Execute"><command>lxqt-config-brightness</command></action>
+    </item>
+    <item label="Date and Time">
+      <action name="Execute"><command>lxqt-admin-time</command></action>
+    </item>
+    <item label="Desktop">
+      <action name="Execute"><command>pcmanfm-qt --desktop-pref=general</command></action>
+    </item>
+    <item label="File Associations">
+      <action name="Execute"><command>lxqt-config-file-associations</command></action>
+    </item>
+    <item label="Firewall">
+      <action name="Execute"><command>firewall-config</command></action>
+    </item>
+    <item label="Keyboard and Mouse">
+      <action name="Execute"><command>lxqt-config-input</command></action>
+    </item>
+    <item label="Locale">
+      <action name="Execute"><command>lxqt-config-locale</command></action>
+    </item>
+    <item label="Lock Screen">
+      <action name="Execute"><command>lxqt-leave --lockscreen</command></action>
+    </item>
+    <item label="LXQt Configuration Center">
+      <action name="Execute"><command>lxqt-config</command></action>
+    </item>
+    <item label="Monitor">
+      <action name="Execute"><command>lxqt-config-monitor</command></action>
+    </item>
+    <item label="Notifications">
+      <action name="Execute"><command>lxqt-config-notificationd</command></action>
+    </item>
+    <item label="Openbox Settings">
+      <action name="Execute"><command>obconf-qt</command></action>
+    </item>
+    <item label="Power Management">
+      <action name="Execute"><command>lxqt-config-powermanagement</command></action>
+    </item>
+    <item label="PulseAudio Volume Control">
+      <action name="Execute"><command>pavucontrol-qt</command></action>
+    </item>
+    <item label="Removable Drives and Media">
+      <action name="Execute"><command>thunar-volman-settings</command></action>
+    </item>
+    <item label="Session Settings">
+      <action name="Execute"><command>lxqt-config-session</command></action>
+    </item>
+    <item label="Shortcut Keys">
+      <action name="Execute"><command>lxqt-config-globalkeyshortcuts</command></action>
+    </item>
+    <item label="Thunar Preferences">
+      <action name="Execute"><command>thunar-settings</command></action>
+    </item>
+    <item label="Users and Groups">
+      <action name="Execute"><command>lxqt-admin-user</command></action>
+    </item>
+    <item label="Volume Control">
+      <action name="Execute"><command>pavucontrol</command></action>
+    </item>
+    <item label="XScreenSaver">
+      <action name="Execute"><command>xscreensaver</command></action>
+    </item>
+    <item label="XScreenSaver Settings">
+      <action name="Execute"><command>xscreensaver-settings</command></action>
+    </item>
+    <item label="YAD settings">
+      <action name="Execute"><command>yad-settings</command></action>
+    </item>
+  </menu> <!-- Settings -->
+  <menu id="System" label="System">
+    <item label="About LXQt">
+      <action name="Execute"><command>lxqt-about</command></action>
+    </item>
+    <item label="Alacritty">
+      <action name="Execute"><command>alacritty</command></action>
+    </item>
+    <item label="Archcanary">
+      <action name="Execute"><command>alacritty 'archcanary-tui'</command></action>
+    </item>
+    <item label="Avahi Zeroconf Browser">
+      <action name="Execute"><command>/usr/bin/avahi-discover</command></action>
+    </item>
+    <item label="btop++">
+      <action name="Execute"><command>alacritty 'btop'</command></action>
+    </item>
+    <item label="conky">
+      <action name="Execute"><command>conky --daemonize --pause=1</command></action>
+    </item>
+    <item label="EndeavourOS apps info">
+      <action name="Execute"><command>eos-apps-info</command></action>
+    </item>
+    <item label="EndeavourOS log tool">
+      <action name="Execute"><command>/usr/bin/eos-log-tool</command></action>
+    </item>
+    <item label="EndeavourOS Quickstart Installer">
+      <action name="Execute"><command>eos-quickstart</command></action>
+    </item>
+    <item label="eos-update">
+      <action name="Execute"><command>alacritty 'bash -c "echo '==> eos-update --aur'; eos-update --aur; eos-sleep-counter 60"'</command></action>
+    </item>
+    <item label="Firewall">
+      <action name="Execute"><command>firewall-config</command></action>
+    </item>
+    <item label="Hardinfo2">
+      <action name="Execute"><command>hardinfo2</command></action>
+    </item>
+    <item label="Hardware Locality lstopo">
+      <action name="Execute"><command>lstopo</command></action>
+    </item>
+    <item label="Hibernate">
+      <action name="Execute"><command>lxqt-leave --hibernate</command></action>
+    </item>
+    <item label="kitty">
+      <action name="Execute"><command>kitty</command></action>
+    </item>
+    <item label="Leave">
+      <action name="Execute"><command>lxqt-leave</command></action>
+    </item>
+    <item label="Lock Screen">
+      <action name="Execute"><command>lxqt-leave --lockscreen</command></action>
+    </item>
+    <item label="Logout">
+      <action name="Execute"><command>lxqt-leave --logout</command></action>
+    </item>
+    <item label="Mission Center">
+      <action name="Execute"><command>missioncenter</command></action>
+    </item>
+    <item label="nvtop">
+      <action name="Execute"><command>alacritty 'nvtop'</command></action>
+    </item>
+    <item label="qps">
+      <action name="Execute"><command>qps</command></action>
+    </item>
+    <item label="QTerminal">
+      <action name="Execute"><command>qterminal</command></action>
+    </item>
+    <item label="QTerminal Drop-down">
+      <action name="Execute"><command>qterminal --drop</command></action>
+    </item>
+    <item label="Reboot">
+      <action name="Execute"><command>lxqt-leave --reboot</command></action>
+    </item>
+    <item label="Reflector Simple">
+      <action name="Execute"><command>/usr/bin/reflector-simple</command></action>
+    </item>
+    <item label="Shutdown">
+      <action name="Execute"><command>lxqt-leave --shutdown</command></action>
+    </item>
+    <item label="Suspend">
+      <action name="Execute"><command>lxqt-leave --suspend</command></action>
+    </item>
+    <item label="Thunar File Manager">
+      <action name="Execute"><command>thunar</command></action>
+    </item>
+    <item label="UXTerm">
+      <action name="Execute"><command>uxterm</command></action>
+    </item>
+    <item label="Welcome">
+      <action name="Execute"><command>eos-welcome --once</command></action>
+    </item>
+    <item label="XScreenSaver Settings">
+      <action name="Execute"><command>xscreensaver-settings</command></action>
+    </item>
+    <item label="XTerm">
+      <action name="Execute"><command>xterm</command></action>
+    </item>
+  </menu> <!-- System -->
+</menu> <!-- root-menu -->
+</openbox_menu>

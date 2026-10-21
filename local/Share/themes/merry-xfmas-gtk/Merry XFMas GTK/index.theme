@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Merry XFMas
+Type=X-GNOME-Metatheme
+Comment=
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Merry XFMas GTK
+IconTheme=Merry-XFMas

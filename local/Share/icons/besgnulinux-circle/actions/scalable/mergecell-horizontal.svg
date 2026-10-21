@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg182"
+   sodipodi:docname="mergecell-horizontal.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview184"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="8"
+     inkscape:cy="8.0338983"
+     inkscape:window-width="1432"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg182" />
+  <defs
+     id="defs3051">
+    <style
+       type="text/css"
+       id="current-color-scheme">
+      .ColorScheme-Text {
+        color:#3cb371;
+      }
+      </style>
+  </defs>
+  <path
+     style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.692028"
+     d="M 4.5957486,3.8358196 V 12.738935 H 12.341582 V 11.997009 9.7712299 9.0293036 4.5777459 3.8358196 Z M 5.2412348,4.5777459 H 6.5322069 V 6.0615985 H 5.2412348 Z m 1.9364582,0 H 9.1141513 V 6.0615985 H 7.177693 Z m 2.5819444,0 H 11.696096 V 6.0615985 H 9.7596374 Z M 5.2412348,6.8035247 H 6.5322069 V 9.0293036 H 5.2412348 Z m 1.9364582,0 H 9.1141513 9.7596374 11.696096 V 9.0293036 H 7.177693 Z M 5.2412348,9.7712299 h 1.2909721 v 0.7419261 0.741927 0.741926 H 5.2412348 v -0.741926 -0.741927 z m 1.9364582,0 h 4.518403 V 11.997009 H 9.7596374 9.1141513 7.177693 Z"
+     class="ColorScheme-Text"
+     id="path178" />
+  <path
+     style="fill:none;stroke:#3cb371;stroke-width:2.22032;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+     d="m 23.003906,12.035156 c 0,6.046875 -4.927734,10.951172 -11.009765,10.951172 -6.082032,0 -11.015625,-4.904297 -11.015625,-10.951172 0,-6.052734 4.933593,-10.951172 11.015625,-10.951172 6.082031,0 11.009765,4.898438 11.009765,10.951172 z m 0,0"
+     transform="scale(0.666667)"
+     id="path180" />
+</svg>

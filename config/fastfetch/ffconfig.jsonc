@@ -1,0 +1,161 @@
+// Inspired by Coffee and Kush
+{ "$schema":
+    "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "auto",
+        "source":  "/home/thefrog/.config/fastfetch/Logos/powered.png",
+        "padding": {
+            "top": 4,
+            "left": 2,
+            "right": 2
+        }
+     },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        {
+            "key": "╭─────────────╮",
+            "type": "custom"
+        },
+        {
+            "key": "│ {#34}󰇅  Machine  {#keys}│",
+            "type": "host",
+        },
+        {
+            "key": "│ {#34}  Board    {#keys}│",
+            "type": "board"
+        },
+        {
+            "key": "│ {#34}  Bios     {#keys}│",
+            "type": "bios"
+        },
+        {
+            "key": "│ {#34}󰍛  CPU      {#keys}│",
+            "type": "cpu",
+            "showPeCoreCount": true
+        },
+        {
+            "key": "│ {#34}󰍛  GFX      {#keys}│",
+            "type": "gpu",
+        },
+        {
+            "key": "│ {#34}󰍛  Vulkan   {#keys}│",
+            "type": "vulkan",
+        },
+        {
+            "key": "│ {#34}󰍹  Monitor  {#keys}│",
+            "type": "monitor"
+        },
+        {
+            "key": "│ {#34}󰟶  Memory   {#keys}│",
+            "type": "memory"
+        },
+        {
+            "key": "│ {#34}󰣁  Swap     {#keys}│",
+            "type": "swap"
+        },
+        {
+            "key": "│ {#34}󰤢  WiFi     {#keys}│",
+            "type": "wifi",
+        },
+        {
+            "key": "│ {#32}󰖠  Camera   {#keys}│",
+            "type": "camera",
+        },
+        {
+            "key": "│ {#34}󰜟  Sound    {#keys}│",
+            "type": "sound",
+        },
+        {
+            "key": "│ {#32}  Media    {#keys}│",
+            "type": "media",
+        },
+        {
+            "key": "╰─────────────╯",
+            "type": "custom"
+        },
+        {
+            "key": "╭─────────────╮",
+            "type": "custom"
+        },
+        {
+            "key": "│ {#33}  Distro   {#keys}│",
+            "type": "os"
+        },
+        {
+            "type": "command",
+            "key": "│ {#33}󰥔  OS Age   {#keys}│",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "key": "│ {#33}󰥔  Uptime   {#keys}│",
+            "type": "uptime"
+        },
+        {
+            "key": "│ {#35}  DE       {#keys}│",
+            "type": "de"
+        },
+        {
+            "key": "│ {#33}  WM       {#keys}│",
+            "type": "wm"
+        },
+        {
+            "key": "│ {#33}󰍂  LM       {#keys}│",
+            "type": "lm"
+        },
+        {
+            "key": "│ {#33}󰏖  Packages {#keys}│",
+            "type": "packages"
+        },
+        {
+            "key": "│ {#32}  Kernel   {#keys}│",
+            "type": "kernel"
+        },
+        {
+            "key": "│ {#32}󱐋  BootMgr  {#keys}│",
+            "type": "bootmgr"
+        },
+        {
+            "key": "│ {#36}  Shell    {#keys}│",
+            "type": "shell"
+        },
+        {
+            "key": "│ {#36}  Terminal {#keys}│",
+            "type": "terminal"
+        },
+        {
+            "key": "│ {#36}  TermFont {#keys}│",
+            "type": "terminalfont"    
+        },
+        {
+            "key": "╰─────────────╯",
+            "type": "custom"
+        },
+        {
+            "key": "╭─────────────╮",
+            "type": "custom"
+        },
+        {
+            "key": "│ {#31}󰉉  SSD      {#keys}│",
+            "type": "disk",
+        },
+        {
+            "key": "╰─────────────╯",
+            "type": "custom"
+        },
+        {
+            "key": "╭─────────────╮",
+            "type": "custom"
+        },
+        {
+            "key": "│ {#35}  Palette  {#keys}│",
+            "type": "colors",
+            "symbol": "circle"
+        },
+        {
+            "key": "╰─────────────╯",
+            "type": "custom"
+        }
+    ]
+}

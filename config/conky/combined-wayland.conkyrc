@@ -1,0 +1,149 @@
+--[[
+
+#=====================================================================================
+# Date    : September 01 2026
+# Author  : thefrog
+# Version : 1.0.3
+# License : Distributed under the terms of GNU GPL version 2 or later
+# Update  : September 21 2026
+#=====================================================================================
+# CONKY
+# For commands in conky.config section:
+# http://conky.sourceforge.net/config_settings.html
+#
+# For commands in conky.text section:
+# http://conky.sourceforge.net/variables.html
+#
+#======================================================================================
+
+]]
+conky.config = {
+
+	background = true,
+	update_interval = 1,
+	double_buffer = true,
+	draw_shades = false,
+	no_buffers = true,
+	-- below removed for wayland use
+	-- own_window = true,
+	-- own_window_class = "Conky",
+	-- own_window_type = 'normal',
+	-- own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	-- own_window_transparent = false,
+	out_to_x = false,
+	out_to_wayland = true,
+	-- output_backend = wayland,
+	own_window_argb_visual = true,
+	-- own_window_color = '#1c0404', < needed for wayland but its not working for me in labwc (wont draw conky)
+	own_window_argb_value = 150,
+	use_xft = true,
+    -- font = 'Hack:size=10:antialias=true',
+	alignment = middle_right,
+	gap_x = 3480,
+	gap_y =10,
+	minimum_width = 350,
+	maximum_height = 900,
+	imlib_cache_size=10,
+	total_run_times = 0,
+-------------------------------------
+--  Color Scheme
+-------------------------------------
+default_color = '02FF00',
+	color4 = 'ff0000', -- red
+	color1 = '02FF00', --green
+	color3 = 'ffa500', -- orange
+	color2 = 'b58bf0', -- purple
+	color5 = '#0f0ef0',  --  blue
+	color6 = 'b13916',  --  red-autumn
+	color7 = 'a8a6a9',   -- offwhite
+	color8 = '8e8e95',   -- grayish
+	color9 = '3b1956', -- deep purple
+-------------------------------------
+--  Weather
+-------------------------------------
+
+-------------------------------------
+--  API Key
+--  To get API Key, first you have to sign up here https://openweathermap.org/appid
+-------------------------------------
+template6="e5d8c78d4d04129f7a9bd767d892b7b2",
+
+
+-------------------------------------
+--  City ID
+--  Find your City ID here https://openweathermap.org/city
+-------------------------------------
+template7="5164466",
+
+
+-------------------------------------
+--  Temp Unit (default, metric, imperial)
+-------------------------------------
+template8="imperial",
+
+
+-------------------------------------
+--  Locale (e.g. "es_ES.UTF-8")
+--  Leave empty for default
+-------------------------------------
+template9=""
+	
+
+}
+conky.text = [[
+#<----[ Clock and Calandar area. Using plain black background image to help with font colors not fading so bad with different wallpapers while transparent.
+#${image /home/thefrog/.config/conky/images/myne/backgrounds/combined-black.png} <----[ not supported in labwc
+${voffset -10}$alignc${color4}${font Tahoma :bold:size=14}${voffset 10}${execi 300 LANG=${template9} LC_TIME=${template9} date +"%A"}
+$alignc${font Tahoma :size=40}${color7}\
+${time %I}:${time %M}${font}
+${voffset 5}$alignc${font Tahoma :bold:size=12}${color4}${execi 300 LANG=${template9} LC_TIME=${template9} date +" %B"}${font}
+#code taken from https://itnotesblog.ru/note/nastrojka-openbox-conky -- Note Font seems to be the only one that comes out correct for me so far.
+${voffset 5}${font DejaVu Sans Mono:size=12}${color7}${execpi 60 DJS=`date +%_d`; cal | sed '1d' | sed '/./!d' | sed 's/$/                    /' | fold -w 21 | sed -n '/^.\{21\}/p' | sed 's/^/${alignc} /' | sed /" $DJS "/s/" $DJS "/" "'${color4}'"$DJS"'${color2}'" "/}${font}
+#<----[ Weather Display
+#code taken from Jelly Conky from zagortenay333
+${voffset -15}${execi 300 l=${template9}; l=${l%%_*}; curl -s "api.openweathermap.org/data/2.5/forecast/daily?APPID=${template6}&id=${template7}&cnt=5&units=${template8}&lang=$l" -o ~/.cache/forecast.json}\
+${execi 300 l=${template9}; l=${l%%_*}; curl -s "api.openweathermap.org/data/2.5/weather?APPID=${template6}&id=${template7}&cnt=5&units=${template8}&lang=$l" -o ~/.cache/weather.json}\
+${font Tahoma :size=28}${color7}\
+${voffset 5}\
+$alignc${execi 300 jq ".main.temp" ~/.cache/weather.json | awk '{print int($1+0.5)}' # round num}°${font}
+${voffset 5}\
+$alignc${color4}${font Tahoma :bold:size=10}${execi 300 jq -r ".weather[0].description" ~/.cache/weather.json}${font}
+${voffset 10}${color3}$hr
+#<----[ OS base info
+$alignc${color2}${font Tahoma :bold:size=10}${voffset 5}${execi 6000 lsb_release -d | grep 'Descr'|awk {'print $2 " " $3" " $4" " $5'}} (${execi 6000 inxi -S | grep "Desktop" | awk {'print $2, $4'}})
+$alignc${color7}${execi 6000 echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days} / ($uptime)
+$alignc${kernel}
+$alignc${execpi 12000 checkupdates | wc -l} - ${execpi 3600 paru -Qu | wc -l}
+#<----[ Cpu and Ram and GPU
+$alignc${color4}${execi 1000 cat /proc/cpuinfo|grep 'model name'|sed -e 's/model name.*: //'| uniq | cut -c 1-25}
+${color4}CPU  ${alignr}${color7}(${execpi 122 inxi -s | grep "System" | awk {'print $4, "°", $5'}})
+${color4}Freq ${alignr}${color7}${freq_g} Ghz
+$alignc${color7}${cpu cpu0} % ${color4}CPU
+${color2}${cpubar cpu0}
+$alignc${color7}${voffset 12}${mem} / ${memperc} % ${color4}RAM
+${color2}${membar}
+$alignc${color7}${voffset 12}${fs_free /} / ${fs_free_perc /} % ${color4}(root)
+${color2}${fs_bar /}
+$alignc${color7}${voffset 12}${fs_size /home/thefrog/.local/mnt/thepad} - ${fs_free /home/thefrog/.local/mnt/thepad} / ${fs_free_perc /home/thefrog/.local/mnt/thepad} % ${color4}(thepad)
+${color2}${fs_bar /home/thefrog/.local/mnt/thepad}
+$alignc${color7}${voffset 12}${fs_size /home/thefrog/.local/mnt/Media} - ${fs_free /home/thefrog/.local/mnt/Media} / ${fs_free_perc /home/thefrog/.local/mnt/Media} % ${color4}(Movies)
+${color2}${fs_bar /home/thefrog/.local/mnt/Media}
+$alignc${color7}${voffset 12}${fs_size /home/thefrog/.local/mnt/TV} - ${fs_free /home/thefrog/.local/mnt/TV} / ${fs_free_perc /home/thefrog/.local/mnt/TV} % ${color4}(Television)
+${color2}${fs_bar /home/thefrog/.local/mnt/TV}
+$alignc${color7}${voffset 12}${fs_size /home/thefrog/.local/mnt/Videos} - ${fs_free /home/thefrog/.local/mnt/Videos} / ${fs_free_perc /home/thefrog/.local/mnt/Videos} % ${color4}(Videos)
+${color2}${fs_bar /home/thefrog/.local/mnt/Videos}
+${color3}$hr
+${color4}BCST:${color7}${texeci 60 curl -s https://icanhazip.com}$color ${alignr}${color7}${wireless_mode wlan0} ${color4}BASE
+${color4}WiFi:${color7}${addr wlan0}$color ${alignr}${color4}SIG:${color7}${wireless_link_qual_perc wlan0} %$color
+${if_match "${addr eno1}"!="No Address"}
+${color4}ETH0:${color7}${addr eno1} ${alignr}${color4}SPD:$color7${downspeedf eno1}kB/s
+${color2}${upspeedgraph eno1 20, 175 000000 FFA500}$color ${color2}$alignr${downspeedgraph eno1 20, 175 000000 FFA500}$color
+${color4}UP:${color7}  ${upspeed eno1}/s$color      ${alignr}${color7}${downspeed eno1}/s$color :${color4}DN${else}${endif}
+${color3}$hr
+${alignc}${color2}Bluetooth Battery Status
+${color4}Keychron K10 Max${alignr}${color7}${execi 30 bluetoothctl info FE:49:DA:28:A5:DE | grep -oP 'Battery Percentage: 0x[0-9a-f]+ \(\K[0-9]+' || echo "N/A"}%
+${color4}Nulea BT5.0 Mouse${alignr}${color7}${execi 30 bluetoothctl info CC:42:5A:7B:0E:D9 | grep -oP 'Battery Percentage: 0x[0-9a-f]+ \(\K[0-9]+' || echo "N/A"}%
+${alignc}${color2}Mobile Battery Status
+${color4}Moto G Play 2023${alignr}${color7}${execi 60 /home/thefrog/bin/mobile_battery.sh}
+${color4}Lenovo M10 Plus 3rd Gen${alignr}${color7}${execi 60 /home/thefrog/bin/tablet_battery.sh}
+]]

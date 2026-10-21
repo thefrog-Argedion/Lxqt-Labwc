@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image13" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAAfklEQVR4nO3QsQ3CAAADQROxf88S6dMwCcMwxiNyt4Bffmx7rXdtO4vhoxj9JQ6oA2oOqANqDqgDag6oA2oOqANqDqgDag6oA2oOqANqDqgDag6oA2oOqANqDqgDag6oA2oOqANqDqgDarc/4LntXUds+9QBAAAAAAAAAPyzLw/4A+Du7hR3AAAAAElFTkSuQmCC"/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image13"/>
+  </g>
+</mask>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(30.479167,0,0,30.479167,0.00520833,0.0416667)">
+<stop offset="0" style="stop-color:#d9f7d8;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#1d5911;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface12" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 30.484375 15.28125 C 30.484375 23.699219 23.660156 30.519531 15.246094 30.519531 C 6.832031 30.519531 0.0117188 23.699219 0.00390625 15.28125 C 0.00390625 6.863281 6.828125 0.0429688 15.246094 0.0429688 C 23.660156 0.0429688 30.484375 6.863281 30.484375 15.28125 Z M 30.484375 15.28125 "/>
+</g>
+<image id="image25" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAAfElEQVR4nO3QQQ2EAAADwR5BC58zgn9FyNgEZgy02Q0AAAAAAACA9/uF2/9tV7i/bTvD7WvbHe5v2476QE2A+kBNgPpATYD6QE2A+kBNgPpATYD6QE2A+kBNgPpATYD6QE2A+kBNgPpATYD6QE2A+kBNgPpATYD6QO3zAR63bQEFMXaIOAAAAABJRU5ErkJggg=="/>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<use xlink:href="#image25"/>
+  </g>
+</mask>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(30.479167,0,0,30.473958,33.520833,33.520833)">
+<stop offset="0" style="stop-color:#d9f7d8;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#1d5911;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface24" clip-path="url(#clip2)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 64 48.765625 C 63.996094 57.183594 57.171875 63.996094 48.761719 63.996094 C 40.347656 63.996094 33.527344 57.183594 33.519531 48.765625 C 33.515625 40.347656 40.34375 33.519531 48.761719 33.519531 C 57.183594 33.519531 64.003906 40.347656 64 48.765625 Z M 64 48.765625 "/>
+</g>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(30.479167,0,0,30.473958,33.520833,0)">
+<stop offset="0" style="stop-color:#d9f7d8;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#1d5911;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear3" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(30.479167,0,0,30.473958,0,33.526042)">
+<stop offset="0" style="stop-color:#d9f7d8;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#1d5911;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+<use xlink:href="#surface24" mask="url(#mask1)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 64 15.246094 C 63.996094 23.65625 57.171875 30.472656 48.761719 30.472656 C 40.347656 30.472656 33.527344 23.65625 33.519531 15.246094 C 33.515625 6.828125 40.34375 0 48.761719 0 C 57.183594 0 64.003906 6.828125 64 15.246094 Z M 64 15.246094 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear3);" d="M 30.480469 48.769531 C 30.472656 57.183594 23.652344 64 15.238281 64 C 6.824219 64 0.00390625 57.183594 0 48.769531 C -0.00390625 40.347656 6.816406 33.527344 15.238281 33.527344 C 23.65625 33.527344 30.480469 40.347656 30.480469 48.769531 Z M 30.480469 48.769531 "/>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+#whiskermenu-window button.flat.category-button{
+	background: url("asset/categorybutton-right.png");
+	background-size: 100% 100%;
+	box-shadow: black 3px 4px 2px -1px;
+	border-radius: 0px;
+}
+#whiskermenu-window button.flat.category-button:hover{
+	background-image: url("asset/categorybutton-prelight-right.png");
+}
+#whiskermenu-window button.flat.category-button:checked{
+	background-image: url("asset/categorybutton-pressed-right.png");
+}
+#whiskermenu-window button.flat.category-button:active:hover{
+	background-image: url("asset/categorybutton-prelight-pressed-right.png");
+}
+#whiskermenu-window button.category-button>box{
+	margin-left: 30px;
+	margin-right: 5px;
+}

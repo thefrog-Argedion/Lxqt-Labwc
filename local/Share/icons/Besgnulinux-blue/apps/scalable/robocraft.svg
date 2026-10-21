@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image13" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAAgklEQVR4nO3ZsQ3CUBAFwQMhElICl0Ah7r8m50REfy0808CtXnozAMBV3eqAL++Z+aw8+Fh57AfbzOwrD95XHjsjA9QBNQPUATUD1AE1A9QBNQPUATUD1AE1A9QBNQPUATUD1AE1A9QBNQPUAbXLD3C2z9BzZl51BAAAAAAAAMDfOQAZ9ADgbCiG2wAAAABJRU5ErkJggg=="/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image13"/>
+  </g>
+</mask>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(24.380208,0,0,21.333333,38.09375,10.666667)">
+<stop offset="0" style="stop-color:#58d2f0;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#1b788f;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface12" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 56.378906 10.667969 L 62.472656 21.332031 L 56.378906 32 L 44.191406 32 L 38.09375 21.332031 L 44.191406 10.667969 Z M 56.378906 10.667969 "/>
+</g>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(24.385417,0,0,21.333333,19.807292,42.666667)">
+<stop offset="0" style="stop-color:#58d2f0;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#1b788f;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(24.380208,0,0,21.333333,38.09375,32)">
+<stop offset="0" style="stop-color:#58d2f0;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#1b788f;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear3" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(24.380208,0,0,21.333333,1.526041,32)">
+<stop offset="0" style="stop-color:#58d2f0;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#1b788f;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear4" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(24.380208,0,0,21.333333,1.526041,10.666667)">
+<stop offset="0" style="stop-color:#58d2f0;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#1b788f;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear5" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(24.385417,0,0,21.333333,19.807292,0)">
+<stop offset="0" style="stop-color:#58d2f0;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#1b788f;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 38.09375 42.667969 L 44.191406 53.332031 L 38.09375 64 L 25.90625 64 L 19.808594 53.332031 L 25.90625 42.667969 Z M 38.09375 42.667969 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 56.378906 32 L 62.472656 42.667969 L 56.378906 53.332031 L 44.191406 53.332031 L 38.09375 42.667969 L 44.191406 32 Z M 56.378906 32 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear3);" d="M 19.808594 32 L 25.90625 42.667969 L 19.808594 53.332031 L 7.621094 53.332031 L 1.527344 42.667969 L 7.621094 32 Z M 19.808594 32 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear4);" d="M 19.808594 10.667969 L 25.90625 21.332031 L 19.808594 32 L 7.621094 32 L 1.527344 21.332031 L 7.621094 10.667969 Z M 19.808594 10.667969 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear5);" d="M 38.09375 0 L 44.191406 10.667969 L 38.09375 21.332031 L 25.90625 21.332031 L 19.808594 10.667969 L 25.90625 0 Z M 38.09375 0 "/>
+</g>
+</svg>

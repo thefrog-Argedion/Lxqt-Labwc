@@ -1,0 +1,135 @@
+conky.config = {
+
+-- COLORS
+
+color1 = 'D70751', -- Debian Red
+color2 = 'FFA54F', -- Tan 1
+color3 = 'FFA500', -- Orange
+
+--set to = true if you want Conky to be forked in the background
+background = true, -- set to false when editing for errors
+
+own_window = true,
+own_window_type = 'normal',
+own_window_transparent = true,
+own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+own_window_argb_visual = true,
+own_window_argb_value = 128,
+out_to_console = false,
+use_xft = true,
+
+font = 'Hack:size=10:antialias=true',
+update_interval = 1,
+
+--This is the number of times Conky will update before quitting
+--Set to zero to run forever.
+--total_run_times 0
+
+--Create own window instead of using desktop (required in nautilus)
+own_window = true,
+
+--Use double buffering (reduces flicker, may not work for everyone)
+double_buffer = true,
+maximum_width = 360,
+
+draw_shades = false,
+
+--Draw outlines?
+draw_outline = false,
+
+--Draw borders around text
+draw_borders = false,
+
+--Stippled borders?
+stippled_borders = 1,
+
+--border width
+border_width = 20,
+
+--Default colors and also border colors
+default_color = 'lightgrey',
+default_shade_color = 'white',
+default_outline_color = 'white',
+
+--Text alignment, other possible values are commented
+alignment = 'bottom_right',
+
+--Gap between borders of screen and text
+gap_x = 20,
+gap_y = 32,
+
+--Add spaces to keep things from moving about?  This only affects certain objects.
+use_spacer = 'left',
+
+--Subtract file system buffers from used memory?
+no_buffers = true,
+--no_buffers = false,
+
+--set to = true if you want all text to be in uppercase
+uppercase = false,
+
+default_bar_width = 140,
+default_bar_height = 6
+}
+
+conky.text = [[
+${font Lato:size=15:style=bold}${color3}${time %R}   ${time %A}${color}${font}       ${alignr}${color3}${execi 300 date +"%x"}${color}
+
+${color3}${texeci 900 curl -s wttr.in/Zanesville?format=%l:+%C+%t+%w+%p}${color}
+${texeci 900 curl -s wttr.in/Sydney?format=%l:+%C+%t+%w+%p}
+${texeci 900 curl -s wttr.in/Savannah?format=%l:+%C+%t+%w+%p}
+
+${color1}${stippled_hr}${color}
+${color1}ID/NET$color${alignr}$sysname ${color3}$kernel$color ${machine}
+${color3}${execi 9000 whoami}$color @ $nodename ${alignr}Desktop ${color3}${desktop}$color of ${desktop_number}
+
+BCST:${color3}${texeci 60 curl -s https://icanhazip.com}$color ${alignr}${wireless_mode wlp3s0} BASE
+MAC :${color3}${wireless_ap wlp3s0}$COLOR ${alignr}${COLOR3}${wireless_essid wlp3s0}$COLOR
+Bitrate: ${color3}${wireless_bitrate wlp3s0}$color
+WiFi:${color3}${addr wlan0}$color ${alignr}${color}SIG:${color3}${wireless_link_qual_perc wlan0} %$color
+${color black}${upspeedgraph wlan0 20, 175 000000 FFA500}$color ${color black}$alignr${downspeedgraph wlan0 20, 175 000000 FFA500}$color
+UP:${color3}  ${upspeed wlan0}/s$color      ${alignr}${color3}${downspeed wlan0}/s$color :DN
+${if_match "${addr eno1}"!="No Address"}
+ETH0:${addr eno1} ${alignr}${color3}SPD:$color${downspeedf eno1}kB/s
+${color black}${upspeedgraph eno1 20, 175 000000 FFA500}$color ${color black}$alignr${downspeedgraph eno1 20, 175 000000 FFA500}$color
+UP:${color3}  ${upspeed eno1}/s$color      ${alignr}${color3}${downspeed eno1}/s$color :DN
+${else}${endif}
+${color1}$stippled_hr$color
+${color1}CPU${color} ${alignr}${execi 1000 cat /proc/cpuinfo | grep 'model name' | sed -e 's/model name.*: //' | cut -d' ' -f 3,6 | uniq} @ ${color3}${freq_g} GHz$color
+${alignr}Usage:  ${color3}${cpu cpu0}%${color}
+CPU▼         Cores➤ ${alignr}0 ${color3}${cpubar cpu1 6,28}$color 1 ${color3}${cpubar cpu2 6,28}$color 2 ${color3}${cpubar cpu3 6,28}$color 3 ${color3}${cpubar cpu4 6,28}$color
+${color3}${cpubar cpu0 6,150}$color${alignr}4 ${color3}${cpubar cpu5 6,28}$color 5 ${color3}${cpubar cpu6 6,28}$color 6 ${color3}${cpubar cpu7 6,28}$color 7 ${color3}${cpubar cpu8 6,28}$color
+CPU: ${color3}${execi 10 sensors|grep CPU |cut -d':' -f2|tr -d ' '}${color} ${alignr}Fan: ${color3}${execi 10 sensors|grep Fan |tr -s ' '|cut -d ' ' -f3-4}${color}
+$alignc${color black}${cpugraph 20,360 000000 FFA500}$color   
+${color1}$stippled_hr$color
+${color1}MEM / HDD / IO$color ${alignr}
+
+RAM      ${color3}${membar 5,140}$color ${alignr}${mem}/${memmax}
+
+${color3}Internal Storage$color
+/        ${color3}${fs_bar 5,140 /}$color ${alignr}${fs_used /}/${fs_size /}
+Home     ${color3}${fs_bar 5,140 /home/}$color ${alignr}${fs_used /home/}/${fs_size /home/}
+${color3}Removable Storage$color
+${if_existing /dev/mmcblk0}microSD  ${color3}${execbar df -l | awk '/mmcblk0p1/ {print substr($5,1,length ($5)-1)}'}$color ${alignr}${exec df -hl | awk '/mmcblk0p1/ {print $3"/"$4}'}
+${else}microSD  ${color3}Offline / Missing$color ${alignr}   ${endif}
+${voffset -13}${if_existing /mmcblk0p1/ ${exec basename $(df -l | awk '/mmcblk0p1/ {print $6}')} ${alignr}${exec df -lT | awk '/mmcblk0p1/ {print $2}'} ${endif}
+
+${color1}$stippled_hr$color
+--${color1}USAGE$color ${color3}BAT${color} ${battery BAT0}${alignr}${color3}Uptime:${color} $uptime_short
+${color3}Proc${color}${processes}${alignc}  | ${color3}Running${color}${running_processes} |${alignr}${color3}Avg:${color} $loadavg
+
+By CPU                MEM  CPU% ${alignr}User      PID
+ ${color3}${top name 1} ${top mem_res 1}${top cpu 1} $alignr${top user 1}  ${top pid 1}$color
+ ${top name 2} ${top mem_res 2}${top cpu 2} $alignr ${top user 2}  ${top pid 2}
+ ${top name 3} ${top mem_res 3}${top cpu 3} $alignr ${top user 3}  ${top pid 3}
+
+By MEM                MEM  CPU% ${alignr}User      PID
+ ${color3}${top_mem name 1} ${top_mem mem_res 1}${top_mem cpu 1} $alignr ${top_mem user 1}  ${top_mem pid 1}$color
+ ${top_mem name 2} ${top_mem mem_res 2}${top_mem cpu 2} $alignr ${top_mem user 2}  ${top_mem pid 2}
+ ${top_mem name 3} ${top_mem mem_res 3}${top_mem cpu 3} $alignr ${top_mem user 3}  ${top_mem pid 3}
+
+By I/O                MEM  CPU% ${alignr}User      PID
+ ${color3}${top_io name 1} ${top_io mem_res 1}${top_io cpu 1} $alignr ${top_io user 1}  ${top_io pid 1}$color
+ ${top_io name 2} ${top_io mem_res 2}${top_io cpu 2} $alignr ${top_io user 2}  ${top_io pid 2}
+ ${top_io name 3} ${top_io mem_res 3}${top_io cpu 3} $alignr ${top_io user 3}  ${top_io pid 3}
+]]

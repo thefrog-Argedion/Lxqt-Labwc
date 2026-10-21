@@ -1,0 +1,66 @@
+--[[
+
+#=====================================================================================
+# Date    : March 21 2023
+# Author  : thefrog
+# Version : 1.0.0
+# License : Distributed under the terms of GNU GPL version 2 or later
+#=====================================================================================
+# CONKY
+# For commands in conky.config section:
+# http://conky.sourceforge.net/config_settings.html
+#
+# For commands in conky.text section:
+# http://conky.sourceforge.net/variables.html
+#
+#======================================================================================
+
+]]
+conky.config = {
+	background = true,
+	update_interval = 1,
+	double_buffer = true,
+	draw_shades = false,
+	no_buffers = true,
+	own_window = true,
+	own_window_class = "Conky",
+	own_window_type = 'normal',
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_transparent = false,
+	own_window_argb_visual = true,
+	own_window_argb_value = 100,
+	use_xft = true,
+font = 'Hack:size=10:antialias=true',
+	alignment = 'top_left',
+	gap_x = 5,
+	gap_y = 5,
+	minimum_width = 350,
+	imlib_cache_size=10,
+	total_run_times = 0,
+-------------------------------------
+--  Color Scheme
+-------------------------------------
+default_color = '02FF00',
+	color4 = 'ff0000', -- red
+	color1 = '02FF00', --green
+	color3 = 'e8ab49', -- orange
+	color2 = 'b58bf0', -- purple
+	color5 = '#0f0ef0',  --  blue
+	color6 = 'b13916',  --  red-autumn
+	color7 = 'a8a6a9',   -- offwhite
+	color8 = '8e8e95',   -- grayish
+	color9 = '000000',  -- black
+
+
+}
+conky.text = [[
+${image /home/thefrog/.config/conky/images/myne/backgrounds/drives.png -s 350x250}
+$alignc${color4}${voffset 12}${fs_size /home/thefrog/.local/mnt/thepad} - ${fs_free /home/thefrog/.local/mnt/thepad} / ${fs_free_perc /home/thefrog/.local/mnt/thepad} % /(thepad)
+${color5}${fs_bar /home/thefrog/.local/mnt/thepad}
+$alignc${color4}${voffset 12}${fs_size /home/thefrog/.local/mnt/Media} - ${fs_free /home/thefrog/.local/mnt/Media} / ${fs_free_perc /home/thefrog/.local/mnt/Media} % /(Movies)
+${color5}${fs_bar /home/thefrog/.local/mnt/Media}
+$alignc${color4}${voffset 12}${fs_size /home/thefrog/.local/mnt/TV} - ${fs_free /home/thefrog/.local/mnt/TV} / ${fs_free_perc /home/thefrog/.local/mnt/TV} % /(Television)
+${color5}${fs_bar /home/thefrog/.local/mnt/TV}
+$alignc${color4}${voffset 12}${fs_size /home/thefrog/.local/mnt/Videos} - ${fs_free /home/thefrog/.local/mnt/Videos} / ${fs_free_perc /home/thefrog/.local/mnt/Videos} % /(Videos)
+${color5}${fs_bar /home/thefrog/.local/mnt/Videos}
+]]

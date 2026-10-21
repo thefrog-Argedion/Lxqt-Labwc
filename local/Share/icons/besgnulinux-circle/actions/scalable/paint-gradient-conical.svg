@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1.1"
+   id="svg98"
+   sodipodi:docname="paint-gradient-conical.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview100"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="8"
+     inkscape:cy="8.0338983"
+     inkscape:window-width="1432"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg98" />
+  <defs
+     id="defs90">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+   .ColorScheme-Text { color:#3cb371; } .ColorScheme-Highlight { color:#4285f4; }
+  </style>
+  </defs>
+  <path
+     style="opacity:0.3;fill:currentColor"
+     class="ColorScheme-Text"
+     d="m -11.595268,6.7725768 a 8,8 0 0 1 -8,8.0000002 8,8 0 0 1 -8,-8.0000002 8,8 0 0 1 8,-8 8,8 0 0 1 8,8 z"
+     id="path92" />
+  <path
+     style="fill:currentColor;stroke-width:0.721082"
+     class="ColorScheme-Text"
+     d="m 7.9892744,2.0536902 v 5.775072 H 13.751527 A 5.7622526,5.775072 0 0 0 7.9892744,2.0536902 Z m 0,5.775072 H 2.2270218 a 5.7622526,5.775072 0 0 0 5.7622526,5.7750718 z"
+     id="path94" />
+  <path
+     style="fill:none;stroke:#3cb371;stroke-width:1.48021;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+     d="m 15.37543,8.1429958 c 0,4.0312522 -3.285158,7.3007852 -7.339847,7.3007852 -4.0546904,0 -7.34375411,-3.269533 -7.34375411,-7.3007852 0,-4.035158 3.28906371,-7.30078502 7.34375411,-7.30078502 4.054689,0 7.339847,3.26562702 7.339847,7.30078502 z m 0,0"
+     id="path96" />
+</svg>

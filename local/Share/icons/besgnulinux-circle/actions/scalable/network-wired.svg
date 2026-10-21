@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg225"
+   sodipodi:docname="network-wired.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview227"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="8"
+     inkscape:cy="8.0338983"
+     inkscape:window-width="1432"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg225" />
+  <defs
+     id="defs219">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+   .ColorScheme-Text { color:#3cb371; } .ColorScheme-Highlight { color:#5294e2; }
+  </style>
+  </defs>
+  <path
+     style="fill:currentColor;stroke-width:0.725511"
+     class="ColorScheme-Text"
+     d="m 3.9327827,4.0565558 c 0,0 -0.7151831,0 -0.7151831,0.7359886 v 6.6238976 c 0,0.735989 0.7151831,0.735989 0.7151831,0.735989 h 1.4303661 l 0.7151832,0.735988 h 4.291098 l 0.715183,-0.735988 h 1.430367 c 0,0 0.715183,0.09563 0.715183,-0.735989 V 4.7925444 c 0,-0.7359886 -0.715183,-0.7359886 -0.715183,-0.7359886 z M 4.6479658,5.5285331 H 11.799796 V 10.680454 H 10.36943 L 9.6542472,11.416442 H 6.793515 L 6.078332,10.680454 H 4.6479658 Z"
+     id="path221" />
+  <path
+     style="fill:none;stroke:#3cb371;stroke-width:2.22032;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+     d="m 23.003906,12.035156 c 0,6.046875 -4.927734,10.951172 -11.009765,10.951172 -6.082032,0 -11.015625,-4.904297 -11.015625,-10.951172 0,-6.052734 4.933593,-10.951172 11.015625,-10.951172 6.082031,0 11.009765,4.898438 11.009765,10.951172 z m 0,0"
+     id="path223"
+     transform="scale(0.666667)" />
+</svg>

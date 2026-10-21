@@ -1,0 +1,91 @@
+--[[
+
+#=====================================================================================
+# Date    : 
+# Author  : thefrog
+# Version : 1.0.0
+# License : Distributed under the terms of GNU GPL version 2 or later
+#=====================================================================================
+# CONKY
+# For commands in conky.config section:
+# http://conky.sourceforge.net/config_settings.html
+#
+# For commands in conky.text section:
+# http://conky.sourceforge.net/variables.html
+#
+#======================================================================================
+
+]]
+conky.config = {
+-------------------------------------
+--  Generic Settings
+-------------------------------------
+	background = true,
+	update_interval = 1,
+	double_buffer = true,
+	imlib_cache_size=10,
+	draw_shades=false,
+	default_shade_color = '#000000',
+	draw_outline=false,
+	draw_borders=false,
+	use_xft = true,
+	no_buffers=true,
+-------------------------------------
+--  Window Specifications
+-------------------------------------
+-- xinerama_head = 1,
+    alignment = 'top_left',
+	gap_x = 10,
+	gap_y = 10,
+	minimum_width = 250,
+	minimum_height = 200,
+	own_window = true,
+	own_window_class = "Conky",
+	own_window_type = 'dock',
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_transparent = false,
+	own_window_argb_visual = true,
+	own_window_argb_value = 100,
+	use_xft = true,
+	
+-------------------------------------
+--  Text Settings
+-------------------------------------
+	xftalpha=1,
+	font="Tahoma:size=10",
+	text_buffer_size=256,
+	override_utf8_locale=true,
+	draw_graph_borders = false,
+	draw_outline = false,
+	default_outline_color = '#828282',
+	uppercase = false,
+	
+-------------------------------------
+--  Color Scheme
+-------------------------------------
+
+	
+default_color = '02FF00',
+	color2 = 'ff0000', -- red
+	color1 = '02FF00', --green
+	color3 = 'e8ab49', -- orange
+	color4= 'b58bf0', -- purple
+	color5="ffffff",  --  white
+	color6 = 'b13916',  --  red-autumn
+	color7 = 'f0efef',   -- offwhite
+	color8 = '8e8e95',   -- grayish
+	color9 = '000000',  -- black
+-------------------------------------
+--  End
+-------------------------------------
+
+}
+conky.text = [[
+${font EtcherSkesch Inverse:size=31}${color ff0000}${alignr}${time %d.%m.%Y}${color}${font}
+${hr 1}
+${font DejaVu Sans Mono:size=14}${color0}${execpi 60 DJS=`date +%_d`; cal | sed '1d' | sed '/./!d' | sed 's/$/                    /' | fold -w 21 | sed -n '/^.\{21\}/p' | sed 's/^/${alignc} /' | sed /" $DJS "/s/" $DJS "/" "'${color2}'"$DJS"'${color4}'" "/}${font}
+]]
+
+
+
+

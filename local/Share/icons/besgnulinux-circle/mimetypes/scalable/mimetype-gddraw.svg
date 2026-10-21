@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64px"
+   height="64px"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg100"
+   sodipodi:docname="mimetype-gddraw.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview102"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.6875"
+     inkscape:cx="32"
+     inkscape:cy="32.135593"
+     inkscape:window-width="1432"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg100" />
+  <defs
+     id="defs91">
+    <filter
+       id="alpha"
+       filterUnits="objectBoundingBox"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="matrix"
+         in="SourceGraphic"
+         values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+         id="feColorMatrix66" />
+    </filter>
+    <image
+       id="image13"
+       width="64"
+       height="64"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAAn0lEQVR4nO3QsQkCAQAEwVNs14JMLfMxsAUDZXjZiS9Y7rLtsf9y33Z8Or7+MOQUOkAHaB2gA7QO0AFaB+gArQN0gNYBOkDrAB2gdYAO0DpAB2gdoAO0DtABWgfoAK0DdIDWATpA6wAdoHWADtA6QAdoHaADtA7QAVoH6ACtA3SA1gE6QOsAHaB1gA7QOkAHaLdtTx3xZS8dkCRJkpzAG+XbBApj5sEUAAAAAElFTkSuQmCC" />
+    <mask
+       id="mask0">
+      <g
+         filter="url(#alpha)"
+         id="g72">
+        <use
+           xlink:href="#image13"
+           id="use70" />
+      </g>
+    </mask>
+    <linearGradient
+       id="linear0"
+       gradientUnits="userSpaceOnUse"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1"
+       gradientTransform="matrix(47.307292,0,0,47.625,0,0)">
+      <stop
+         offset="0"
+         style="stop-color:#c5eeed;stop-opacity:1;"
+         id="stop75" />
+      <stop
+         offset="1"
+         style="stop-color:#0c7672;stop-opacity:1;"
+         id="stop77" />
+    </linearGradient>
+    <clipPath
+       id="clip1">
+      <rect
+         x="0"
+         y="0"
+         width="64"
+         height="64"
+         id="rect80" />
+    </clipPath>
+    <g
+       id="surface12"
+       clip-path="url(#clip1)">
+      <path
+         style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);"
+         d="M 47.308594 23.8125 C 47.402344 32.292969 42.917969 40.160156 35.558594 44.425781 C 31.9375 46.527344 27.832031 47.625 23.65625 47.625 C 19.472656 47.625 15.371094 46.527344 11.75 44.425781 C 4.402344 40.160156 -0.0820312 32.292969 0 23.8125 C -0.0820312 15.332031 4.402344 7.46875 11.75 3.199219 C 15.371094 1.105469 19.472656 0 23.65625 0 C 27.832031 0 31.9375 1.105469 35.558594 3.199219 C 42.917969 7.464844 47.402344 15.332031 47.308594 23.8125 Z M 47.308594 23.8125 "
+         id="path83" />
+    </g>
+    <linearGradient
+       id="linear1"
+       gradientUnits="userSpaceOnUse"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1"
+       gradientTransform="matrix(38.953125,0,0,38.802083,25.046875,25.197917)">
+      <stop
+         offset="0"
+         style="stop-color:#c5eeed;stop-opacity:1;"
+         id="stop86" />
+      <stop
+         offset="1"
+         style="stop-color:#0c7672;stop-opacity:1;"
+         id="stop88" />
+    </linearGradient>
+  </defs>
+  <g
+     id="surface1"
+     transform="matrix(0.54120571,0,0,0.62734015,12.89084,10.608489)">
+    <use
+       xlink:href="#surface12"
+       mask="url(#mask0)"
+       id="use93" />
+    <path
+       style="fill:url(#linear1);fill-rule:nonzero;stroke:none"
+       d="M 25.046875,25.199219 H 64 V 64 H 25.046875"
+       id="path95" />
+  </g>
+  <path
+     style="fill-rule:evenodd;fill:#20b2aa;fill-opacity:1;stroke-width:4.904;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%, 0%, 0%);stroke-opacity:0.309804;stroke-miterlimit:4"
+     d="M 253.03125 7.84375 C 117.625 7.84375 7.84375 117.625 7.84375 253.0625 C 7.84375 388.46875 117.625 498.25 253.03125 498.25 C 388.46875 498.25 498.21875 388.46875 498.21875 253.0625 C 498.21875 117.625 388.4375 7.84375 253.03125 7.84375 Z M 253.03125 34.15625 C 373.9375 34.15625 471.9375 132.15625 471.9375 253.0625 C 471.9375 373.96875 373.9375 471.96875 253.03125 471.96875 C 132.125 471.96875 34.125 373.96875 34.125 253.0625 C 34.125 132.15625 132.125 34.15625 253.03125 34.15625 Z M 253.03125 34.15625 "
+     transform="matrix(0.125,0,0,0.125,0,0)"
+     id="path98" />
+</svg>

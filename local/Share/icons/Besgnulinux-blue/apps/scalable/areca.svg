@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(26.619792,0,0,25.125,7.25,34.875)">
+<stop offset="0" style="stop-color:#cff3fe;stop-opacity:0.7;"/>
+<stop offset="1" style="stop-color:#054cff;stop-opacity:0.7;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(26.619792,0,0,23.875,31.25,3.75)">
+<stop offset="0" style="stop-color:#cff3fe;stop-opacity:0.7;"/>
+<stop offset="1" style="stop-color:#054cff;stop-opacity:0.7;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(39.192708,0,0,27.994792,4.010416,4.010416)">
+<stop offset="0" style="stop-color:#cff3fe;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#054cff;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear3" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(39.197917,0,0,27.994792,20.802085,32.005208)">
+<stop offset="0" style="stop-color:#cff3fe;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#054cff;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 20.800781 60 L 33.871094 48.800781 L 19.75 34.875 L 7.25 45.875 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 46 27.625 L 57.871094 16.800781 L 43.25 3.75 L 31.25 13.875 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 4.011719 32.003906 L 24.542969 32.003906 L 18.9375 26.40625 L 43.203125 4.011719 L 20.800781 4.011719 L 9.609375 17.074219 L 4.011719 11.472656 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear3);" d="M 20.800781 60 L 45.066406 37.605469 L 39.46875 32.003906 L 60 32.003906 L 60 52.535156 L 54.402344 46.9375 L 41.339844 60 "/>
+</g>
+</svg>

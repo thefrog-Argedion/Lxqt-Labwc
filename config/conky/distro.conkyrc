@@ -1,0 +1,57 @@
+--[[
+
+#=====================================================================================
+# Date    : March 21 2023
+# Author  : thefrog
+# Version : 1.0.0
+# License : Distributed under the terms of GNU GPL version 2 or later
+#=====================================================================================
+# CONKY
+# For commands in conky.config section:
+# http://conky.sourceforge.net/config_settings.html
+#
+# For commands in conky.text section:
+# http://conky.sourceforge.net/variables.html
+#
+#======================================================================================
+
+]]
+conky.config = {
+	alignment = 'top_middle',
+	gap_y = 5,
+	minimum_width = 350,
+	minimum_height=50,
+	background = true,
+	
+default_color = '02FF00',
+	color2 = 'ff0000', -- red
+	color1 = '02FF00', --green
+	color3 = 'e8ab49', -- orange
+	color4= 'b58bf0', -- purple
+	color5="ffffff",  --  white
+	color6 = 'b13916',  --  red-autumn
+	color7 = 'f0efef',   -- offwhite
+	
+	
+	update_interval = 10,
+	double_buffer = true,
+	font = 'HellraiserBloody=16',
+	draw_shades = false,
+	no_buffers = true,
+	own_window = true,
+	own_window_class = "Conky",
+	own_window_type = 'desktop',
+	own_window_transparent = false,
+	own_window_argb_visual = true,
+	own_window_argb_value = 100,
+	use_xft = true,
+}
+conky.text = [[
+
+${voffset -25}${image $HOME/.config/conky/images/myne/icons/os.png -p 60,05 -s 32x32}\
+${image $HOME/.config/conky/images/myne/icons/kernel.png -p 205,03 -s 32x40}\
+${image $HOME/.config/conky/images/myne/icons/update.png -p 300,05 -s 32x32} 
+${voffset 20}${color4}${execi 6000 lsb_release -d | grep 'Descr'|awk {'print $2 " " $3" " $4" " $5'}}
+${voffset -24}${color7}${offset 170}${kernel}
+${voffset -24}${offset 295}${execpi 12000 checkupdates | wc -l} - ${execpi 3600 paru -Qu | wc -l}
+]]

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(27.739583,0,0,30.78125,18.130208,16.609375)">
+<stop offset="0" style="stop-color:#f8f1d0;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#e18d0f;stop-opacity:1;"/>
+</linearGradient>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image13" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAAl0lEQVR4nO3QQRHAMADDsKz8CZTtYOhRC4HP37a7hx0doDVAB2gN0AFaA3SA1gAdoDVAB2gN0AFaA3SA1gAdoDVAB2gN0AFaA3SA1gAdoDVAB2gN0AFaA3SA1gAdoDVAB2gN0AFaA3SA1gAdoDVAB2gN0AFaA3SA1gAdoDVAB2gN0AFaA3SA1gAdoDVAB2gN0AFaA3SA9gO3RgEZCYOoJwAAAABJRU5ErkJggg=="/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image13"/>
+  </g>
+</mask>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(60,0,0,64,2,0)">
+<stop offset="0" style="stop-color:#f8f1d0;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#e18d0f;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface12" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 34.3125 0 L 34.3125 13.328125 L 47.457031 20.816406 L 59.746094 14.222656 Z M 29.847656 0.03125 L 4.3125 14.078125 L 16.328125 20.746094 L 29.65625 13.546875 Z M 2.109375 17.808594 L 2 46.078125 L 14.015625 39.410156 L 14.191406 24.722656 Z M 62 17.921875 L 49.984375 24.589844 L 49.808594 39.277344 L 61.890625 46.191406 Z M 16.535156 43.183594 L 4.253906 49.769531 L 29.6875 64 L 29.6875 50.671875 Z M 47.671875 43.253906 L 34.34375 50.453125 L 34.152344 63.96875 L 59.6875 49.921875 Z M 47.671875 43.253906 "/>
+</g>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 18.128906 39.691406 L 18.128906 24.308594 L 32 16.609375 L 45.871094 24.308594 L 45.871094 39.691406 L 32 47.390625 Z M 18.128906 39.691406 "/>
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+</g>
+</svg>

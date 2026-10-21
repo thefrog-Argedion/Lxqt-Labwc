@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64px"
+   height="64px"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg216"
+   sodipodi:docname="application-x-firmware.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview218"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.6875"
+     inkscape:cx="32"
+     inkscape:cy="32.135593"
+     inkscape:window-width="1432"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg216" />
+  <defs
+     id="defs205">
+    <filter
+       id="alpha"
+       filterUnits="objectBoundingBox"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="matrix"
+         in="SourceGraphic"
+         values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+         id="feColorMatrix191" />
+    </filter>
+    <mask
+       id="mask0">
+      <g
+         filter="url(#alpha)"
+         id="g196">
+        <rect
+           x="0"
+           y="0"
+           width="64"
+           height="64"
+           style="fill:rgb(0%,0%,0%);fill-opacity:0.5;stroke:none;"
+           id="rect194" />
+      </g>
+    </mask>
+    <clipPath
+       id="clip1">
+      <rect
+         x="0"
+         y="0"
+         width="64"
+         height="64"
+         id="rect199" />
+    </clipPath>
+    <g
+       id="surface5"
+       clip-path="url(#clip1)">
+      <path
+         style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+         d="M 14 18 L 14 20 L 50 20 L 50 18 Z M 14 22 L 14 24 L 50 24 L 50 22 Z M 14 26 L 14 28 L 50 28 L 50 26 Z M 14 30 L 14 32 L 50 32 L 50 30 Z M 14 34 L 14 36 L 50 36 L 50 34 Z M 14 38 L 14 40 L 50 40 L 50 38 Z M 14 42 L 14 44 L 50 44 L 50 42 Z M 14 46 L 14 48 L 50 48 L 50 46 Z M 14 46 "
+         id="path202" />
+    </g>
+  </defs>
+  <g
+     id="surface1"
+     transform="matrix(0.68733598,0,0,0.67794894,9.4563127,9.237895)">
+    <path
+       style="fill:#389c4a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 7.5,4.5 h 49 c 1.65625,0 3,1.34375 3,3 v 49 c 0,1.65625 -1.34375,3 -3,3 h -49 c -1.65625,0 -3,-1.34375 -3,-3 v -49 c 0,-1.65625 1.34375,-3 3,-3 z m 0,0"
+       id="path207" />
+    <use
+       xlink:href="#surface5"
+       mask="url(#mask0)"
+       id="use209" />
+    <path
+       style="fill:#4c4c4c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 18,13.5 h 28 c 0.277344,0 0.5,0.222656 0.5,0.5 v 37 c 0,0.277344 -0.222656,0.5 -0.5,0.5 H 18 c -0.132812,0 -0.261719,-0.05078 -0.355469,-0.144531 C 17.550781,51.261719 17.5,51.132812 17.5,51 V 14 c 0,-0.277344 0.222656,-0.5 0.5,-0.5 z m 0,0"
+       id="path211" />
+  </g>
+  <path
+     style="fill-rule:evenodd;fill:#2e8b57;fill-opacity:1;stroke-width:4.904;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%, 0%, 0%);stroke-opacity:0.309804;stroke-miterlimit:4"
+     d="M 253.03125 7.84375 C 117.625 7.84375 7.84375 117.625 7.84375 253.0625 C 7.84375 388.46875 117.625 498.25 253.03125 498.25 C 388.46875 498.25 498.21875 388.46875 498.21875 253.0625 C 498.21875 117.625 388.4375 7.84375 253.03125 7.84375 Z M 253.03125 34.15625 C 373.9375 34.15625 471.9375 132.15625 471.9375 253.0625 C 471.9375 373.96875 373.9375 471.96875 253.03125 471.96875 C 132.125 471.96875 34.125 373.96875 34.125 253.0625 C 34.125 132.15625 132.125 34.15625 253.03125 34.15625 Z M 253.03125 34.15625 "
+     transform="matrix(0.125,0,0,0.125,0,0)"
+     id="path214" />
+</svg>

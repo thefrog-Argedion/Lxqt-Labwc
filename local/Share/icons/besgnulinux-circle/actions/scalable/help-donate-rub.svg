@@ -1,0 +1,9 @@
+<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css" id="current-color-scheme">
+        .ColorScheme-Text {
+            color:#3cb371;
+        }
+    </style>
+    <path d="M6 2v5H4v1h2v2H4v1h2v3h1v-3h2v-1H7V8h2a3 3 0 0 0 0-6H7zm1 1h2a2 2 0 1 1 0 4H7z" class="ColorScheme-Text" fill="currentColor"/>
+<path style="fill:none;stroke:#3cb371;stroke-width:2.22032;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" d="m 23.003906,12.035156 c 0,6.046875 -4.927734,10.951172 -11.009765,10.951172 -6.082032,0 -11.015625,-4.904297 -11.015625,-10.951172 0,-6.052734 4.933593,-10.951172 11.015625,-10.951172 6.082031,0 11.009765,4.898438 11.009765,10.951172 z m 0,0" transform="scale(0.666667)" />
+</svg>

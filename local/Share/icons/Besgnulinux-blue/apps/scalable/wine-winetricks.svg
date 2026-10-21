@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.5;stroke:none;"/>
+  </g>
+</mask>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 42 46 L 52 46 C 53.105469 46 54 46.898438 54 48 C 54 49.105469 53.105469 50 52 50 L 42 50 C 40.894531 50 40 49.105469 40 48 C 40 46.898438 40.894531 46 42 46 Z M 42 46 "/>
+</g>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(12.941177%,58.823532%,95.294118%);fill-opacity:1;" d="M 13.996094 5.996094 L 50 5.996094 C 54.417969 5.996094 58 9.578125 58 13.996094 L 58 50 C 58 54.417969 54.417969 57.996094 50 57.996094 L 13.996094 57.996094 C 9.578125 57.996094 6 54.417969 6 50 L 6 13.996094 C 6 9.578125 9.578125 5.996094 13.996094 5.996094 Z M 13.996094 5.996094 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 45.996094 17 L 31 19.328125 L 31 31 L 45.996094 31 Z M 29 19.648438 L 18 21.246094 L 18.011719 31 L 29 31 Z M 18.011719 32.996094 L 18.011719 42.855469 L 29 44.46875 L 29 32.996094 Z M 31 33 L 31 44.75 L 45.996094 47 L 46 33 Z M 31 33 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,33.333334%,33.333334%);fill-opacity:1;" d="M 60 48 C 60 54.628906 54.628906 60 48 60 C 41.375 60 36 54.628906 36 48 C 36 41.375 41.375 36 48 36 C 54.628906 36 60 41.375 60 48 Z M 60 48 "/>
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 56 48 C 56 50.210938 54.207031 52 52 52 C 49.792969 52 48 50.210938 48 48 C 48 45.792969 49.792969 44.003906 52 44.003906 C 54.207031 44.003906 56 45.792969 56 48 Z M 56 48 "/>
+</g>
+</svg>

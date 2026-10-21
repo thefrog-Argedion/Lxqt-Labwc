@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.5;stroke:none;"/>
+  </g>
+</mask>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(0%,0%,5.882353%);fill-opacity:1;" d="M 6 22 L 58 22 L 58 25 L 6 25 Z M 6 22 "/>
+</g>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.5;stroke:none;"/>
+  </g>
+</mask>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface8" clip-path="url(#clip2)">
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(0%,0%,5.882353%);fill-opacity:1;" d="M 6 38 L 58 38 L 58 41 L 6 41 Z M 6 38 "/>
+</g>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(24.313726%,25.882354%,27.058825%);fill-opacity:1;" d="M 8 6 L 56 6 C 57.105469 6 58 6.894531 58 8 L 58 56 C 58 57.105469 57.105469 58 56 58 L 8 58 C 6.894531 58 6 57.105469 6 56 L 6 8 C 6 6.894531 6.894531 6 8 6 Z M 8 6 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 12 15 L 36 15 L 36 17 L 12 17 Z M 12 15 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(44.705883%,83.137256%,2.352941%);fill-opacity:1;" d="M 45 16 C 45 17.105469 44.105469 18 43 18 C 41.894531 18 41 17.105469 41 16 C 41 14.894531 41.894531 14 43 14 C 44.105469 14 45 14.894531 45 16 Z M 45 16 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(44.705883%,83.137256%,2.352941%);fill-opacity:1;" d="M 53 16 C 53 17.105469 52.105469 18 51 18 C 49.894531 18 49 17.105469 49 16 C 49 14.894531 49.894531 14 51 14 C 52.105469 14 53 14.894531 53 16 Z M 53 16 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 12 31 L 36 31 L 36 33 L 12 33 Z M 12 31 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 45 32 C 45 33.105469 44.105469 34 43 34 C 41.894531 34 41 33.105469 41 32 C 41 30.894531 41.894531 30 43 30 C 44.105469 30 45 30.894531 45 32 Z M 45 32 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 53 32 C 53 33.105469 52.105469 34 51 34 C 49.894531 34 49 33.105469 49 32 C 49 30.894531 49.894531 30 51 30 C 52.105469 30 53 30.894531 53 32 Z M 53 32 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 12 47 L 36 47 L 36 49 L 12 49 Z M 12 47 "/>
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+<use xlink:href="#surface8" mask="url(#mask1)"/>
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(89.019608%,33.725491%,70.588237%);fill-opacity:1;" d="M 64 46 C 64 55.941406 55.941406 64 46 64 C 36.058594 64 28 55.941406 28 46 C 28 36.058594 36.058594 28 46 28 C 55.941406 28 64 36.058594 64 46 Z M 64 46 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 53 32 C 50.785156 32 49 33.785156 49 36 C 49 38.214844 50.785156 40 53 40 C 55.214844 40 57 38.214844 57 36 C 57 33.785156 55.214844 32 53 32 Z M 35 42 C 32.785156 42 31 43.785156 31 46 C 31 48.214844 32.785156 50 35 50 C 37.214844 50 39 48.214844 39 46 C 39 43.785156 37.214844 42 35 42 Z M 53 52 C 50.785156 52 49 53.785156 49 56 C 49 58.214844 50.785156 60 53 60 C 55.214844 60 57 58.214844 57 56 C 57 53.785156 55.214844 52 53 52 Z M 46 38 C 45.449219 38 45 38.449219 45 39 C 45 39.550781 45.449219 40 46 40 C 46.550781 40 47 39.550781 47 39 C 47 38.449219 46.550781 38 46 38 Z M 42 40 C 41.449219 40 41 40.449219 41 41 C 41 41.550781 41.449219 42 42 42 C 42.550781 42 43 41.550781 43 41 C 43 40.449219 42.550781 40 42 40 Z M 42 50 C 41.449219 50 41 50.449219 41 51 C 41 51.550781 41.449219 52 42 52 C 42.550781 52 43 51.550781 43 51 C 43 50.449219 42.550781 50 42 50 Z M 46 52 C 45.449219 52 45 52.449219 45 53 C 45 53.550781 45.449219 54 46 54 C 46.550781 54 47 53.550781 47 53 C 47 52.449219 46.550781 52 46 52 Z M 46 52 "/>
+</g>
+</svg>

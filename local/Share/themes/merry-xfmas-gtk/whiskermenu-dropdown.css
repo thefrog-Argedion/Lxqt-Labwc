@@ -1,0 +1,7 @@
+#whiskermenu-window frame{
+	background: url("asset/titlebar.png"), url("asset/window-bg.png");
+	background-blend-mode: normal;
+	background-size: 40% 10%, 100% 95%;
+	background-position: 0% 100%, 0% 0%;
+	background-repeat: repeat-x;
+}

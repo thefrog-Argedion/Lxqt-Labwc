@@ -1,0 +1,4 @@
+profile dual_monitor {
+    output "DP-1" enable mode 1920x1080@100Hz position 0,0
+    output "HDMI-A-2" enable mode 1920x1080@100Hz posistion 1920,0
+}

@@ -1,0 +1,2222 @@
+@import url("colors.css");
+
+*{
+	background-color: rgba(42,102,43,0.0);
+	-gtk-icon-style: regular;
+	-gtk-icon-palette: warning rgb(255,170,0), error rgb(255,0,0), success rgb(0,170,127);
+}
+*:backdrop, *:disabled{
+	background-color: rgba(44,79,45,0.0);
+	-gtk-icon-style: regular;
+}
+*.titlebar{
+	background-image: url("asset/titlebar.png"), linear-gradient(rgba(43,103,44,0.0),rgba(43,103,44,0.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0));
+	background-color: rgba(0,0,0,0);
+	background-blend-mode: normal;
+	background-size: contain;
+	margin-left: -3px;
+	margin-right: -3px;
+}
+*.titlebar:backdrop{
+	background-image: url("asset/titlebar-inactive.png"), linear-gradient(rgba(44,79,45,0.0),rgba(44,79,45,0.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(44,79,45,1.0),rgba(44,79,45,1.0),rgba(44,79,45,1.0),rgba(44,79,45,1.0));
+	background-color: rgba(0,0,0,0);
+	background-blend-mode: normal;
+}
+*.titlebar:disabled{
+	background-image: url("asset/titlebar-inactive.png"), linear-gradient(rgba(74,103,74,0.0),rgba(74,103,74,0.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0));
+	background-color: rgba(0,0,0,0);
+	background-blend-mode: normal;
+}
+*.titlebar *.titlebar:backdrop *.titlebar:disabled{
+	min-height: 50px;
+	box-shadow: @bg_color;
+}
+*.titlebar box.left{
+	margin: 5px;
+}
+*.text-button.toggle, *.text-button, *.up, *.down, button{
+	background-image: url("asset/button1-wide.png"), linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+	box-shadow: black 2.6px 3px 3px 1px;
+	border-radius: 8%;
+}
+*.text-button.toggle label, *.text-button label, *.radio.text-button label, *.radio.image-button label, button label{
+	margin-right: 6px;
+   	margin-left: 6px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+button image{
+	margin: 2px;
+}
+*.text-button.toggle:checked, *.text-button:checked, *.up:checked, *.down:checked, button:checked{
+	background-image: url("asset/button2-wide.png"), linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+}
+*.text-button.toggle:disabled, *.text-button:disabled, *.up:disabled, *.down:disabled, button:disabled, *.text-button.toggle:disabled:backdrop, *.text-button:disabled:backdrop, *.up:disabled:backdrop, *.down:disabled:backdrop, button:disabled:backdrop{
+	background-image: url("asset/button5-wide.png"), linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+}
+*.text-button.toggle:disabled:checked, *.text-button:disabled:checked, *.up:disabled:checked, *.down:disabled:checked, button:disabled:checked, *.text-button.toggle:disabled:checked:backdrop, *.text-button:disabled:checked:backdrop, *.up:disabled:checked:backdrop, *.down:disabled:checked:backdrop, button:disabled:checked:backdrop{
+	background-image: url("asset/button6-wide.png"), linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+}
+*.text-button.toggle:hover, *.text-button:hover, *.up:hover, *.down:hover, button:hover{
+	background-image: url("asset/button3-wide.png"), linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+}
+*.text-button.toggle:checked:hover, *.text-button:checked:hover, *.up:checked:hover, *.down:checked:hover, button:checked:hover{
+	background-image: url("asset/button7-wide.png"), linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+}
+*.text-button.toggle:active, *.text-button:active, *.up:active, *.down:active, button:active, *.text-button.toggle:checked:active, *.text-button:checked:active, *.up:checked:active, *.down:checked:active, button:checked:active{
+	background-image: url("asset/button4-wide.png"), linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+}
+*.text-button.toggle:backdrop, *.text-button:backdrop, *.up:backdrop, *.down:backdrop, button:backdrop{
+	background-image: url("asset/button8-wide.png"), linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+}
+*.text-button.toggle:checked:backdrop, *.text-button:checked:backdrop, *.up:checked:backdrop, *.down:checked:backdrop, button:checked:backdrop{
+	background-image: url("asset/button9-wide.png"), linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+}
+*.text-button.toggle, *.text-button, *.up, *.down, button, *.text-button.toggle:checked, *.text-button:checked, *.up:checked, *.down:checked, button:checked, *.text-button.toggle:disabled, *.text-button:disabled, *.up:disabled, *.down:disabled, button:disabled, *.text-button.toggle:disabled:backdrop, *.text-button:disabled:backdrop, *.up:disabled:backdrop, *.down:disabled:backdrop, button:disabled:backdrop, *.text-button.toggle:disabled:checked, *.text-button:disabled:checked, *.up:disabled:checked, *.down:disabled:checked, button:disabled:checked, *.text-button.toggle:disabled:checked:backdrop, *.text-button:disabled:checked:backdrop, *.up:disabled:checked:backdrop, *.down:disabled:checked:backdrop, button:disabled:checked:backdrop, *.text-button.toggle:hover, *.text-button:hover, *.up:hover, *.down:hover, button:hover, *.text-button.toggle:checked:hover, *.text-button:checked:hover, *.up:checked:hover, *.down:checked:hover, button:checked:hover, *.text-button.toggle:active, *.text-button:active, *.up:active, *.down:active, button:active, *.text-button.toggle:checked:active, *.text-button:checked:active, *.up:checked:active, *.down:checked:active, button:checked:active, *.text-button.toggle:backdrop, *.text-button:backdrop, *.up:backdrop, *.down:backdrop, button:backdrop, *.text-button.toggle:checked:backdrop, *.text-button:checked:backdrop, *.up:checked:backdrop, *.down:checked:backdrop, button:checked:backdrop{
+	background-size: 100% 100%;
+	min-height: 15px;
+	min-width: 15px;
+	margin: 2px;
+	box-shadow: black 2.6px 3px 3px 1px;
+}
+*.up, *.down, *.up:checked, *.down:checked, *.up:checked:hover, *.down:checked:hover, *.up:active, *.down:active, *.up:backdrop, *.down:backdrop, *.up:checked:backdrop, *.down:checked:backdrop{
+	box-shadow: none;
+}
+*.radio.text-button,.radio.image-button{
+	background-image: url("asset/button1.png");
+}
+*.radio.text-button:hover, *.radio.image-button:hover{
+	background-image: url("asset/button3.png");
+}
+*.radio.text-button:active, *.radio.image-button:active{
+	background-image: url("asset/button2.png");
+}
+*.radio.text-button:checked, *.radio.image-button:checked{
+	background-image: url("asset/button4.png");
+}
+*.radio.text-button:disabled, *.radio.image-button:disabled, *.radio.text-button:disabled:backdrop, *.radio.image-button:disabled:backdrop{
+	background-image: url("asset/button5.png");
+}
+*.radio.text-button:disabled:active, *.radio.image-button:disabled:active, *.radio.text-button:disabled:checked, *.radio.image-button:disabled:checked, *.radio.text-button:backdrop:disabled:active, *.radio.image-button:backdrop:disabled:active, *.radio.text-button:backdrop:disabled:checked, *.radio.image-button:backdrop:disabled:checked{
+	background-image: url("asset/button6.png");
+}
+*.radio.text-button:backdrop, *.radio.image-button:backdrop{
+	background-image: url("asset/button8.png");
+}
+*.radio.text-button:checked:backdrop, *.radio.image-button:checked:backdrop{
+	background-image: url("asset/button9.png");
+}
+*.radio.text-button, *.radio.image-button, *.radio.text-button:hover, *.radio.image-button:hover, *.radio.text-button:active, *.radio.image-button:active, *.radio.text-button:checked, *.radio.image-button:checked, *.radio.text-button:disabled, *.radio.image-button:disabled, .radio.text-button:disabled:checked, *.radio.image-button:disabled:checked, .radio.text-button:disabled:active, *.radio.image-button:disabled:active, *.radio.text-button:backdrop, *.radio.image-button:backdrop, *.radio.text-button:disabled:backdrop, *.radio.image-button:disabled:backdrop, *.radio.text-button:checked:backdrop, *.radio.image-button:checked:backdrop, *.radio.text-button:checked:backdrop:disabled, *.radio.image-button:checked:backdrop:disabled{
+	background-size: 100% 100%;
+	min-height: 15px;
+	min-width: 15px;
+}
+button>box>image{
+	padding: 2px;
+}
+#pathbarbox button>box>label{
+	margin: 6px;
+	margin-left: 0px;
+}
+#pathbarbox button>box>image{
+	padding-left: 5px;
+	padding-top: 6px;
+}
+window label:insensitive, dialog label:insensitive{
+	color: rgba(255,255,255,0.5);
+}
+box{
+ 	margin: 1px;
+}
+radiobutton.text-button, radiobutton.text-button:hover, radiobutton.text-button:checked, radiobutton.text-button:disabled, radiobutton.text-button:active,  radiobutton.text-button:disabled:checked, radiobutton.text-button:checked:hover, radiobutton.text-button:backdrop, radiobutton.text-button:checked:backdrop, radiobutton.text-button:disabled:backdrop, radiobutton.text-button:disabled:checked:backdrop{
+	background: none;
+	box-shadow: none;
+}
+radiobutton>radio{
+	-gtk-icon-source: url("asset/radiobutton.png");
+}
+radiobutton>radio:checked{
+	-gtk-icon-source: url("asset/radiobutton-checked.png");
+}
+radiobutton>radio:inconsistent{
+	-gtk-icon-source: url("asset/radiobutton-inconsistent.png");
+}
+radiobutton>radio:disabled{
+	-gtk-icon-source: url("asset/radiobutton-disabled.png");
+}
+radiobutton>radio:disabled:checked{
+	-gtk-icon-source: url("asset/radiobutton-disabled-checked.png");
+}
+radiobutton>radio:disabled:inconsistent{
+	-gtk-icon-source: url("asset/radiobutton-disabled-inconsistent.png");
+}
+headerbar .radio.text-button{
+	background-image: url("asset/csdtitlebarbutton.png");
+}
+headerbar>box>separator.titlebutton{
+	background: none;
+}
+headerbar .radio.text-button label{
+	margin-top: 8px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+headerbar .radio.text-button:hover, headerbar .radio.text-button:checked:active{
+	background-image: url("asset/csdtitlebarbutton-prelight.png");
+}
+headerbar .radio.text-button:active, headerbar .radio.text-button:checked:hover{
+	background-image: url("asset/csdtitlebarbutton-pressed.png");
+}
+headerbar .radio.text-button:checked{
+	background-image: url("asset/csdtitlebarbutton-toggled.png");
+}
+headerbar .radio.text-button:backdrop{
+	background-image: url("asset/csdtitlebarbutton-inactive.png");
+}
+headerbar .radio.text-button:backdrop:checked{
+	background-image: url("asset/csdtitlebarbutton-inactive-toggled.png");
+}
+headerbar .radio.text-button:disabled, headerbar .radio.text-button:backdrop:disabled{
+	background-image: url("asset/csdtitlebarbutton-disabled.png");
+}
+headerbar .radio.text-button:disabled:checked, headerbar .radio.text-button:backdrop:disabled:checked{
+	background-image: url("asset/csdtitlebarbutton-checked-disabled.png");
+}
+headerbar .radio.text-button, headerbar .radio.text-button:hover, headerbar .radio.text-button:checked:active, headerbar .radio.text-button:active, headerbar .radio.text-button:checked:hover, headerbar .radio.text-button:checked, headerbar .radio.text-button:backdrop, headerbar .radio.text-button:backdrop:checked, headerbar .radio.text-button:disabled, headerbar .radio.text-button:disabled:checked, headerbar .radio.text-button:backdrop:disabled, headerbar .radio.text-button:backdrop:disabled:checked{
+	background-size: cover, contain;
+	border: 0px;
+	border-image-source: none;
+	margin-top: 12px;
+	padding: 3.5px;
+	margin-bottom: -4px;
+	min-height: 28px;
+	min-width: 64px;
+	box-shadow: none;
+}
+button.titlebutton{
+	color: rgba(0,0,0,0);
+	-gtk-icon-style: requested;
+	-gtk-icon-source: none;
+	box-shadow: none;
+}
+*.titlebutton.close, *.titlebutton.close:disabled{
+	background-image: url("asset/close-active.png");
+	-gtk-icon-source: none;
+}
+*.titlebutton.close image{
+	color: rgba(0,0,0,0);
+	-gtk-icon-source: none;
+	-gtk-icon-style: requested;
+}
+*.titlebutton.close:hover{
+	background-image: url("asset/close-prelight.png");
+}
+*.titlebutton.close:active{
+	background-image: url("asset/close-pressed.png");
+}
+*.titlebutton.close, *.titlebutton.close:hover, *.titlebutton.close:active, *.titlebutton.close:disabled{
+	min-height: 28px;
+	min-width: 26px;
+	border: 0px;
+	color: rgba(0,0,0,0);
+	margin: 0px;
+	box-shadow: none;
+}
+*.titlebutton.maximize, *.titlebutton.maximize:disabled{
+	-gtk-icon-style: requested;
+	background-image: url("asset/maximize-active.png");
+}
+*.titlebutton.maximize image{
+	-gtk-icon-style: requested;
+}
+*.titlebutton.maximize:hover{
+	background-image: url("asset/maximize-prelight.png");
+}
+*.titlebutton.maximize:active{
+	background-image: url("asset/maximize-pressed.png");
+}
+.maximized headerbar .titlebutton.maximize, .maximized headerbar .titlebutton.maximize:disabled{
+	-gtk-icon-style: requested;
+	background-image: url("asset/maximize-toggled.png");
+}
+.maximized headerbar .titlebutton.maximize image{
+	-gtk-icon-style: requested;
+}
+.maximized headerbar .titlebutton.maximize:hover{
+	background-image: url("asset/maximize-toggled-prelight.png");
+}
+.maximized headerbar .titlebutton.maximize:active{
+	background-image: url("asset/maximize-toggled-pressed.png");
+}
+*.titlebutton.maximize, .titlebutton.maximize:hover, *.titlebutton.maximize:active, *.titlebutton.maximize:disabled, .maximized headerbar .titlebutton.maximize, .maximized headerbar .titlebutton.maximize:hover, .maximized headerbar .titlebutton.maximize:active, .maximized headerbar .titlebutton.maximize:disabled{
+	min-height: 28px;
+	min-width: 23px;
+	border: 0px;
+	color: rgba(0,0,0,0);
+	margin: 0px;
+	box-shadow: none;
+}
+*.titlebutton.minimize, *.titlebutton.minimize:disabled{
+	-gtk-icon-style: requested;
+	background-image: url("asset/minimize-active.png");
+}
+*.titlebutton.minimize image{
+	-gtk-icon-style: requested;
+}
+*.titlebutton.minimize:hover{
+	background-image: url("asset/minimize-prelight.png");
+}
+*.titlebutton.minimize:active{
+	background-image: url("asset/minimize-pressed.png");
+}
+*.titlebutton.minimize, *.titlebutton.minimize:hover, *.titlebutton.minimize:active, *.titlebutton.minimize:disabled{
+	min-height: 28px;
+	min-width: 25px;
+	border: 0px;
+	color: rgba(0,0,0,0);
+	margin: 0px;
+	box-shadow: none;
+}
+headerbar{
+	min-height: 50px;
+}
+headerbar>image{
+	margin-left: 13px;
+}
+headerbar>box.horizontal.linked>button{
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+headerbar>button.image-button, headerbar>button.image-button:backdrop{
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+headerbar .text-button, headerbar .image-button, headerbar .text-button:hover, headerbar .image-button:hover, headerbar .text-button:active, headerbar .image-button:active, headerbar .text-button:checked, headerbar .image-button:checked, headerbar .text-button:disabled, headerbar .image-button:disabled, headerbar .text-button:disabled:active, headerbar .image-button:disabled:active, headerbar .text-button:backdrop, headerbar .image-button:backdrop, headerbar .image-button:disabled:backdrop, headerbar .text-button:checked:backdrop, headerbar .image-button:checked:backdrop, headerbar .text-button:disabled:backdrop, headerbar .image-button:disabled:backdrop, headerbar .text-button:disabled:backdrop:checked, headerbar .image-button:disabled:backdrop:checked, headerbar .text-button:disabled:backdrop:active, headerbar .image-button:disabled:backdrop:active{
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+headerbar combobox, headerbar combobox:hover, headerbar combobox:checked, headerbar combobox:disabled, headerbar combobox:backdrop, headerbar combobox:disabled:backdrop{
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+headerbar entry, headerbar entry.horizontal, headerbar entry.vertical, headerbar>toolitem>box.linked entry{
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+headerbar button, headerbar button:hover, headerbar button:checked,  headerbar button:checked:hover, headerbar button:active, headerbar button:backdrop, headerbar button:backdrop:checked, headerbar button:backdrop:active, headerbar button:disabled, headerbar button:disabled:active, headerbar button:disabled:checked, headerbar button:backdrop:disabled, headerbar button:backdrop:disabled:active, headerbar button:backdrop:disabled:checked{
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+headerbar *.image-button.toggle, headerbar *.text-button.toggle, headerbar *.image-button.toggle:hover, headerbar *.text-button.toggle:hover, headerbar *.image-button.toggle:checked, headerbar *.text-button.toggle:checked, headerbar *.image-button.toggle:active, headerbar *.text-button.toggle:active, headerbar *.image-button.toggle:checked:hover, headerbar *.text-button.toggle:checked:hover, headerbar *.text-button.toggle:backdrop, headerbar *.image-button.toggle:backdrop, headerbar *.text-button.toggle:backdrop:checked, headerbar *.image-button.toggle:backdrop:checked, headerbar *.text-button.toggle:backdrop:active, headerbar *.image-button.toggle:backdrop:active, headerbar *.image-button.toggle:disabled, headerbar *.text-button.toggle:disabled, headerbar *.image-button.toggle:disabled:checked, headerbar *.text-button.toggle:disabled:checked, headerbar *.image-button.toggle:backdrop:disabled, headerbar *.text-button.toggle:backdrop:disabled, headerbar *.image-button.toggle:backdrop:disabled:active, headerbar *.text-button.toggle:backdrop:disabled:active, headerbar *.image-button.toggle:backdrop:disabled:checked, headerbar *.text-button.toggle:backdrop:disabled:checked{
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+headerbar *.image-button.popup.toggle image{
+	-gtk-icon-style: requested;
+}
+headerbar *.image-button.popup.toggle, headerbar *.image-button.popup.toggle:backdrop{
+	-gtk-icon-style: requested;
+	background-image: url("asset/menu-active.png");
+}
+headerbar *.image-button.popup.toggle:hover{
+	background-image: url("asset/menu-prelight.png");
+}
+headerbar *.image-button.popup.toggle:active, headerbar *.image-button.popup.toggle:checked{
+	background-image: url("asset/menu-pressed.png");
+}
+headerbar *.image-button.popup.toggle, headerbar *.image-button.popup.toggle:backdrop, headerbar *.image-button.popup.toggle:hover, headerbar *.image-button.popup.toggle:active, headerbar *.image-button.popup.toggle:checked{
+	min-height: 29px;
+	min-width: 29px;
+	border: 0px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	background-size: 100% 100%;
+	color: rgba(0,0,0,0);
+	box-shadow: none;
+}
+*.background, *.background:focus{
+	background-image: url("asset/window-bg2.png");
+}
+*.background:backdrop, *.background:insensitive{
+	background-image: url("asset/window-bg2-backdrop.png");
+}
+*.background:disabled{
+	background-image: url("asset/window-bg2-disabled.png");
+}
+*.background, *.background:focus, *.background:backdrop, *.background:insensitive *.background:disabled{
+	background-clip: content-box;
+	background-size: 110% 110%;
+	background-position: -10px -10px;
+}
+window{
+	border: 0px;
+}
+window.background{
+	background-image: url("asset/window-bg2.png");
+}
+window.background:backdrop{
+	background-image: url("asset/window-bg2-backdrop.png");
+}
+window.background:disabled{
+	background-image: url("asset/window-bg2-disabled.png");
+}
+window.background, window.background:backdrop, window.background:disabled{
+	background-clip: content-box;
+	background-size: 110% 110%;
+	background-position: -10px -10px;
+}
+window.csd.background{
+	background-image: url("asset/window-bg2.png");
+}
+window.csd.background:backdrop{
+	background-image: url("asset/window-bg2-backdrop.png");
+}
+window.csd.background:disabled{
+	background-image: url("asset/window-bg2-disabled.png");
+}
+window.csd.background, window.csd.background:backdrop, window.csd.background:disabled{
+	border: 0px;
+	margin: 0px;
+}
+dialog.background.csd, window.background.csd, dialog.background.csd:backdrop, window.background.csd:backdrop, dialog.background:disabled, window.background.csd:disabled{
+	border-right: solid 12px;
+	border-left: solid 12px;
+	border-bottom: solid 12px;
+	border-image-slice: 2%;
+}
+dialog>decoration{
+	margin: -10px;
+}
+dialog.background.csd, window.background.csd{
+	border-image-source: url("asset/window-bg.png");
+}
+dialog.background.csd:backdrop, window.background.csd:backdrop{
+	border-image-source: url("asset/window-bg-backdrop.png");
+}
+dialog.background.csd:disabled, window.background.csd:disabled{
+	border-image-source: url("asset/window-bg-disabled.png");
+}
+menu, context-menu{
+	background-image: url("asset/window-bg.png");
+	background-size: 120% 120%;
+	background-position: 20% 20%;
+	border: solid 5px;
+	border-image-source: url("asset/window-bg.png");
+	border-image-slice: 2% 2% 2% 2%;
+	border-image-width: 10px;
+}
+menu>menuitem, context-menu>menuitem{
+	background: none;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+}
+menu>menuitem:hover, context-menu>menuitem:hover{
+	background-image: url("asset/menubutton-checked.png");
+	background-clip: content-box;
+	background-size: 100% 100%;
+}
+menu>menuitem label, context-menu>menuitem label{
+	margin-left: 5px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+}
+menu>menuitem image, context-menu>menuitem image{
+	margin-left: 5px;
+}
+tooltip, widget.background.floating-bar.frame, widget.background.floating-bar.frame:backdrop, widget.background.floating-bar.frame:disabled, widget.background.floating-bar.frame:backdrop:disabled{
+	background-size: 120% 120%;
+	background-position: 20% 20%;
+	border: solid 2px;
+	border-image-slice: 2% 2% 2% 2%;
+	border-image-width: 10px;
+}
+tooltip, widget.background.floating-bar.frame{
+	background-image: url("asset/window-bg.png");
+	border-image-source: url("asset/window-bg.png");
+}
+widget.background.floating-bar.frame:backdrop{
+	background-image: url("asset/window-bg-backdrop.png");
+	border-image-source: url("asset/window-bg-backdrop.png");
+}
+widget.background.floating-bar.frame:disabled, widget.background.floating-bar.frame:backdrop:disabled{
+	background-image: url("asset/window-bg-disabled.png");
+	border-image-source: url("asset/window-bg-disabled.png");
+}
+modelbutton, #xfce4-notification-plugin-menu modelbutton{
+	margin-bottom: 3px;
+}
+modelbutton:hover, #xfce4-notification-plugin-menu modelbutton:hover{
+	background-image: url("asset/menubutton-checked.png");
+	background-position: 0%, 0%;
+	background-size: 100% 100%;
+	border-image-source: url("asset/menubutton-checked.png");
+	border-image-slice: 1% 1% 1% 1%;
+}
+popover.background modelbutton:hover{
+	background: rgba(102,72,24,0.5);
+}
+*.frame{
+	padding: 5px;
+}
+scrolledwindow.frame{
+	padding: 0px;
+}
+*.view, scrolledwindow.sidebar{
+	background-color: rgba(200,180,100,1.0);
+	background-image: url("asset/view.png");
+	border: solid 1px;
+	border-color: @bg_color;
+	outline: solid 2px;
+	outline-color: @bg_color;
+}
+*.view:backdrop, scrolledwindow.sidebar:backdrop{
+	background-color: rgb(200,189,143);
+	background-image: url("asset/view-inactive.png");
+}
+*.view:disabled, scrolledwindow.sidebar:disabled, *.view:backdrop:disabled, scrolledwindow.sidebar:backdrop:disabled{
+	background-color: rgb(165,158,130);
+	background-image: url("asset/view-disabled.png");
+}
+XfdesktopIconView .view, .background.caja-desktop-window, .background.caja-desktop-window scrolledwindow, .background.caja-desktop-window:backdrop, .background.caja-desktop-window scrolledwindow:backdrop, .background.caja-desktop-window:disabled, .background.caja-desktop-window scrolledwindow:disabled, .background.caja-desktop-window:backdrop:disabled, .background.caja-desktop-window scrolledwindow:backdrop:disabled{
+	background: none;
+}
+.background.caja-desktop-window box, .background.caja-desktop-window box:backdrop, .background.caja-desktop-window box:disabled, .background.caja-desktop-window box:backdrop:disabled{
+	background: none;
+}
+textview>text{
+	color: rgb(102,72,24);
+}
+textview>text>selection{
+	color: white;
+	background-color: rgba(89,139,80,0.5);
+}
+textview>text>selection:backdrop{
+	color: white;
+	background-color: rgba(120,176,110,0.5);
+}
+textview>text>selection:disabled, textview>text>selection:backdrop:disabled{
+	color: white;
+	background-color: rgba(118,149,112,0.5);
+}
+list>row:focus{
+	background: linear-gradient(rgba(255,218,235,1.0),rgba(236,6,29,1.0));
+}
+list>row:hover{
+	background: linear-gradient(rgba(165,5,21,0.0),rgba(165,5,21,1.0));
+}
+list>row:backdrop{
+	background: none;
+}
+list>row:backdrop:focus{
+	background: linear-gradient(rgba(236,202,217,1.0),rgba(165,5,21,1.0));
+}
+list>row:disabled:focus{
+	background: linear-gradient(rgba(236,224,229,1.0),rgba(99,19,27,1.0));
+}
+calendar{
+	color: rgb(102,72,24);
+}
+calendar>selection{
+	background-color: green;
+}
+*.vertical.right,*.horizontal.right{
+	border-image-source: none;
+}
+
+treeview.view{
+	color: rgb(102,72,24);
+	background: rgba(200,180,100,1.0);
+}
+treeview.view:backdrop{
+	background: rgb(200,189,143);
+}
+treeview.view:disabled, treeview.view:backdrop:disabled{
+	background: rgb(165,158,130);
+}
+treeview.view:hover, *.view:hover{
+	background: linear-gradient(rgba(200,180,100,1.0),rgba(200,180,100,1.0),rgba(39,92,39,1.0));
+}
+treeview.view:backdrop:hover, *.view:backdrop:hover, calendar:backdrop:hover{
+	background: rgba(200,189,143,0.0);
+}
+treeview.view:selected, *.view:selected{
+	background: linear-gradient(rgba(200,180,100,1.0),rgba(39,92,39,1.0));
+}
+treeview.view:backdrop:selected, *.view:backdrop:selected{
+	background: linear-gradient(rgba(200,189,143,1.0),rgba(40,69,40,1.0));
+}
+treeview.view:disabled:selected, *.view:disabled:selected, treeview.view:backdrop:disabled:selected, *.view:backdrop:disabled:selected{
+	background: linear-gradient(rgba(165,158,130,1.0),rgba(64,90,65,1.0));
+}
+calendar:hover, scrolledwindow.sidebar label:hover{
+	background: linear-gradient(rgba(200,180,100,0.0),rgba(200,180,100,0.5),rgba(39,92,39,1.0));
+}
+calendar:selected{
+	background: linear-gradient(rgba(200,180,100,0.0),rgba(39,92,39,1.0));
+}
+calendar:backdrop:selected, scrolledwindow.sidebar label:backdrop:selected{
+	background: linear-gradient(rgba(200,189,143,0.0),rgba(40,69,40,1.0));
+}
+calendar:disabled:selected, scrolledwindow.sidebar label:disabled:selected, calendar:backdrop:disabled:selected, scrolledwindow.sidebar label:backdrop:disabled:selected{
+	background: linear-gradient(rgba(165,158,130,0.0),rgba(64,90,65,1.0));
+}
+treeview>header{
+	color: white;
+}
+XfdesktopIconView .view:active{
+	background: linear-gradient(rgba(200,180,100,0.1),rgba(39,92,39,0.5));
+}
+iconview.view:hover{
+	background: rgba(39,92,39,0.5);
+}
+iconview.view:selected{
+	background: rgba(39,92,39,1.0);
+}
+iconview.view:backdrop:hover{
+	background: none;
+}
+iconview.view:backdrop:selected{
+	background: rgba(40,69,40,1.0);
+}
+iconview.view:disabled:selected{
+	background: rgba(64,90,65,1.0);
+}
+treeview>header>button, treeview>header>button:checked, treeview>header>button:active, treeview>header>button:hover, treeview>header>button:backdrop, treeview>header>button:backdrop:checked, treeview>header>button:disabled, treeview>header>button:disabled:checked, treeview>header>button:backdrop:disabled, treeview>header>button:backdrop:disabled:checked{
+	background-size: 200% 100%;
+	background-position: 50% 50%;
+	border-right: solid 5px;
+	border-left: solid 5px;
+	border-bottom: none;
+	border-image-slice: 15% 35% 0% 35%;
+	border-image-width: 15% 7% 0% 7%;
+	margin-right: 0px;
+	margin-left: -1px;
+	margin-top: -1px;
+	margin-bottom: -1px;
+	box-shadow: none;
+}
+treeview>header>button{
+	background-color: rgba(39,92,39,1.0);
+	background-image: url("asset/treeview-header.png");
+	border-image-source: url("asset/csdtitlebarbutton.png");
+}
+treeview>header>button>box{
+	padding-left: 13px;
+	padding-right: 13px;
+}
+treeview>header>button:checked{
+	background-color: rgba(39,92,39,1.0);
+	background-image: url("asset/treeview-header-toggled.png");
+	border-image-source: url("asset/csdtitlebarbutton-toggled.png");
+}
+treeview>header>button:active{
+	background-color: rgba(39,92,39,1.0);
+	background-image: url("asset/treeview-header-pressed.png");
+	border-image-source: url("asset/csdtitlebarbutton-pressed.png");
+}
+treeview>header>button:hover{
+	background-color: rgba(39,92,39,1.0);
+	background-image: url("asset/treeview-header-prelight.png");
+	border-image-source: url("asset/csdtitlebarbutton-prelight.png");
+}
+treeview>header>button:backdrop{
+	background-color: rgba(40,69,40,1.0);
+	background-image: url("asset/treeview-header-disabled.png");
+	border-image-source: url("asset/csdtitlebarbutton-disabled.png");
+}
+treeview>header>button:backdrop:checked{
+	background-color: rgba(40,69,40,1.0);
+	background-image: url("asset/treeview-header-checked-disabled.png");
+	border-image-source: url("asset/csdtitlebarbutton-checked-disabled.png");
+}
+treeview>header>button:disabled, treeview>header>button:backdrop:disabled{
+	background-color: rgba(64,90,65,0.0);
+	background-image: url("asset/treeview-header-inactive.png");
+	border-image-source: url("asset/csdtitlebarbutton-inactive.png");
+}
+treeview>header>button:disabled:checked, treeview>header>button:backdrop:disabled:checked{
+	background-color: rgba(64,90,65,0.0);
+	background-image: url("asset/treeview-header-inactive-toggled.png");
+	border-image-source: url("asset/csdtitlebarbutton-inactive-toggled.png");
+}
+scrollbar .up{
+	background-image: url("asset/button-scrollbar-up.png");
+	-gtk-icon-source: none;
+}
+scrollbar *.up:active{
+	background-image: url("asset/button-scrollbar-up-pressed.png");
+	-gtk-icon-source: none;
+}
+scrollbar *.up:checked{
+	background-image: url("asset/button-scrollbar-up-pressed.png");
+	-gtk-icon-source: none;
+}
+scrollbar *.up:disabled, scrollbar *.up:disabled:backdrop{
+	background-image: url("asset/button-scrollbar-up-disabled.png");
+}
+scrollbar *.up:hover{
+	background-image: url("asset/button-scrollbar-up-prelight.png");
+}
+scrollbar>contents>button.up:backdrop{
+	background-image: url("asset/button-scrollbar-up-backdrop.png");
+}
+scrollbar .down{
+	background-image: url("asset/button-scrollbar-down.png");
+	-gtk-icon-source: none;
+}
+scrollbar *.down:disabled, scrollbar *.down:disabled:backdrop{
+	background-image: url("asset/button-scrollbar-down-disabled.png");
+}
+scrollbar *.down:hover{
+	background-image: url("asset/button-scrollbar-down-prelight.png");
+}
+scrollbar *.down:backdrop{
+	background-image: url("asset/button-scrollbar-down-backdrop.png");
+}
+scrollbar.horizontal>contents>button.up{
+	background-image: url("asset/button-scrollbar-left.png");
+	-gtk-icon-source: none;
+}
+scrollbar.horizontal>contents>button.up:disabled, scrollbar.horizontal>contents>button.up:disabled:backdrop{
+	background-image: url("asset/button-scrollbar-left-disabled.png");
+}
+scrollbar.horizontal>contents>button.up:hover{
+	background-image: url("asset/button-scrollbar-left-prelight.png");
+}
+scrollbar.horizontal>contents>button.up:backdrop{
+	background-image: url("asset/button-scrollbar-left-backdrop.png");
+}
+scrollbar.horizontal>contents>button.down{
+	background-image: url("asset/button-scrollbar-right.png");
+	-gtk-icon-source: none;
+}
+scrollbar.horizontal>contents>button.down:disabled, scrollbar.horizontal>contents>button.down:disabled:backdrop{
+	background-image: url("asset/button-scrollbar-right-disabled.png");
+}
+scrollbar.horizontal>contents>button.down:hover{
+	background-image: url("asset/button-scrollbar-right-prelight.png");
+}
+scrollbar.horizontal>contents>button.down:backdrop{
+	background-image: url("asset/button-scrollbar-right-backdrop.png");
+}
+scrollbar .up, scrollbar *.up:active, scrollbar *.up:checked, scrollbar *.up:disabled, scrollbar *.up:disabled:backdrop, scrollbar *.up:hover, scrollbar>contents>button.up:backdrop, scrollbar .down, scrollbar *.down:disabled, scrollbar *.down:disabled:backdrop, scrollbar *.down:hover, scrollbar *.down:backdrop, scrollbar.horizontal>contents>button.up, scrollbar.horizontal>contents>button.up:disabled, scrollbar.horizontal>contents>button.up:disabled:backdrop, scrollbar.horizontal>contents>button.up:hover, scrollbar.horizontal>contents>button.up:backdrop, scrollbar.horizontal>contents>button.down, scrollbar.horizontal>contents>button.down:disabled, scrollbar.horizontal>contents>button.down:disabled:backdrop, scrollbar.horizontal>contents>button.down:hover, scrollbar.horizontal>contents>button.down:backdrop{
+	background-size: 100% 100%;
+	min-height: 18px;
+	min-width: 18px;
+	box-shadow: none;
+}
+scrollbar>contents>trough{
+	background-image: url("asset/scrollbar-trough-vertical.png");
+	background-size: 100% 100%;
+	border-top: 5px;
+	border-bottom: 5px;
+	border-image-source: url("asset/scrollbar-trough-vertical-border.png");
+	border-image-slice: 5% 0% 5% 0%;
+	min-width: 18px;
+}
+scrollbar.horizontal>contents>trough{
+	background-image: url("asset/scrollbar-trough-horizontal.png");
+	background-size: 100% 100%;
+	border-right: 5px;
+	border-left: 5px;
+	border-top: 5px;
+	border-bottom: 0px;
+	border-image-source: url("asset/scrollbar-trough-horizontal-border.png");
+	border-image-slice: 0% 5% 0% 5%;
+	min-height: 18px;
+}
+scrollbar>contents>trough>slider{
+	background-image: url("asset/scrollbar1.png");
+	margin-top: 4px;
+	margin-bottom: 5px;
+}
+scrollbar>contents>trough>slider:hover{
+	background-image: url("asset/scrollbar3.png");
+}
+scrollbar>contents>trough>slider:active{
+	background-image: url("asset/scrollbar2.png");
+}
+scrollbar>contents>trough>slider:disabled{
+	background-image: url("asset/scrollbar5.png");
+}
+scrollbar>contents>trough>slider:backdrop{
+	background-image: url("asset/scrollbar8.png");
+}
+scrollbar>contents>trough>slider, scrollbar>contents>trough>slider:hover, scrollbar>contents>trough>slider:active, scrollbar>contents>trough>slider:disabled, scrollbar>contents>trough>slider:backdrop{
+	background-size: 100% 100%;
+	min-height: 19px;
+	min-width: 14px;
+}
+scrollbar.horizontal>contents>trough>slider{
+	background-image: url("asset/scrollbar1-h.png");
+	margin-left: 4px;
+	margin-right: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+scrollbar.horizontal>contents>trough>slider:hover{
+	background-image: url("asset/scrollbar3-h.png");
+}
+scrollbar.horizontal>contents>trough>slider:active{
+	background-image: url("asset/scrollbar2-h.png");
+}
+scrollbar.horizontal>contents>trough>slider:disabled{
+	background-image: url("asset/scrollbar5-h.png");
+}
+scrollbar.horizontal>contents>trough>slider:backdrop{
+	background-image: url("asset/scrollbar8-h.png");
+}
+scrollbar.horizontal>contents>trough>slider, scrollbar.horizontal>contents>trough>slider:hover, scrollbar.horizontal>contents>trough>slider:active, scrollbar.horizontal>contents>trough>slider:disabled, scrollbar.horizontal>contents>trough>slider:backdrop{
+	background-size: 100% 100%;
+	min-height: 14px;
+	min-width: 19px;
+}
+.view check, check, .view check:checked, check:checked, .view check:disabled, check:disabled, .view check:backdrop, check:backdrop, .view check:backdrop:check, check:backdrop:check, .view check:disabled:checked, check:disabled:checked, .view check:inconsistent, check:inconsistent, .view check:backdrop:inconsistent, check:backdrop:inconsistent, .view check:disabled:inconsistent, check:disabled:inconsistent, .view check:backdrop:disabled, check:backdrop:disabled, .view check:backdrop:disabled:checked, check:backdrop:disabled:checked, .view check:backdrop:disabled:inconsistent, check:backdrop:disabled:inconsistent{
+	border: none;
+}
+.view check, check, .view check:backdrop, check:backdrop{
+	-gtk-icon-source: image(url("asset/checkbox.png"));
+	border: none;
+}
+.view check:checked, check:checked, .view check:backdrop:checked, check:backdrop:checked{
+	-gtk-icon-source: image(url("asset/checkbox-checked.png"));
+}
+.view check:disabled, check:disabled, .view check:backdrop:disabled, check:backdrop:disabled{
+	-gtk-icon-source: image(url("asset/checkbox-disabled.png"));
+}
+.view check:disabled:checked, check:disabled:checked, .view check:backdrop:disabled:checked, check:backdrop:disabled:checked{
+	-gtk-icon-source: image(url("asset/checkbox-disabled-checked.png"));
+}
+.view check:inconsistent, check:inconsistent, .view check:backdrop:inconsistent, check:backdrop:inconsistent{
+	-gtk-icon-source: image(url("asset/checkbox-inconsistent.png"));
+}
+.view check:disabled:inconsistent, check:disabled:inconsistent, .view check:backdrop:disabled:inconsistent, check:backdrop:disabled:inconsistent{
+	-gtk-icon-source: image(url("asset/checkbox-disabled-inconsistent.png"));
+}
+.view radio, radio, .view radio:checked, radio:checked, .view radio:disabled, radio:disabled, .view radio:backdrop, radio:backdrop, .view radio:backdrop:checked, radio:backdrop:checked, .view radio:disabled:checked, radio:disabled:checked, .view radio:inconsistent, radio:inconsistent, .view radio:backdrop:inconsistent, radio:backdrop:inconsistent, .view radio:disabled:inconsistent, radio:disabled:inconsistent, .view radio:backdrop:disabled, radio:backdrop:disabled, .view radio:backdrop:disabled:checked, radio:backdrop:disabled:checked, .view radio:backdrop:disabled:inconsistent, radio:backdrop:disabled:inconsistent{
+	border: none;
+}
+.view radio, radio, .view radio:backdrop, radio:backdrop{
+	-gtk-icon-source: image(url("asset/radiobutton.png"));
+	border: none;
+}
+.view radio:checked, radio:checked, .view radio:backdrop:checked, radio:backdrop:checked{
+	-gtk-icon-source: image(url("asset/radiobutton-checked.png"));
+}
+.view radio:disabled, radio:disabled, .view radio:backdrop:disabled, radio:backdrop:disabled{
+	-gtk-icon-source: image(url("asset/radiobutton-disabled.png"));
+}
+.view radio:disabled:checked, radio:disabled:checked, .view radio:backdrop:disabled:checked, radio:backdrop:disabled:checked{
+	-gtk-icon-source: image(url("asset/radiobutton-disabled-checked.png"));
+}
+.view radio:inconsistent, radio:inconsistent, .view radio:backdrop:inconsistent, radio:backdrop:inconsistent{
+	-gtk-icon-source: image(url("asset/radiobutton-inconsistent.png"));
+}
+.view radio:disabled:inconsistent, radio:disabled:inconsistent, .view radio:backdrop:disabled:inconsistent, radio:backdrop:disabled:inconsistent{
+	-gtk-icon-source: image(url("asset/radiobutton-disabled-inconsistent.png"));
+}
+checkbutton.text-button, checkbutton.text-button:hover, checkbutton.text-button:checked, checkbutton.text-button:checked:hover, checkbutton.text-button:disabled, checkbutton.text-button:disabled:checked, checkbutton.text-button:backdrop, checkbutton.text-button:checked:backdrop, checkbutton.text-button:disabled:backdrop, checkbutton.text-button:disabled:checked:backdrop{
+	background: none;
+	background-size: contain;
+	box-shadow: none;
+	border: 0px;
+}
+checkbutton.text-button>label{
+	margin-left: 5px;
+}
+checkbutton>check, modelbutton>check{
+	-gtk-icon-source: url("asset/checkbox.png");
+}
+checkbutton>check:checked, modelbutton>check:checked{
+	background-image: none;
+	-gtk-icon-source: url("asset/checkbox-checked.png");
+	background-size: contain;
+	border: 0px;
+}
+checkbutton>check:inconsistent, modelbutton>check:inconsistent{
+	-gtk-icon-source: url("asset/checkbox-inconsistent.png");
+}
+checkbutton>check:disabled, modelbutton>check:disabled{
+	-gtk-icon-source: url("asset/checkbox-disabled.png");
+}
+checkbutton>check:disabled:checked, modelbutton>check:disabled:checked{
+	-gtk-icon-source: url("asset/checkbox-disabled-checked.png");
+}
+checkbutton>check:disabled:inconsistent, modelbutton>check:disabled:inconsistent{
+	-gtk-icon-source: url("asset/checkbox-disabled-inconsistent.png");
+}
+scale.vertical>contents{
+	padding: 4px;
+}
+scale.horizontal>contents{
+	padding: 10px;
+}
+scale.vertical>contents>trough, scale.vertical>contents>trough:disabled, scale.vertical>contents>trough:backdrop, scale.vertical>contents>trough:backdrop:disabled{
+	background-size: 100% 100%;
+	background-position: -10% 20%;
+	border: solid 1px;
+	border-top: solid 3px;
+	border-bottom: solid 3px;
+	background-clip: border-box;
+	border-image-slice: 15% 25% 15% 25%;
+	border-image-width: 35% 30% 35% 30%;
+	min-width: 3px;
+	min-height: 25px;
+	box-shadow: black 2.6px 3px 3px 1px;
+	border-radius: 12%;
+}
+scale.horizontal>contents>trough, scale.horizontal>contents>trough:disabled, scale.horizontal>contents>trough:backdrop, scale.horizontal>contents>trough:backdrop:disabled{
+	background-position: -10% 20%;
+	border: solid 1px;
+	border-left: solid 3px;
+	border-right: solid 3px;
+	background-clip: border-box;
+	background-size: 100% 100%;
+	border-image-slice: 15% 25% 15% 25%;
+	border-image-width: 35% 30% 35% 30%;
+	min-width: 25px;
+	min-height: 3px;
+	box-shadow: black 2.6px 3px 3px 1px;
+	border-radius: 12%;
+}
+scale.vertical>contents>trough{
+	background-image: url("asset/progressbar-trough-vertical.png");
+	border-image-source: url("asset/progressbar-trough-vertical.png");
+}
+scale.horizontal>contents>trough{
+	background-image: url("asset/progressbar-trough.png");
+	border-image-source: url("asset/progressbar-trough.png");
+}
+scale.vertical>contents>trough:disabled, scale.vertical>contents>trough:backdrop:disabled{
+	background-image: url("asset/progressbar-trough-disabled-vertical.png");
+	border-image-source: url("asset/progressbar-trough-disabled-vertical.png");
+}
+scale.horizontal>contents>trough:disabled, scale.horizontal>contents>trough:backdrop:disabled{
+	background-image: url("asset/progressbar-trough-disabled.png");
+	border-image-source: url("asset/progressbar-trough-disabled.png");
+}
+scale.vertical>contents>trough:backdrop{
+	background-image: url("asset/progressbar-trough-backdrop-vertical.png");
+	border-image-source: url("asset/progressbar-trough-backdrop-vertical.png");
+}
+scale.horizontal>contents>trough:backdrop{
+	background-image: url("asset/progressbar-trough-backdrop.png");
+	border-image-source: url("asset/progressbar-trough-backdrop.png");
+}
+scale.vertical>contents>trough>highlight.top, scale.horizontal>contents>trough>highlight.top, scale.vertical>contents>trough>highlight.top:hover, scale.vertical>contents>trough>highlight.top:active, scale.horizontal>contents>trough>highlight.top:hover, scale.horizontal>contents>trough>highlight.top:active, scale.vertical>contents>trough>highlight.top:disabled, scale.horizontal>contents>trough>highlight.top:disabled, scale.vertical>contents>trough>highlight.top:backdrop, scale.horizontal>contents>trough>highlight.top:backdrop, scale.vertical>contents>trough>highlight.top:backdrop:disabled, scale.horizontal>contents>trough>highlight.top:backdrop:disabled{
+	background-size: cover;
+	border-image-slice: 15%;
+	border-image-width: 6px;
+	min-height: 3px;
+}
+scale.vertical>contents>trough>highlight.top{
+	border-image-source: url("asset/button2.png");
+	padding: 0px;
+}
+scale.horizontal>contents>trough>highlight.top{
+	border-image-source: url("asset/button2.png");
+}
+scale.vertical>contents>trough>highlight.top:hover, scale.vertical>contents>trough>highlight.top:active{
+	border-image-source: url("asset/button4.png");
+	padding: 0px;
+}
+scale.horizontal>contents>trough>highlight.top:hover, scale.horizontal>contents>trough>highlight.top:active{
+	border-image-source: url("asset/button4.png");
+}
+scale.vertical>contents>trough>highlight.top:disabled, scale.vertical>contents>trough>highlight.top:backdrop:disabled{
+	border-image-source: url("asset/button6.png");
+}
+scale.horizontal>contents>trough>highlight.top:disabled, scale.horizontal>contents>trough>highlight.top:backdrop:disabled{
+	border-image-source: url("asset/button6.png");
+}
+scale.vertical>contents>trough>highlight.top:backdrop{
+	border-image-source: url("asset/button8.png");
+}
+scale.horizontal>contents>trough>highlight.top:backdrop{
+	border-image-source: url("asset/button8.png");
+}
+scale.vertical>contents>trough>slider{
+	background-image: url("asset/verticalslider.png");
+}
+scale.vertical>contents>trough>slider:hover{
+	background-image: url("asset/verticalslider-prelight.png");
+}
+scale.vertical>contents>trough>slider:disabled{
+	background-image: url("asset/verticalslider-disabled.png");
+}
+scale.vertical>contents>trough>slider, scale.vertical>contents>trough>slider:hover, scale.vertical>contents>trough>slider:disabled{
+	background-size: contain;
+	min-height: 20px;
+	min-width: 15px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+scale.horizontal>contents>trough>slider{
+	background-image: url("asset/horizontalslider.png");
+	background-size: contain;
+}
+scale.horizontal>contents>trough>slider:hover, scale.horizontal>contents>trough>slider:active{
+	background-image: url("asset/horizontalslider-prelight.png");
+	background-size: contain;
+}
+scale.horizontal>contents>trough>slider:disabled{
+	background-image: url("asset/horizontalslider-disabled.png");
+}
+scale.horizontal>contents>trough>slider, scale.horizontal>contents>trough>slider:hover, scale.horizontal>contents>trough>slider:active, scale.horizontal>contents>trough>slider:disabled, scale.horizontal>contents>trough>slider:backdrop:disabled{
+	background-size: contain;
+	min-height: 15px;
+	min-width: 20px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+scale.vertical.marks-after>contents>trough>slider{
+	background-image: url("asset/pointer2.png");
+}
+scale.vertical.marks-after>contents>trough>slider:hover, scale.vertical.marks-after>contents>trough>slider:active{
+	background-image: url("asset/pointer2-prelight.png");
+}
+scale.vertical.marks-after>contents>trough>slider:disabled{
+	background-image: url("asset/pointer2-disabled.png");
+}
+scale.vertical.marks-after>contents>trough>slider, scale.vertical.marks-after>contents>trough>slider:hover, scale.vertical.marks-after>contents>trough>slider:active, scale.vertical.marks-after>contents>trough>slider:disabled{
+	background-size: contain;
+	min-height: 20px;
+	min-width: 15px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+scale.horizontal.marks-after>contents>trough>slider{
+	background-image: url("asset/pointer.png");
+}
+scale.horizontal.marks-after>contents>trough>slider:hover, scale.horizontal.marks-after>contents>trough>slider:active{
+	background-image: url("asset/pointer-prelight.png");
+}
+scale.horizontal.marks-after>contents>trough>slider:disabled{
+	background-image: url("asset/pointer-disabled.png");
+}
+scale.horizontal.marks-after>contents>trough>slider, scale.horizontal.marks-after>contents>trough>slider:hover, scale.horizontal.marks-after>contents>trough>slider:active, scale.horizontal.marks-after>contents>trough>slider:disabled{
+	background-size: contain;
+	min-height: 15px;
+	min-width: 20px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+scale.horizontal.marks-after>marks>mark>indicator{
+	color: rgb(0,24,1);
+	min-width: 1px;
+	min-height: 5px;
+}
+progressbar.vertical>trough, progressbar.vertical>trough:disabled, progressbar.vertical>trough:backdrop, progressbar.vertical>trough:backdrop:disabled{
+	background-size: 100% 100%;
+	background-position: -10% 20%;
+	border: solid 5px;
+	background-clip: border-box;
+	background-size: 100% 100%;
+	border-image-slice: 25% 15% 25% 15%;
+	border-image-width: 30% 25% 30% 25%;
+	min-width: 25px;
+	min-height: 25px;
+	box-shadow: black 2.6px 3px 3px 1px;
+	border-radius: 12%;
+}
+progressbar.horizontal>trough, progressbar.horizontal>trough:disabled, progressbar.horizontal>trough:backdrop, progressbar.horizontal>trough:backdrop:disabled{
+	background-position: -10% 20%;
+	border: solid 5px;
+	background-clip: border-box;
+	background-size: 100% 100%;
+	border-image-slice: 15% 25% 15% 25%;
+	border-image-width: 25% 30% 25% 30%;
+	min-width: 25px;
+	min-height: 25px;
+	box-shadow: black 2.6px 3px 3px 1px;
+	border-radius: 12%;
+}
+progressbar.vertical>trough{
+	background-image: url("asset/progressbar-trough-vertical.png");
+	border-image-source: url("asset/progressbar-trough-vertical.png");
+}
+progressbar.horizontal>trough{
+	background-image: url("asset/progressbar-trough.png");
+	border-image-source: url("asset/progressbar-trough.png");
+}
+progressbar.vertical>trough:disabled, progressbar.vertical>trough:backdrop:disabled{
+	background-image: url("asset/progressbar-trough-disabled-vertical.png");
+	border-image-source: url("asset/progressbar-trough-disabled-vertical.png");
+}
+progressbar.horizontal>trough:disabled, progressbar.horizontal>trough:backdrop:disabled{
+	background-image: url("asset/progressbar-trough-disabled.png");
+	border-image-source: url("asset/progressbar-trough-disabled.png");
+}
+progressbar.vertical>trough:backdrop{
+	background-image: url("asset/progressbar-trough-backdrop-vertical.png");
+	border-image-source: url("asset/progressbar-trough-backdrop-vertical.png");
+}
+progressbar.horizontal>trough:backdrop{
+	background-image: url("asset/progressbar-trough-backdrop.png");
+	border-image-source: url("asset/progressbar-trough-backdrop.png");
+}
+progressbar.vertical>trough>progress{
+	background-image: url("asset/progressbar-vertical.png");
+}
+progressbar.horizontal>trough>progress{
+	background-image: url("asset/progressbar.png");
+}
+progressbar.vertical>trough>progress:disabled, progressbar.vertical>trough>progress:backdrop:disabled{
+	background-image: url("asset/progressbar-disabled-vertical.png");
+}
+progressbar.horizontal>trough>progress:disabled, progressbar.horizontal>trough>progress:backdrop:disabled{
+	background-image: url("asset/progressbar-disabled.png");
+}
+progressbar.vertical>trough>progress:backdrop{
+	background-image: url("asset/progressbar-backdrop-vertical.png");
+}
+progressbar.horizontal>trough>progress:backdrop{
+	background-image: url("asset/progressbar-backdrop.png");
+}
+progressbar.vertical>trough>progress, progressbar.vertical>trough>progress:disabled, progressbar.vertical>trough>progress:backdrop, progressbar.vertical>trough>progress:backdrop:disabled{
+	background-size: 100% 100%;
+	min-width: 25px;
+	min-height: 1px;
+}
+progressbar.horizontal>trough>progress, progressbar.horizontal>trough>progress:disabled, progressbar.horizontal>trough>progress:backdrop, progressbar.horizontal>trough>progress:backdrop:disabled{
+	background-size: 100% 100%;
+	min-width: 1px;
+	min-height: 25px;
+}
+levelbar.continuous.horizontal>trough, levelbar.continuous.horizontal>trough:disabled, levelbar.continuous.horizontal>trough:backdrop, levelbar.continuous.horizontal>trough:backdrop:disabled, levelbar.discrete.horizontal>trough, levelbar.discrete.horizontal>trough:disabled, levelbar.discrete.horizontal>trough:backdrop, levelbar.discrete.horizontal>trough:backdrop:disabled{
+	background-position: -10% 20%;
+	border: solid 3px;
+	border-left: solid 3px;
+	border-right: solid 3px;
+	background-clip: border-box;
+	background-size: 100% 100%;
+	border-image-slice: 15% 25% 15% 25%;
+	border-image-width: 35% 30% 35% 30%;
+	min-width: 3px;
+	min-height: 3px;
+	box-shadow: black 2.6px 3px 3px 1px;
+	border-radius: 12%;
+}
+levelbar.continuous.horizontal>trough{
+	background-image: url("asset/progressbar-trough.png");
+	border-image-source: url("asset/progressbar-trough.png");
+}
+levelbar.continuous.horizontal>trough:disabled, levelbar.continuous.horizontal>trough:backdrop:disabled{
+	background-image: url("asset/progressbar-trough-disabled.png");
+	border-image-source: url("asset/progressbar-trough-disabled.png");
+}
+levelbar.continuous.horizontal>trough:backdrop{
+	background-image: url("asset/progressbar-trough-backdrop.png");
+	border-image-source: url("asset/progressbar-trough-backdrop.png");
+}
+levelbar.continuous.horizontal>trough>block.filled.high{
+	background-image: url("asset/levelbar.png");
+}
+levelbar.continuous.horizontal>trough>block.filled.high:disabled, levelbar.continuous.horizontal>trough>block.filled.high:backdrop:disabled{
+	background-image: url("asset/levelbar-disabled.png");
+}
+levelbar.continuous.horizontal>trough>block.filled.high:backdrop{
+	background-image: url("asset/levelbar-backdrop.png");
+}
+levelbar.continuous.horizontal>trough>block.filled.high, levelbar.continuous.horizontal>trough>block.filled.high:disabled, levelbar.continuous.horizontal>trough>block.filled.high:backdrop, levelbar.continuous.horizontal>trough>block.filled.high:backdrop:disabled, levelbar.discrete.horizontal>trough>block.filled.high, levelbar.discrete.horizontal>trough>block.filled.high:disabled, levelbar.discrete.horizontal>trough>block.filled.high:backdrop, levelbar.discrete.horizontal>trough>block.filled.high:backdrop:disabled{
+	background-size: 100% 100%;
+	margin-left: 1px;
+	min-width: 1px;
+	min-height: 3px;
+}
+levelbar.discrete.horizontal>trough{
+	background-image: url("asset/progressbar-trough.png");
+	border-image-source: url("asset/progressbar-trough.png");
+	box-shadow: black 2.6px 3px 3px 1px;
+	border-radius: 12%;
+}
+levelbar.discrete.horizontal>trough:disabled, levelbar.discrete.horizontal>trough:backdrop:disabled{
+	background-image: url("asset/progressbar-trough-disabled.png");
+	border-image-source: url("asset/progressbar-trough-disabled.png");
+}
+levelbar.discrete.horizontal>trough:backdrop{
+	background-image: url("asset/progressbar-trough-backdrop.png");
+	border-image-source: url("asset/progressbar-trough-backdrop.png");
+}
+levelbar.discrete.horizontal>trough>block.filled.high{
+	background-image: url("asset/levelbar-discrete.png");
+}
+levelbar.discrete.horizontal>trough>block.filled.high:disabled, levelbar.discrete.horizontal>trough>block.filled.high:backdrop:disabled{
+	background-image: url("asset/levelbar-discrete-disabled.png");
+}
+levelbar.discrete.horizontal>trough>block.filled.high:backdrop{
+	background-image: url("asset/levelbar-discrete-backdrop.png");
+}
+paned>separator{
+	background: rgba(39,92,39,1.0);
+}
+paned>separator:backdrop{
+	background: rgba(40,69,40,1.0);
+}
+paned>separator:disabled{
+	background: rgba(64,90,65,1.0);
+}
+.border-inset>border{
+	border: inset 2px rgba(39,92,39,1.0);
+}
+.border-outset>border{
+	border: outset 2px rgba(39,92,39,1.0);
+}
+.border-inset>border:backdrop{
+	border: inset 2px rgba(40,69,40,1.0);
+}
+.border-outset>border:backdrop{
+	border: outset 2px rgba(40,69,40,1.0);
+}
+.border-inset>border:disabled{
+	border: inset 2px rgba(64,90,65,1.0);
+}
+.border-outset>border:disabled{
+	border: outset 2px rgba(64,90,65,1.0);
+}
+.border-groove>border{
+	border: groove 5px rgba(39,92,39,0.25);
+}
+.border-ridge>border{
+	border: ridge 5px rgba(39,92,39,0.25);
+}
+.border-groove>border:backdrop{
+	border: groove 5px rgba(40,69,40,0.25);
+}
+.border-ridge>border:backdrop{
+	border: ridge 5px rgba(40,69,40,0.25);
+}
+.border-groove>border:disabled{
+	border: groove 5px rgba(64,90,65,0.25);
+}
+.border-ridge>border:disabled{
+	border: ridge 3px rgba(64,90,65,0.25);
+}
+.border-groove>border{
+	border: groove 5px rgba(39,92,39,0.25);
+}
+.border-ridge>border{
+	border: ridge 5px rgba(39,92,39,0.25);
+}
+.border-groove>border:backdrop{
+	border: groove 5px rgba(40,69,40,0.25);
+}
+.border-ridge>border:backdrop{
+	border: ridge 5px rgba(40,69,40,0.25);
+}
+.border-groove>border:disabled{
+	border: groove 5px rgba(64,90,65,0.25);
+}
+.border-ridge>border:disabled{
+	border: ridge 3px rgba(64,90,65,0.25);
+}
+combobox cellview{
+	margin-left: 3px;
+}
+entry, entry:focus, entry:backdrop, entry:disabled{
+	border: solid 3px;
+	border-image-slice: 10% 1% 10% 1%;
+	min-height: 21px;
+	padding-left: 4px;
+	padding-right: 4px;
+	box-shadow: black 2.6px 3px 3px 1px;
+	border-radius: 12%;
+}
+entry{
+	background-image: url("asset/textentry.png");
+	border-image-source: url("asset/textentry.png");
+	color: rgb(102,72,24);
+}
+entry:focus{
+	background: url("asset/textentry-active.png");
+	border-image-source: url("asset/textentry-active.png");
+}
+entry:backdrop{
+	background: url("asset/textentry-backdrop.png");
+	border-image-source: url("asset/textentry-backdrop.png");
+}
+entry:disabled{
+	background:url("asset/textentry-disabled.png");
+	border-image-source: url("asset/textentry-disabled.png");
+}
+entry, entry:focus, entry:backdrop, entry:disabled{
+	background-size: 103% 120%;
+	background-position: 50% 50%;
+}
+entry selection{
+	background: rgba(102,72,24,0.5);
+	color: black;
+}
+entry selection:backdrop{
+	background: rgba(200,189,143,0.5);
+	color: black;
+}
+entry selection:disabled, entry selection:backdrop:disabled{
+	background: rgba(165,158,130,0.5);
+	color: black;
+}
+entry, textview{
+	caret-color: rgb(102,72,24);
+}
+box.linked entry, box.linked combobox, box.linked spinbutton, box.linked button, box.linked button:checked, box.linked button:hover, box.linked button:active, box.linked button:checked:active, box.linked button:checked:hover, box.linked button:backdrop, box.linked button:backdrop:active, box.linked button:backdrop:checked, box.linked button:disabled, box.linked button:disabled:active, box.linked button:disabled:checked, box.linked button:backdrop:disabled, box.linked button:backdrop:disabled:active, box.linked button:backdrop:disabled:checked{
+	margin: 3px;
+}
+spinbutton.horizontal entry{
+	margin: 0px;
+}
+combobox>box, combobox>box:backdrop, combobox>box:disabled, combobox>box:backdrop:disabled, combobox>box.horizontal, combobox>box.horizontal:backdrop, combobox>box.horizontal:disabled, combobox>box.horizontal:backdrop:disabled, combobox>box.linked, combobox>box.linked:backdrop, combobox>box.linked:disabled, combobox>box.linked:backdrop:disabled{
+	border: solid 3px;
+	border-image-slice: 10% 1% 10% 1%;
+	box-shadow: black 2.6px 3px 3px 1px;
+	border-radius: 12%;
+	background: linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+	margin: 0px;
+	padding: 0px;
+}
+combobox>box>button>box, combobox>box>button>box.horizontal, combobox>box>button>box.linked{
+	margin: 0px;
+	padding: 0px;
+}
+combobox>box, combobox>box.horizontal, combobox>box.linked{
+	border-image-source: url("asset/textentry.png");
+}
+combobox>box:backdrop, combobox>box.horizontal:backdrop, combobox>box.linked:backdrop{
+	border-image-source: url("asset/textentry-backdrop.png");
+}
+combobox>box:disabled, combobox>box.horizontal:disabled, combobox>box.linked:disabled, combobox>box:backdrop:disabled, combobox>box.horizontal:backdrop:disabled, combobox>box.linked:backdrop:disabled{
+	border-image-source: url("asset/textentry-disabled.png");
+}
+combobox>box>entry, combobox>box.horizontal>entry, combobox>box>entry:focus, combobox>box>entry:backdrop, combobox>box>entry:disabled{
+	border: none;
+	border-radius: 0%;
+	box-shadow: none;
+	margin: 0px;	
+}
+combobox>box>button.combo, combobox>box>button.combo:hover, combobox>box>button.combo:checked, combobox>box>button.combo:backdrop, combobox>box>button.combo:disabled, combobox>box>button.combo:backdrop:disabled{
+	min-height: 21px;
+	min-width: 21px;
+	margin: 0px;
+	padding: 0px;
+	box-shadow: none;
+}
+combobox>box>button>box, combobox>box>button.combo>box, combobox>box>button>box:backdrop, combobox>box>button.combo>box:backdrop, combobox>box>button>box:disabled, combobox>box>button.combo>box:disabled, combobox>box>button>box:backdrop:disabled, combobox>box>button.combo>box:backdrop:disabled{
+	margin: 0px;
+	padding: 0px;
+}
+combobox label{
+	margin-right: 5px;
+}
+combobox arrow{
+	-gtk-icon-source: url("asset/button-scrollbar-down.png");
+}
+combobox arrow:backdrop{
+	-gtk-icon-source: url("asset/button-scrollbar-down-backdrop.png");
+}
+combobox arrow:disabled{
+	-gtk-icon-source: url("asset/button-scrollbar-down-disabled.png");
+}
+combobox arrow, combobox arrow:backdrop, combobox arrow:disabled{
+	min-height: 21px;
+	min-width: 21px;
+	max-width: 32px;
+	margin-left: 0px;
+}
+menu arrow, menu arrow:backdrop, menu arrow:disabled{
+	-gtk-icon-source: builtin;
+}
+spinbutton.horizontal, spinbutton.horizontal:backdrop, spinbutton.horizontal:disabled{
+	border: solid 3px;
+	box-shadow: black 2.6px 3px 3px 1px;
+	border-image-slice: 10% 1% 10% 1%;
+	border-radius: 12%;
+	background: linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+}
+spinbutton.horizontal{
+	border-image-source: url("asset/textentry.png");
+}
+spinbutton.horizontal:backdrop{
+	border-image-source: url("asset/textentry-backdrop.png");
+}
+spinbutton.horizontal:disabled{
+	border-image-source: url("asset/textentry-disabled.png");
+}
+spinbutton.horizontal>entry, spinbutton.horizontal>entry:focus, spinbutton.horizontal>entry:backdrop, spinbutton.horizontal>entry:disabled{
+	border: none;
+	box-shadow: none;
+	border-radius: 0%;
+}
+spinbutton.horizontal>button{
+	background-image:url("asset/button1.png");
+}
+spinbutton.horizontal>button:hover{
+	background-image:url("asset/button3.png");
+}
+spinbutton.horizontal>button:active{
+	background-image:url("asset/button4.png");
+}
+spinbutton.horizontal>button:disabled,spinbutton.horizontal>button:disabled:backdrop{
+	background-image:url("asset/button5.png");
+}
+spinbutton.horizontal>button:backdrop{
+	background-image:url("asset/button8.png");
+}
+spinbutton.horizontal, spinbutton.vertical{
+	color: rgb(102,72,24);
+}
+spinbutton.horizontal:disabled, spinbutton.vertical:disabled{
+	color: rgb(102,91,75);
+}
+spinbutton.vertical, spinbutton.vertical:backdrop, spinbutton.vertical:disabled{
+	border: solid 3px;
+	border-image-slice: 25% 15% 25% 15%;
+	box-shadow: black 2.6px 3px 3px 1px;
+	border-radius: 12%;
+	background: linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+}
+spinbutton.vertical{
+	border-image-source: url("asset/progressbar-trough-vertical.png");
+}
+spinbutton.vertical:backdrop{
+	border-image-source: url("asset/progressbar-trough-backdrop-vertical.png");
+}
+spinbutton.vertical:disabled{
+	border-image-source: url("asset/progressbar-trough-disabled-vertical.png");
+}
+spinbutton.vertical>entry, spinbutton.vertical>entry:focus, spinbutton.vertical>entry:backdrop, spinbutton.vertical>entry:disabled{
+	border: none;
+	box-shadow: none;
+	border-radius: 0%;
+}
+spinbutton.vertical>button{
+	background-image:url("asset/button1.png");
+}
+spinbutton.vertical>button:hover{
+	background-image:url("asset/button3.png");
+}
+spinbutton.vertical>button:active{
+	background-image:url("asset/button4.png");
+}
+spinbutton.vertical>button:disabled, spinbutton.vertical>button:disabled:backdrop{
+	background-image:url("asset/button5.png");
+}
+spinbutton.vertical>button:backdrop{
+	background-image:url("asset/button8.png");
+}
+spinbutton.horizontal>button, spinbutton.horizontal>button:hover, spinbutton.horizontal>button:active, spinbutton.horizontal>button:disabled, spinbutton.horizontal>button:disabled:backdrop, spinbutton.horizontal>button:backdrop, spinbutton.vertical>button, spinbutton.vertical>button:hover, spinbutton.vertical>button:active, spinbutton.vertical>button:disabled, spinbutton.vertical>button:disabled:backdrop, spinbutton.vertical>button:backdrop{
+	min-height: 21px;
+	min-width: 21px;
+	margin: 0px;
+	box-shadow: none;
+}
+window>box{
+	background-image: none;
+}
+box>scrolledwindow, box>scrolledwindow.frame, placessidebar.frame, stacksidebar viewport, box>scrolledwindow:backdrop, box>scrolledwindow.frame:backdrop, placessidebar.frame:backdrop, stacksidebar viewport:backdrop, box>scrolledwindow:disabled, box>scrolledwindow.frame:disabled, placessidebar.frame:disabled, stacksidebar viewport:disabled{
+	border: solid 4px;
+	border-image-slice: 1.7%;
+}
+scrolledwindow.view, scrolledwindow.view:backdrop{
+	border: solid 1px;
+	border-color: @bg_color;
+}
+scrolledwindow, box>scrolledwindow, box>scrolledwindow.frame, placessidebar.frame, stacksidebar viewport{
+	background: linear-gradient(rgb(200,180,100),rgb(200,180,100),rgb(103,63,3));
+	border-image-source: url("asset/window-bg.png");
+}
+scrolledwindow:backdrop, box>scrolledwindow:backdrop, box>scrolledwindow.frame:backdrop, placessidebar.frame:backdrop, stacksidebar viewport:backdrop{
+	background: linear-gradient(rgb(200,189,143),rgb(200,189,143),rgb(103,63,3));
+	border-image-source: url("asset/window-bg-backdrop.png");
+}
+scrolledwindow:disabled, box>scrolledwindow:disabled, box>scrolledwindow.frame:disabled, placessidebar.frame:disabled, stacksidebar viewport:disabled{
+	background: linear-gradient(rgb(165,158,130),rgb(165,158,130),rgb(103,63,3));
+	border-image-source: url("asset/window-bg-disabled.png");
+}
+searchbar, frame.app-notification{
+	background: url("asset/snow-backdrop2.png"), linear-gradient(rgb(200,180,100),rgb(200,180,100),rgb(103,63,3));
+}
+searchbar:backdrop, frame.app-notification:backdrop{
+	background: url("asset/snow-backdrop2.png"), linear-gradient(rgb(200,189,143),rgb(200,189,143),rgb(103,63,3));
+}
+searchbar:disabled, frame.app-notification:disabled, searchbar:backdrop:disabled, frame.app-notification:backdrop:disabled{
+	background: url("asset/snow-backdrop2.png"), linear-gradient(rgb(165,158,130),rgb(165,158,130),rgb(103,63,3));
+}
+searchbar button, frame.app-notification button, searchbar button:hover, frame.app-notification button:hover, searchbar button:checked, frame.app-notification button:checked, searchbar button:active, frame.app-notification button:active, searchbar button:backdrop, frame.app-notification button:backdrop, searchbar button:backdrop:active, frame.app-notification button:backdrop:active, searchbar button:backdrop:checked, frame.app-notification button:backdrop:checked, searchbar button:disabled, frame.app-notification button:disabled, searchbar button:disabled:checked, frame.app-notification button:disabled:checked, searchbar button:disabled:active, frame.app-notification button:disabled:active, searchbar button:backdrop:disabled, frame.app-notification button:backdrop:disabled, searchbar button:backdrop:disabled:checked, frame.app-notification button:backdrop:disabled:active, searchbar button:backdrop:disabled:checked, frame.app-notification button:backdrop:disabled:checked{
+	margin: 4px;
+}
+notebook>stack>box>scrolledwindow{
+	background: none;
+	border: none;
+}
+scrolledwindow>viewport.frame{
+	padding: 0px;
+}
+notebook.frame{
+	padding: 0px;
+}
+notebook>header>tabs>tab>box>button, notebook>header>tabs>tab>box>button:hover, notebook>header>tabs>tab>box>button:backdrop, notebook>header>tabs>tab>box>button:disabled{
+	box-shadow: none;
+}
+notebook>header.top{
+	margin-bottom: -2px;
+}
+notebook>header.bottom{
+	margin-top: -2px;
+}
+notebook>header.left{
+	margin-right: -2px;
+}
+notebook>header.right{
+	margin-left: -2px;
+}
+notebook>header button, notebook>header button:hover, notebook>header button:checked, notebook>header button:checked:hover, notebook>header button:backdrop, notebook>header button:backdrop:checked, notebook>header button:disabled, notebook>header button:backdrop:disabled, notebook>header button:backdrop:disabled:checked{
+	margin: 3px;
+	box-shadow: rgba(0,0,0,0.7) 1px 1px 2px 1px;
+}
+notebook>header.right>tabs>tab{
+	border-image-source: url("asset/notebook-tab-right.png");
+	background: url("asset/notebook-tab-right.png");
+}
+notebook>header.left>tabs>tab{
+	border-image-source: url("asset/notebook-tab-left.png");
+	background: url("asset/notebook-tab-left.png");
+}
+notebook>header.top>tabs>tab{
+	border-image-source: url("asset/notebook-tab-top.png");
+	background: url("asset/notebook-tab-top.png");
+}
+notebook>header.bottom>tabs>tab{
+	border-image-source: url("asset/notebook-tab-bottom.png");
+	background: url("asset/notebook-tab-bottom.png");
+}
+notebook>header.right>tabs>tab:checked{
+	border-image-source: url("asset/notebook-tab-active-right.png");
+	background: url("asset/notebook-tab-active-right.png");
+}
+notebook>header.left>tabs>tab:checked{
+	border-image-source: url("asset/notebook-tab-active-left.png");
+	background: url("asset/notebook-tab-active-left.png");
+}
+notebook>header.top>tabs>tab:checked{
+	border-image-source: url("asset/notebook-tab-active-top.png");
+	background: url("asset/notebook-tab-active-top.png");
+}
+notebook>header.bottom>tabs>tab:checked{
+	border-image-source: url("asset/notebook-tab-active-bottom.png");
+	background: url("asset/notebook-tab-active-bottom.png");
+}
+notebook>header.right>tabs>tab:disabled, notebook>header.right>tabs>tab:backdrop:disabled{
+	border-image-source: url("asset/notebook-tab-disabled-right.png");
+	background: url("asset/notebook-tab-disabled-right.png");
+}
+notebook>header.left>tabs>tab:disabled, notebook>header.left>tabs>tab:backdrop:disabled{
+	border-image-source: url("asset/notebook-tab-disabled-left.png");
+	background: url("asset/notebook-tab-disabled-left.png");
+}
+notebook>header.top>tabs>tab:disabled, notebook>header.top>tabs>tab:backdrop:disabled{
+	border-image-source: url("asset/notebook-tab-disabled-top.png");
+	background: url("asset/notebook-tab-disabled-top.png");
+}
+notebook>header.bottom>tabs>tab:disabled, notebook>header.bottom>tabs>tab:backdrop:disabled{
+	border-image-source: url("asset/notebook-tab-disabled-bottom.png");
+	background: url("asset/notebook-tab-disabled-bottom.png");
+}
+notebook>header.right>tabs>tab:disabled:checked, notebook>header.right>tabs>tab:backdrop:disabled:checked{
+	border-image-source: url("asset/notebook-tab-active-disabled-right.png");
+	background: url("asset/notebook-tab-active-disabled.png");
+}
+notebook>header.left>tabs>tab:disabled:checked, notebook>header.left>tabs>tab:backdrop:disabled:checked{
+	border-image-source: url("asset/notebook-tab-active-disabled-left.png");
+	background: url("asset/notebook-tab-active-disabled.png");
+}
+notebook>header.top>tabs>tab:disabled:checked, notebook>header.top>tabs>tab:backdrop:disabled:checked{
+	border-image-source: url("asset/notebook-tab-active-disabled-top.png");
+	background: url("asset/notebook-tab-active-disabled-top.png");
+}
+notebook>header.bottom>tabs>tab:disabled:checked, notebook>header.bottom>tabs>tab:backdrop:disabled:checked{
+	border-image-source: url("asset/notebook-tab-active-disabled-bottom.png");
+	background: url("asset/notebook-tab-active-disabled-bottom.png");
+}
+notebook>header.right>tabs>tab:backdrop{
+	border-image-source: url("asset/notebook-tab-backdrop-right.png");
+	background: url("asset/notebook-tab-backdrop-right.png");
+}
+notebook>header.left>tabs>tab:backdrop{
+	border-image-source: url("asset/notebook-tab-backdrop-left.png");
+	background: url("asset/notebook-tab-backdrop-left.png");
+}
+notebook>header.top>tabs>tab:backdrop{
+	background: url("asset/notebook-tab-backdrop-top.png");
+	border-image-source: url("asset/notebook-tab-backdrop-top.png");
+}
+notebook>header.bottom>tabs>tab:backdrop{
+	border-image-source: url("asset/notebook-tab-backdrop-bottom.png");
+	background: url("asset/notebook-tab-backdrop.png");
+}
+notebook>header.right>tabs>tab:backdrop:checked{
+	border-image-source: url("asset/notebook-tab-active-backdrop-right.png");
+	background: url("asset/notebook-tab-active-backdrop-right.png");
+}
+notebook>header.left>tabs>tab:backdrop:checked{
+	border-image-source: url("asset/notebook-tab-active-backdrop-left.png");
+	background: url("asset/notebook-tab-active-backdrop-left.png");
+}
+notebook>header.top>tabs>tab:backdrop:checked{
+	border-image-source: url("asset/notebook-tab-active-backdrop-top.png");
+	background: url("asset/notebook-tab-active-backdrop-top.png");
+}
+notebook>header.bottom>tabs>tab:backdrop:checked{
+	border-image-source: url("asset/notebook-tab-active-backdrop-bottom.png");
+	background: url("asset/notebook-tab-active-backdrop-bottom.png");
+}
+notebook>header.bottom>tabs>tab, notebook>header.bottom>tabs>tab:checked, notebook>header.bottom>tabs>tab:disabled, notebook>header.bottom>tabs>tab:disabled:checked, notebook>header.bottom>tabs>tab:backdrop, notebook>header.bottom>tabs>tab:backdrop:checked, notebook>header.bottom>tabs>tab:backdrop:disabled, notebook>header.bottom>tabs>tab:backdrop:disabled:checked{
+	border-right: solid 1px;
+	border-left: solid 1px;
+	border-bottom: solid 1px;
+	border-image-slice: 0% 1.2% 8% 1.2%;
+	background-size: 500% 2000%;
+	background-position: 2% 90%;
+	margin-top: 1px;
+}
+notebook>header.top>tabs>tab, notebook>header.top>tabs>tab:checked, notebook>header.top>tabs>tab:disabled, notebook>header.top>tabs>tab:disabled:checked, notebook>header.top>tabs>tab:backdrop, notebook>header.top>tabs>tab:backdrop:checked, notebook>header.top>tabs>tab:backdrop:disabled, notebook>header.top>tabs>tab:backdrop:disabled:checked{
+	border-right: solid 1px;
+	border-left: solid 1px;
+	border-top: solid 1px;
+	border-image-slice: 8% 1.2% 0% 1.2%;
+	background-size: 500% 2000%;
+	background-position: 2% 10%;
+	margin-bottom: 1px;
+}
+notebook>header.right>tabs>tab, notebook>header.right>tabs>tab:checked, notebook>header.right>tabs>tab:disabled, notebook>header.right>tabs>tab:disabled:checked, notebook>header.right>tabs>tab:backdrop, notebook>header.right>tabs>tab:backdrop:checked, notebook>header.right>tabs>tab:backdrop:disabled, notebook>header.right>tabs>tab:backdrop:disabled:checked{
+	border-right: solid 1px;
+	border-bottom: solid 1px;
+	border-top: solid 1px;
+	border-image-slice: 1.2% 8% 1.2% 0%;
+	background-size: 2000% 500%;
+	background-position: 90% 2%;
+	margin-left: 1px;
+}
+notebook>header.left>tabs>tab, notebook>header.left>tabs>tab:checked, notebook>header.left>tabs>tab:disabled, notebook>header.left>tabs>tab:disabled:checked, notebook>header.left>tabs>tab:backdrop, notebook>header.left>tabs>tab:backdrop:checked, notebook>header.left>tabs>tab:backdrop:disabled, notebook>header.left>tabs>tab:backdrop:disabled:checked{
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+	border-top: solid 1px;	
+	border-image-slice: 1.2% 0% 1.2% 8%;
+	background-size: 2000% 500%;
+	background-position: 10% 2%;
+	margin-right: 1px;
+}
+notebook>stack>box{
+	padding: 5px;
+}
+notebook>stack, notebook>stack:backdrop, notebook>stack:disabled{
+	border: solid 1px;	
+}
+notebook>stack{
+	border-image-source: url("asset/notebook-tab-active.png");
+	background: url("asset/snow-backdrop.png"), url("asset/notebook-tab-active.png");
+}
+notebook>stack:backdrop{	
+	border-image-source: url("asset/notebook-tab-active-backdrop.png");
+	background: url("asset/snow-backdrop.png"), url("asset/notebook-tab-active-backdrop.png");	
+}
+notebook>stack:disabled{
+	border-image-source: url("asset/notebook-tab-active-disabled.png");
+	background: url("asset/snow-backdrop.png"), url("asset/notebook-tab-active-disabled.png");
+}
+notebook>stack, notebook>stack:backdrop, notebook>stack:disabled{	
+	border-image-slice: 1.2% 1.2% 1.2% 1.2% fill;
+	background-size: auto, 105% 105%;
+	background-position: 50% 50%;	
+}
+window>notebook>header.top>tabs>tab{
+	min-height: 24px;
+}
+notebook>header>tabs>tab>label, window>notebook>header>tabs>tab:checked>label{
+	padding: 3px;
+}
+button.flat.small-button{
+	border: 0px;
+	background: none;
+}
+separator.vertical{
+	background-color: rgb(0,24,1);
+	min-height: 1px;
+	min-width: 1px;
+}
+separator.horizontal{
+	background-color: rgb(0,24,1);
+	min-height: 1px;
+	min-width: 1px;
+}
+menubar>menuitem{
+	background: url("asset/window-bg.png");
+	border-image-source: url("asset/window-bg.png");
+}
+menubar>menuitem:backdrop{
+	background: url("asset/window-bg-backdrop.png");
+	border-image-source: url("asset/window-bg-backdrop.png");
+}
+menubar>menuitem:disabled{
+	background: url("asset/window-bg-disabled.png");
+	border-image-source: url("asset/window-bg-disabled.png");
+}
+menubar>menuitem>label{
+	padding: 2px;
+}
+menubar>menuitem:hover{
+	background-image: url("asset/menubutton-checked.png");
+	border-image-source: url("asset/menubutton-checked.png");
+}
+menubar>menuitem, menubar>menuitem:backdrop, menubar>menuitem:disabled, menubar>menuitem:hover{
+	border-right: solid 2px;
+	background-position: 10%, 10%;
+	background-size: 110% 110%;
+	border-image-slice: 1% 1% 1% 1%;
+	padding-right: 5px;
+	padding-left: 2px;
+	padding-top: 2px;
+}
+menubar>menuitem>window.background.csd.popup{
+	background: url("asset/window-bg.png");
+	background-position: 10%, 10%;
+	background-size: 110% 110%;
+	border: solid 2px;
+	border-image-source: url("asset/window-bg.png");
+	border-image-slice: 1% 1% 1% 1%;
+	margin: 2px;
+}
+menubar>menuitem>window.background.csd.popup>menu>menuitem>label{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+menubar>menuitem>window.background.csd.popup>menu>menuitem>image{
+	margin: 5px;
+	margin-left: 7px;
+}
+menubar>menuitem>window.background.csd.popup>menu>menuitem:hover{
+	background-image: url("asset/notebook-tab.png");
+	background-size: 100% 100%;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+menubar>menuitem>window.background.csd.popup>menu>menuitem:hover>label{
+	margin-top: 13px;
+	margin-bottom: 5px;
+	margin-left: 8px;
+}
+menubar>menuitem>window.background.csd.popup>menu>menuitem:hover>image{
+	margin-top: 5px;
+	margin-left: 7px;
+}
+popover.background.csd, popover.background, popover.background.menu, popover.background.emoji-picker, popover.background.csd:backdrop, popover.background:backdrop, popover.background.menu:backdrop, popover.background.emoji-picker:backdrop{
+	background-size: 110% 105%;
+	background-position: 50% 50%;
+	border: solid 3px;
+	background-color: none;
+	border-image-slice: 5%;
+	border-image-width: 10px;
+	color: rgba(0,0,0,0);
+}
+popover.background.csd label, popover.background label, popover.background.menu label, popover.background.emoji-picker{
+	color: rgb(102,72,24);
+}
+popover.background.csd, popover.background, popover.background.menu, popover.background.emoji-picker{
+	background-image: url("asset/menu-popover.png");
+	border-image-source: url("asset/menu-popover.png");
+}
+popover.background.csd:backdrop, popover.background:backdrop, popover.background.menu:backdrop, popover.background.emoji-picker:backdrop{
+	background-image: url("asset/menu-popover-backdrop.png");
+	border-image-source: url("asset/menu-popover-backdrop.png");
+}
+popover.background.emoji-picker button{
+	color: white;
+}
+toolbar.horizontal{
+	background: linear-gradient(rgba(112,206,114,0.0),rgba(112,206,114,1.0));
+}
+toolbar.horizontal:backdrop{
+	background: linear-gradient(rgba(148,207,149,0.0),rgba(148,207,149,1.0));
+}
+toolbar.horizontal:disabled{
+	background: linear-gradient(rgba(135,168,135,0.0),rgba(135,168,135,1.0));
+}
+toolbar.vertical{
+	background: linear-gradient(to right,rgba(112,206,114,0.0),rgba(112,206,114,1.0));
+}
+toolbar.vertical:backdrop{
+	background: linear-gradient(to right,rgba(148,207,149,0.0),rgba(148,207,149,1.0));
+}
+toolbar.vertical:disabled{
+	background: linear-gradient(to right,rgba(135,168,135,0.0),rgba(135,168,135,1.0));
+}
+toolbar{
+	padding: 5px;
+}
+actionbar .horizontal{
+	background: linear-gradient(rgba(112,206,114,1.0),rgba(112,206,114,0.0));
+}
+actionbar .horizontal:backdrop{
+	background: linear-gradient(rgba(148,207,149,1.0),rgba(148,207,149,0.0));
+}
+actionbar .horizontal:disabled{
+	background: linear-gradient(rgba(135,168,135,1.0),rgba(135,168,135,0.0));
+}
+actionbar .horizontal, actionbar .horizontal:backdrop, actionbar .horizontal:disabled{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	min-height: 32px;
+}
+actionbar>revealer>box box, actionbar>revealer>box box:backdrop, actionbar>revealer>box box:disabled, actionbar>revealer>box box:backdrop:disabled, actionbar>revealer>box box.horizontal, actionbar>revealer>box box.horizontal:backdrop, actionbar>revealer>box box.horizontal:disabled, actionbar>revealer>box box.horizontal:backdrop:disabled, actionbar>revealer>box.horizontal stackswitcher, actionbar>revealer>box.horizontal stackswitcher:backdrop, actionbar>revealer>box.horizontal stackswitcher:disabled, actionbar>revealer>box.horizontal stackswitcher:backdrop:disabled{
+	background: none;
+}
+actionbar>revealer>box>box.horizontal>combobox box, actionbar>revealer>box>box>combobox>box>button box, actionbar>revealer>box>box.horizontal>combobox box:backdrop, actionbar>revealer>box>box>combobox>box>button box:backdrop, actionbar>revealer>box>box.horizontal>combobox:disabled box, actionbar>revealer>box>box>combobox>box>button box:disabled{
+	min-height: 0px;
+	padding: 0px;
+}
+actionbar>revealer>box>box.horizontal>combobox>box>button>box, actionbar>revealer>box>box.horizontal>combobox>box>button>box:backdrop, actionbar>revealer>box>box.horizontal>combobox>box>button>box:disabled{
+	min-height: 0px;
+	padding: 0px;
+}
+actionbar>revealer>box.horizontal box, actionbar>revealer>box.horizontal box:backdrop, actionbar>revealer>box.horizontal box:disabledx
+	background: none;
+}
+toolbar.horizontal button, toolbar.horizontal button:hover, toolbar.horizontal button:checked, toolbar.horizontal button:active, toolbar.horizontal button:checked:hover, toolbar.horizontal button:backdrop, toolbar.horizontal button:backdrop:checked, toolbar.horizontal button:backdrop:active, toolbar.horizontal button:disabled, toolbar.horizontal button:disabled:active, toolbar.horizontal button:disabled:checked, toolbar.horizontal button:backdrop:disabled, toolbar.horizontal button:backdrop:disabled:checked, toolbar.horizontal button:backdrop:disabled:active{
+	box-shadow: rgba(0,0,0,0.7) 1px 1px 2px 1px;
+}
+toolbar.horizontal>toolitem button,toolbar.horizontal>toolitem>box button, toolbar.horizontal>toolitem button:hover,toolbar.horizontal>toolitem>box button:hover, toolbar.horizontal>toolitem button:checked,toolbar.horizontal>toolitem>box button:checked, toolbar.horizontal>toolitem button:active,toolbar.horizontal>toolitem>box button:active, toolbar.horizontal>toolitem button:checked:hover,toolbar.horizontal>toolitem>box button:checked:hover, toolbar.horizontal>toolitem button:backdrop,toolbar.horizontal>toolitem>box button:backdrop, toolbar.horizontal>toolitem button:backdrop:checked,toolbar.horizontal>toolitem>box button:backdrop:checked, toolbar.horizontal>toolitem button:backdrop:active,toolbar.horizontal>toolitem>box button:backdrop:active, toolbar.horizontal>toolitem button:disabled,toolbar.horizontal>toolitem>box button:disabled, toolbar.horizontal>toolitem button:disabled:checked,toolbar.horizontal>toolitem>box button:disabled:checked, toolbar.horizontal>toolitem button:disabled:active,toolbar.horizontal>toolitem>box button:disabled:active, toolbar.horizontal>toolitem button:backdrop:disabled,toolbar.horizontal>toolitem>box button:backdrop:disabled, toolbar.horizontal>toolitem button:backdrop:disabled:checked,toolbar.horizontal>toolitem>box button:backdrop:disabled:checked, toolbar.horizontal>toolitem button:backdrop:disabled:active,toolbar.horizontal>toolitem>box button:backdrop:disabled:active, toolbar.horizontal>toolitem>box combobox{
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+toolitem>box>combobox button, toolitem>box>combobox button:hover, toolitem>box>combobox button:checked, toolitem>box>combobox button:backdrop, toolitem>box>combobox button:disabled, toolitem>box>combobox button:backdrop:disabled,toolbar.horizontal>toolitem>box>combobox button, toolbar.horizontal>toolitem>box>combobox button:hover, toolbar.horizontal>toolitem>box>combobox button:checked, toolbar.horizontal>toolitem>box>combobox button:backdrop, toolbar.horizontal>toolitem>box>combobox button:disabled, toolbar.horizontal>toolitem>box>combobox button:backdrop:disabled, toolbar.horizontal>toolitem>filechooserbutton>combobox button, toolbar.horizontal>toolitem>filechooserbutton>combobox button:hover, toolbar.horizontal>toolitem>filechooserbutton>combobox button:checked, toolbar.horizontal>toolitem>filechooserbutton>combobox button:checked:hover, toolbar.horizontal>toolitem>filechooserbutton>combobox button:backdrop, toolbar.horizontal>toolitem>filechooserbutton>combobox button:backdrop:checked, toolbar.horizontal>toolitem>filechooserbutton>combobox button:disabled, toolbar.horizontal>toolitem>filechooserbutton>combobox button:disabled:checked{
+	margin-right: 0px;
+	margin-bottom: 0px;
+	box-shadow: none;
+}
+statusbar{
+	background: url("asset/statusbar.png"), linear-gradient(rgb(153,205,111),rgb(153,201,109),rgb(150,198,106), rgb(140,195,106), rgb(110,192,104),rgb(100,188,102),rgb(98,185,100), rgb(96,181,97), rgb(93,178,95),rgb(92,176,93), rgb(90,172,91), rgb(97,168,89), rgb(132,165,85),rgb(144,162,83), rgb(146,159,80),rgb(146,156,79), rgb(144,152,76),rgb(142,149,74),rgb(139,146,72), rgb(124,143,70), rgb(81,140,69), rgb(65,136,67),rgb(63,133,65), rgb(61,129,62), rgb(59,126,60),rgb(56,124,58),rgb(55,120,56), rgb(65,115,53), rgb(101,106,51),rgb(108,99,49),rgb(105,93,46), rgb(103,91,44));
+}
+statusbar:backdrop{
+	background: url("asset/statusbar-inactive.png"), linear-gradient(rgb(184,205,146),rgb(182,201,143),rgb(180,197,140), rgb(168,193,137), rgb(141,189,134),rgb(130,185,131),rgb(127,181,128), rgb(123,177,124), rgb(120,172,122),rgb(117,169,118), rgb(113,165,114), rgb(119,160,111), rgb(144,152,107),rgb(149,144,104), rgb(147,140,101),rgb(144,136,97), rgb(140,131,94),rgb(135,126,91),rgb(130,122,88), rgb(117,119,84), rgb(88,122,82), rgb(79,121,79),rgb(75,118,76), rgb(72,113,72), rgb(68,110,70),rgb(65,106,67),rgb(62,101,63), rgb(66,96,60), rgb(84,83,56),rgb(87,75,52),rgb(84,71,49), rgb(80,66,46));
+}
+statusbar:disabled{
+	background: url("asset/statusbar-disabled.png"), linear-gradient(rgb(167,159,134),rgb(164,156,132),rgb(160,154,130), rgb(152,155,128), rgb(131,158,126),rgb(124,157,124),rgb(122,155,123), rgb(120,153,121), rgb(119,150,119),rgb(117,149,116), rgb(114,147,115), rgb(118,143,113), rgb(135,135,110),rgb(139,131,109), rgb(137,127,107),rgb(136,126,105), rgb(135,124,103),rgb(132,122,101),rgb(128,119,99), rgb(120,120,97), rgb(100,124,96), rgb(95,125,94),rgb(92,123,92), rgb(90,121,90), rgb(88,118,88),rgb(87,116,86),rgb(85,115,84), rgb(87,110,82), rgb(103,101,81),rgb(106,97,79),rgb(105,94,77), rgb(104,92,75));
+}
+statusbar, statusbar:backdrop, statusbar:disabled, infobar{
+	min-height: 32px;
+	margin-left: -10px;
+	margin-right: -10px;
+	background-size: contain;
+}
+spinner
+{
+	-gtk-icon-source: none;
+}
+spinner:checked{
+	-gtk-icon-source: url("asset/throbber.png");
+	animation-name: spin;
+	animation-duration: 3s;
+	animation-play-state: running;
+	animation-direction: normal;
+	
+}
+spinner:disabled{
+	-gtk-icon-source: none;
+}
+spinner:disabled:checked{
+	-gtk-icon-source: url("asset/throbber-disabled.png");
+	-gtk-icon-effect: dim;
+	animation-name: spin;
+	animation-duration: 3s;
+	animation-play-state: running;
+	animation-direction: normal;
+	
+}
+spinner, spinner:checked, spinner:disabled, spinner:disabled:checked{
+	min-width: 24px;
+	min-height: 24px;
+}
+notebook spinner:checked{
+	-gtk-icon-source: url("asset/throbber.png");
+	min-width: 8px;
+	min-height: 8px;
+	animation-name: spin;
+	animation-duration: 3s;
+	animation-play-state: running;
+	animation-direction: normal;	
+}
+notebook spinner:disabled{
+	-gtk-icon-source: none;
+}
+notebook spinner:disabled:checked{
+	-gtk-icon-source: url("asset/throbber-disabled.png");
+	-gtk-icon-effect: dim;
+	animation-name: spin;
+	animation-duration: 3s;
+	animation-play-state: running;
+	animation-direction: normal;	
+}
+notebook spinner:checked, notebook spinner:disabled, notebook spinner:disabled:checked{
+	min-width: 8px;
+	min-height: 8px;
+}
+box>colorswatch, colorswatch, box>colorswatch:disabled, colorswatch:disabled, box>colorswatch:backdrop, colorswatch:backdrop{
+	background-size: 100% 100%;
+	border: solid 5px;
+	background-clip: content-box;
+	background-position: 10% 10%;
+	border-image-width: 17% 13% 17% 13%;
+	border-image-slice: 5% 5% 5% 5%;
+	box-shadow: rgba(0,0,0,0.7) 1.5px 1.5px 2px 1px;
+	border-radius: 8%;
+}
+popover.background textview, popover.background textview:focus, popover.background textview:backdrop, popover.background textview:disabled{
+	background: none;
+}
+popover.background button>label{
+	color: white;
+}
+popover.background scrolledwindow.frame{
+	border: solid 5px;
+	background-size: 120% 120%;
+	background-clip: content-box;
+	background-position: 50% 50%;
+	border-image-width: 17% 13% 17% 13%;
+	border-image-slice: 25%;
+	box-shadow: rgba(0,0,0,0.7) 1.5px 1.5px 2px 1px;
+	border-radius: 8%;
+}
+box>colorswatch, colorswatch, popover.background scrolledwindow.frame{
+	background-image: url("asset/colorswatch-frame.png");
+	border-image-source: url("asset/colorswatch-frame.png");
+}
+box>colorswatch:disabled, colorswatch:disabled, popover.background scrolledwindow.frame:disabled{
+	background-image: url("asset/colorswatch-frame-disabled.png");
+	border-image-source: url("asset/colorswatch-frame-disabled.png");
+}
+box>colorswatch:backdrop, colorswatch:backdrop, popover.background scrolledwindow.frame:backdrop{
+	background-image: url("asset/colorswatch-frame-backdrop.png");
+	border-image-source: url("asset/colorswatch-frame-backdrop.png");
+}
+button.color{
+	background: linear-gradient(to bottom right, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1.0));
+}
+button.color>colorswatch{
+	border-left: solid 7px;
+	border-right: solid 7px;
+	border-image-slice: 5% 10% 5% 10%;
+}
+switch{
+	background-image: url("asset/switch-off.png");
+}
+switch:checked{
+	background-image: url("asset/switch-on.png");
+}
+switch:backdrop{
+	background-image: url("asset/switch-off-backdrop.png");
+}
+switch:checked:backdrop{
+	background-image: url("asset/switch-on-backdrop.png");
+}
+switch:disabled{
+	background-image: url("asset/switch-off-disabled.png");
+}
+switch:checked:disabled{
+	background-image: url("asset/switch-on-disabled.png");
+}
+switch, switch:checked, switch:backdrop, switch:checked:backdrop, switch:disabled, switch:checked:disabled{
+	background-size: 100% 100%;
+	min-height: 32px;
+	color: rgba(0,0,0,0.0);
+	margin: 2px;
+	box-shadow: black 2.6px 3px 3px 1px;
+}
+*.rubberband, .view .rubberband, XfdesktopIconView .rubberband{
+	background: rgba(39,92,39,0.5);
+}
+.dialog-vbox buttonbox{
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+box.background.vertical{
+	margin: 0px;
+}
+.xfce4-panel{
+	background-color: rgba(0,0,0,0);
+	background-image: none;
+}
+.xfce4-panel .background{
+	background-color: rgba(0,0,0,0);
+}
+.xfce4-panel .panel .background{
+	background-image: none;
+}
+#XfcePanelWindowHidden{
+	background-color: rgba(0,0,0,0);
+	background-image: none;
+	background-size: auto;
+	border-image-source: none;
+}
+#XfcePanelWindow, #XfcePanelWindowWrapper scrolledwindow, #XfcePanelWindowWrapper menubar>menuitem{
+	background-color: rgba(0,0,0,0);
+	background-image: none;
+	background-size: auto;
+	background-position: 0% 0%;
+	border-image-source: none;
+	border-width: 0px;
+}
+#XfcePanelWindow box{
+	margin: 0px;
+}
+#XfcePanelWindow button{
+	margin: 0px;
+	margin-left: 1px;
+	box-shadow: none;
+}
+#XfcePanelWindowWrapper progressbar.vertical>trough, #XfcePanelWindowWrapper progressbar.vertical>trough>progress{
+	min-width: 8px;
+}
+#XfcePanelWindowWrapper progressbar.vertical{
+	margin-left: 6px;
+	margin-bottom: -2px;
+}
+#XfcePanelWindowWrapper>widget>widget>box{
+	margin-right: 7px;
+}
+#XfcePanelWindowWrapper>widget>widget>box label, #XfcePanelWindowWrapper>widget>widget>box image, #XfcePanelWindowWrapper widget>button>image{
+	margin-top: 7px;
+}
+#XfcePanelWindow button>box>label, #XfcePanelWindow button>box>image, #launcher-arrow label, #launcher-arrow image, #windowmenu-button label, #windowmenu-button image, #showdesktop-button label, #showdesktop-button image, #directorymenu-button label, #directorymenu-button image, #actions-button label, #actions-button image{
+	margin-top: 10px;
+}
+.xfce4-panel .tasklist button, #applicationmenu-button, #launcher-arrow, #windowmenu-button, #showdesktop-button, #directorymenu-button, #actions-button, #XfcePanelWindowWrapper widget>button.flat{
+	background-color: rgba(0,0,0,0);
+	background-image: none;
+	box-shadow: none;
+	margin: 0px;
+	box-shadow: none;
+	border-radius: 0px;
+}
+.xfce4-panel .tasklist :prelight, .xfce4-panel .tasklist button>window>menu>menuitem:hover, #whiskermenu-button:hover, #applicationmenu-button:hover, #launcher-arrow:hover, #windowmenu-button:hover, #showdesktop-button:hover, #directorymenu-button:hover, #actions-button:checked{
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(255,255,127,0.5));
+	background-blend-mode: overlay;
+}
+.xfce4-panel .tasklist :checked, #whiskermenu-button:checked, #applicationmenu-button:checked, #launcher-arrow:checked, #windowmenu-button:checked, #showdesktop-button:checked, #directorymenu-button:checked, #actions-button:checked, #XfcePanelWindowWrapper menubar>menuitem:hover{
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(255,255,127,1.0));
+	background-blend-mode: overlay;
+}
+.xfce4-panel .tasklist .background, #xfce4-notification-plugin-menu{
+	background-color: rgba(0,0,0,0);
+	background-image: url("asset/window-bg.png");
+	background-size: 120% 120%;
+	background-position: 30% 20%;
+	border: solid 3px;
+	border-image-source: url("asset/window-bg.png");
+	border-image-slice: 2% 2% 2% 2%;
+	border-image-width: 5% 5% 5% 5%;
+	margin: 5px;
+}
+.xfce4-panel .tasklist>menu:hover{
+	background-image: url("asset/menubutton-checked.png");
+	background-clip: content-box;
+	background-size: 100% 100%;
+}
+.xfce4-panel .tasklist>menu>menuitem>label{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+#xfce4-notification-plugin-menu menuitem>label, #xfce4-notification-plugin-menu menuitem>box, #xfce4-notification-plugin-menu menuitem>image{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+#xfce4-power-manager-plugin image{
+	-gtk-icon-transform: scale(1.8, 1.0);
+	margin-top: 0px;
+}
+#sn-button{
+	margin-bottom: 2px;
+	margin-top: 8px;
+}
+#XfcePanelWindowWrapper>widget>box{
+	margin-bottom: -1px;
+	margin-top: 2px;
+}
+#XfcePanelWindowWrapper button.toggle.flat{
+	margin-bottom: 4px;
+	margin-top: 5px;
+}
+#xfce4-notification-plugin{
+	-gtk-icon-source: none;
+}
+button#xfce4-notification-plugin.toggle.flat{
+	background: none;
+	min-width: 8px;
+	min-width: 8px;
+	margin: 2px;
+	-gtk-icon-transform: none;
+	box-shadow: none;
+}
+#clock-button{
+	background-image: url("asset/csdtitlebarbutton.png");
+	background-size: 100% 100%;
+}
+#clock-button:hover{
+	background-image: url("asset/csdtitlebarbutton-prelight.png");
+	background-size: 100% 100%;
+}
+#clock-button:checked{
+	background-image: url("asset/csdtitlebarbutton-toggled.png");
+	background-size: 100% 100%;
+}
+#clock-button:checked:hover{
+	background-image: url("asset/csdtitlebarbutton-pressed.png");
+	background-size: 100% 100%;
+}
+#clock-button label{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#pulseaudio-button, #sn-button, #xfce4-power-manager-plugin, #whiskermenu-button{
+	background-image: none;
+	box-shadow: none;
+	border-radius: 0px;
+}
+button#whiskermenu-button.toggle.flat{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	-gtk-icon-transform: none;
+}
+button#pulseaudio-button.toggle.flat, button#xfce4-power-manager-plugin.toggle.flat{
+	margin-bottom: -3px;
+	margin-top: 0px;
+	min-width: 16px;
+	-gtk-icon-transform: none;
+}
+button#pulseaudio-button.toggle.flat>box{
+	margin: 0px;
+}
+button#pulseaudio-button.toggle.flat>image, button#xfce4-power-manager-plugin.toggle.flat>box>image{
+	margin: 0px;
+	padding: 0px;
+}
+.mousepad menubar>menuitem>window.background.csd.popup>menu>menuitem:hover{
+	background-image: url("asset/notebook-tab.png");
+	background-size: 100% 100%;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+window.thunar>grid>menubar>menuitem:disabled{
+	background-image: none;
+	border: 0px;
+}
+window.background.csd.unified{
+	background: none;
+	border: 0px;
+}
+window.background.csd.unified>deck>box{
+	background: linear-gradient(rgba(0,0,0,0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0),rgba(43,103,44,1.0));
+}
+window.background.csd.unified>deck>box:backdrop{
+	background: linear-gradient(rgba(0,0,0,0),rgba(44,79,45,1.0),rgba(44,79,45,1.0),rgba(44,79,45,1.0),rgba(44,79,45,1.0),rgba(44,79,45,1.0),rgba(44,79,45,1.0),rgba(44,79,45,1.0),rgba(44,79,45,1.0),rgba(44,79,45,1.0),rgba(39,92,39,1.0),rgba(44,79,45,1.0),rgba(44,79,45,1.0));
+}
+window.background.csd.unified>deck>box:disabled{
+	background: linear-gradient(rgba(0,0,0,0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0),rgba(74,103,74,1.0));
+}
+window>deck>box>clamp{
+	background: rgba(44,79,45,0);
+	background-image: url("asset/window-bg2.png");
+	background-clip: content-box;
+	background-position: -10px -10px;
+	background-size: 110% 110%;
+}
+window>deck>box>clamp:backdrop{
+	background: rgba(44,79,45,0);
+	background-image: url("asset/window-bg2-backdrop.png");
+	background-clip: content-box;
+	background-position: -10px -10px;
+	background-size: 110% 110%;
+}
+#login_window{
+	border: 0px;
+}
+#login_box{
+	background-color: rgba(0,0,0,0);
+	background-image: url("asset/window-bg.png");
+	background-size: 100% 100%;
+	background-position: 0% 0%;
+	border: solid 3px;
+	border-image-source: url("asset/window-bg.png");
+	border-image-slice: 2% 2% 2% 2%;
+	border-image-width: 5% 5% 5% 5%;
+}
+#user_image_border{
+	background-size: 110% 110%;
+	border: solid 5px;
+	background-image: url("asset/colorswatch-frame.png");
+	border-image-source: url("asset/colorswatch-frame.png");
+	background-clip: content-box;
+	background-position: 50% 50%;
+	border-image-width: 5% 5% 5% 5%;
+	border-image-slice: 5% 5% 5% 5%;
+	margin-bottom: 5px;	
+}
+infobar{
+	background: url("asset/snow-backdrop2.png"), linear-gradient(rgba(112,206,114,1.0),rgba(112,206,114,0.0));
+}
+infobar.warning{
+	background: url("asset/snow-backdrop2.png"), linear-gradient(rgba(255,239,58,1.0),rgba(192,139,0,1.0));
+}
+infobar.error{
+	background: url("asset/snow-backdrop2.png"), linear-gradient(rgba(244,8,65,1.0),rgba(163,0,18,1.0));
+}
+infobar.question{
+	background: url("asset/snow-backdrop2.png"), linear-gradient(rgba(99,220,255,1.0),rgba(0,65,56,1.0));
+}
+#panel_window.background.panel.xfce4-panel{
+	min-height: 64px;
+	background: url("asset/titlebar.png"), linear-gradient(rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,1.0),rgba(4,31,5,0.0),rgba(43,103,44,0.0),rgba(43,103,44,0.0));
+	background-blend-mode: normal;	
+	background-size: contain, 100%;
+	background-position: 0% 110%, 0%;
+	background-repeat: repeat no-repeat;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-top: -20px;
+}
+#whiskermenu-window.background.whiskermenu{
+	background: rgba(0,0,0,0);
+}
+#whiskermenu-window frame{
+	background: url("asset/titlebar.png"), url("asset/window-bg.png");
+	background-blend-mode: normal;
+	background-size: 40% 10%, 100% 95%;
+	background-position: 0% 0%, 0% 95%;
+	background-repeat: repeat-x;
+}
+#whiskermenu-window scrolledwindow{
+	background: rgba(42,102,43,1.0);
+}
+#whiskermenu-window button.flat.category-button{
+	background: url("asset/categorybutton.png");
+	background-size: 100% 100%;
+	box-shadow: black -3px 4px 2px -1px;
+	border-radius: 0px;
+}
+#whiskermenu-window button.flat.category-button:hover{
+	background-image: url("asset/categorybutton-prelight.png");
+}
+#whiskermenu-window button.flat.category-button:checked{
+	background-image: url("asset/categorybutton-pressed.png");
+}
+#whiskermenu-window button.flat.category-button:active:hover{
+	background-image: url("asset/categorybutton-prelight-pressed.png");
+}
+#whiskermenu-window button.category-button>box{
+	margin-left: 5px;
+	margin-right: 15px;
+}

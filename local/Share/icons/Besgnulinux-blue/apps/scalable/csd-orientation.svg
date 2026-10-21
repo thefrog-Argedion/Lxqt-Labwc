@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.1;stroke:none;"/>
+  </g>
+</mask>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 16.367188 37.378906 L 26.292969 37.378906 L 26.292969 47.304688 L 16.371094 47.304688 Z M 16.367188 37.378906 "/>
+</g>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
+  </g>
+</mask>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface8" clip-path="url(#clip2)">
+<path style="fill:none;stroke-width:0.853;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-dasharray:0.852958,0.852958;stroke-dashoffset:1;stroke-miterlimit:4;" d="M -0.000438652 288.269622 L 7.407823 288.269622 L 7.407823 295.676218 L -0.000438652 295.676218 Z M -0.000438652 288.269622 " transform="matrix(2.344827,0,0,2.344827,16.98931,-646.614318)"/>
+</g>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(30.19608%,30.19608%,30.19608%);fill-opacity:1;" d="M 59 31.976562 C 59 46.886719 46.910156 58.976562 32 58.976562 C 17.089844 58.976562 5 46.886719 5 31.976562 C 5 17.0625 17.089844 4.976562 32 4.976562 C 46.910156 4.976562 59 17.0625 59 31.976562 Z M 59 31.976562 "/>
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 20.09375 16.289062 L 16.371094 24.316406 C 16.96875 23.976562 17.625 23.734375 18.304688 23.578125 L 20.109375 41.101562 L 21.914062 23.570312 C 22.582031 23.726562 23.230469 23.976562 23.816406 24.316406 Z M 39.980469 39.863281 C 40.320312 40.460938 40.5625 41.117188 40.722656 41.792969 L 22.574219 43.601562 L 40.730469 45.40625 C 40.574219 46.074219 40.324219 46.714844 39.980469 47.308594 L 48.011719 43.585938 Z M 39.980469 39.863281 "/>
+<use xlink:href="#surface8" mask="url(#mask1)"/>
+</g>
+</svg>

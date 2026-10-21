@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image13" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAAuUlEQVR4nO3bQQ1CURTE0AthiQQc4OZ7xwkCMHHzzoJWwKTpfmb+nNvi1mtmrsW9IzwWt54z817cO8JdC2gKoAU0BdACmgJoAU0BtICmAFpAUwAtoCmAFtAUQAtoCqAFNAXQApoCaAFNAbSApgBaQFMALaApgBbQFEALaAqgBTQF0AKaAmgBTQG0gKYAWkBTAC2gKYAW0BRAC2gKoAU0BdACmgJoAU0BtICmAFpAs/kd/s7MZ3EvTvADtroC7p0VbRoAAAAASUVORK5CYII="/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image13"/>
+  </g>
+</mask>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(41.145833,0,0,51.197917,22.854167,6.401041)">
+<stop offset="0" style="stop-color:#fcd7fb;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#ce13b8;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface12" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear0);" d="M 44.511719 57.597656 C 45.8125 57.597656 46.863281 56.566406 46.863281 55.296875 C 46.863281 44.855469 48.839844 37.246094 50.859375 34.191406 C 52.011719 32.464844 52.886719 31.550781 54.265625 30.902344 C 55.644531 30.25 58.078125 29.855469 61.644531 29.855469 C 62.941406 29.855469 64 28.816406 64 27.546875 L 64 8.703125 C 64 7.433594 62.941406 6.402344 61.644531 6.402344 C 48.808594 6.402344 37.160156 11.957031 30.769531 21.589844 C 24.5 31.042969 22.855469 42.511719 22.855469 55.296875 C 22.855469 56.566406 23.910156 57.597656 25.214844 57.597656 Z M 44.511719 57.597656 "/>
+</g>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(46.932292,0,0,51.197917,0,6.401041)">
+<stop offset="0" style="stop-color:#fcd7fb;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#ce13b8;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 44.574219 57.597656 C 45.386719 57.597656 46.140625 57.183594 46.574219 56.488281 C 47.003906 55.800781 47.050781 54.9375 46.699219 54.199219 L 24.1875 7.734375 C 23.792969 6.917969 22.964844 6.402344 22.058594 6.402344 L 2.359375 6.402344 C 1.546875 6.402344 0.792969 6.816406 0.359375 7.511719 C -0.0742188 8.199219 -0.121094 9.0625 0.234375 9.796875 L 22.75 56.265625 C 23.140625 57.082031 23.96875 57.597656 24.871094 57.597656 Z M 44.574219 57.597656 "/>
+</g>
+</svg>

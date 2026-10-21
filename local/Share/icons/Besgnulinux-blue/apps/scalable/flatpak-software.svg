@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.1;stroke:none;"/>
+  </g>
+</mask>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 8 42.28125 L 8 44 L 32 62.664062 L 32 60.949219 Z M 8 42.28125 "/>
+</g>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.1;stroke:none;"/>
+  </g>
+</mask>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface8" clip-path="url(#clip2)">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 55.996094 42.28125 L 32 60.949219 L 32 62.664062 L 55.996094 44 Z M 55.996094 42.28125 "/>
+</g>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(72.156864%,66.274512%,54.509807%);fill-opacity:1;" d="M 8 44 L 20 38.664062 L 32 29.332031 L 32 1.332031 L 8 20 Z M 8 44 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(87.450981%,80.000001%,65.882355%);fill-opacity:1;" d="M 8 20 L 32 38.664062 L 32 62.664062 L 8 44 Z M 8 20 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(86.666667%,78.039217%,60.784316%);fill-opacity:1;" d="M 55.996094 44 L 44 38.664062 L 32 29.332031 L 32 1.332031 L 55.996094 20 Z M 55.996094 44 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(73.333335%,67.450982%,55.686277%);fill-opacity:1;" d="M 55.996094 20 L 32 38.664062 L 32 62.664062 L 55.996094 44 Z M 55.996094 20 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(92.54902%,88.235295%,80.392158%);fill-opacity:1;" d="M 32 1.332031 L 8 20 L 32 38.664062 L 55.996094 20 Z M 32 5.332031 L 52 20 L 32 34.664062 L 12 20 Z M 32 5.332031 "/>
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+<use xlink:href="#surface8" mask="url(#mask1)"/>
+</g>
+</svg>

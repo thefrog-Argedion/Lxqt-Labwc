@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name[de]=Mousam
+Name[fr]=Mousam
+Name[hi]=मौसम
+Name[nl]=Mousam
+Name[ro]=Mousam
+Name[pt_BR]=Mousam
+Name[pl]=Mousam
+Name[uk]=Mousam
+Name=Mousam
+Exec=mousam
+Comment=Weather at a glance
+Icon=/home/thefrog/.local/share/themes/Halloween/Icons/plank/Mousam.png
+Terminal=false
+Type=Application
+Categories=Application;Utility;GTK;
+Keywords=Weather;Mousam;Rain;Cloud;Forecast;GTK4;Python;temperature;
+StartupNotify=true

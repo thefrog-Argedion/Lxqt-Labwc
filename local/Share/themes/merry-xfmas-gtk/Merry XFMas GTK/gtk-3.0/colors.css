@@ -1,0 +1,4 @@
+@define-color bg_color rgba(39,92,39,1.0);
+@define-color fg_color #654321;
+@define-color bg_color_normal @bg_color;
+@define-color gtk_selected_fg_color blue;

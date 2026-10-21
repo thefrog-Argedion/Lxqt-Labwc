@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image13" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAAb0lEQVR4nO3QQQ3DQADEwL0o0Euj9IKjLOpHZhBY3gAAAABe5mz71BGls+2pI0pXHVAzoA6oGVAH1AyoA2oG1AE1A+qAmgF1QM2AOqBmQB1QM6AOqBlQB9QMqANqBtQBNQPqgNq97VtHAAAAAPBHP5APAkR0So8EAAAAAElFTkSuQmCC"/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image13"/>
+  </g>
+</mask>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(64,0,0,24.28125,0,19.859375)">
+<stop offset="0" style="stop-color:#c5eeed;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#0c7672;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface12" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear0);" d="M 6.621094 19.859375 L 6.621094 26.484375 L 0 26.484375 L 0 28.6875 L 8.828125 28.6875 L 8.828125 22.066406 L 11.03125 22.066406 L 11.03125 35.3125 L 17.65625 35.3125 L 17.65625 28.6875 L 30.902344 28.6875 L 30.902344 22.066406 L 33.097656 22.066406 L 33.097656 35.3125 L 39.722656 35.3125 L 39.722656 28.6875 L 50.753906 28.6875 L 50.753906 22.066406 L 52.96875 22.066406 L 52.96875 35.3125 L 59.582031 35.3125 L 59.582031 28.6875 L 64 28.6875 L 64 26.484375 L 57.378906 26.484375 L 57.378906 33.097656 L 55.171875 33.097656 L 55.171875 19.859375 L 48.558594 19.859375 L 48.558594 26.484375 L 37.515625 26.484375 L 37.515625 33.097656 L 35.3125 33.097656 L 35.3125 19.859375 L 28.6875 19.859375 L 28.6875 26.484375 L 15.441406 26.484375 L 15.441406 33.097656 L 13.246094 33.097656 L 13.246094 19.859375 Z M 48.558594 37.515625 L 48.558594 44.140625 L 50.753906 44.140625 L 50.753906 37.515625 Z M 44.140625 39.722656 L 44.140625 44.140625 L 46.34375 44.140625 L 46.34375 39.722656 Z M 52.96875 39.722656 L 52.96875 44.140625 L 55.171875 44.140625 L 55.171875 39.722656 Z M 39.722656 41.933594 L 39.722656 44.140625 L 41.933594 44.140625 L 41.933594 41.933594 Z M 57.378906 41.933594 L 57.378906 44.140625 L 59.582031 44.140625 L 59.582031 41.933594 Z M 57.378906 41.933594 "/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+</g>
+</svg>

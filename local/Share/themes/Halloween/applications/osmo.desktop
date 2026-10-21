@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Osmo
+GenericName=Osmo
+Icon=/home/thefrog/.local/share/themes/Halloween/Icons/plank/Osmo.png
+Exec=osmo
+Terminal=false
+Type=Application
+Categories=Office;

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg251"
+   sodipodi:docname="insertcellcopy.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview253"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="8"
+     inkscape:cy="8.0338983"
+     inkscape:window-width="1432"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg251" />
+  <defs
+     id="defs3051">
+    <style
+       type="text/css"
+       id="current-color-scheme">
+      .ColorScheme-Text {
+        color:#3cb371;
+      }
+      </style>
+  </defs>
+  <path
+     style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.747381"
+     d="M 3.5137877,3.6798696 V 12.638978 H 4.2619571 8.7509728 V 11.892386 H 7.2546341 V 10.399201 H 6.5064649 v 1.493185 H 4.2619571 V 9.6526086 H 5.7582956 V 8.9060162 H 4.2619571 V 7.4128314 H 5.7582956 V 6.666239 H 4.2619571 V 5.9196467 4.4264619 H 6.5064649 V 5.9196467 H 7.2546341 V 4.4264619 H 8.7509728 V 5.9196467 H 9.499142 V 4.4264619 h 0.748169 0.74817 0.748169 V 5.9196467 6.666239 h -1.005352 -0.490987 v 0.7465924 h 0.490987 1.005352 v 0.7465924 h 0.748169 V 3.6798696 Z M 7.2546341,6.666239 5.7582956,8.1594238 7.2546341,9.6526086 Z m 1.4963387,0 V 8.9060162 H 9.499142 L 10.247311,8.1594238 Z M 10.247311,8.9060162 V 9.6526086 H 9.499142 v 2.9863694 h 2.992677 V 9.6526086 H 11.74365 V 8.9060162 Z m 0,1.4931848 h 1.496339 v 1.493185 h -1.496339 z"
+     class="ColorScheme-Text"
+     id="path247" />
+  <path
+     style="fill:none;stroke:#3cb371;stroke-width:2.22032;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+     d="m 23.003906,12.035156 c 0,6.046875 -4.927734,10.951172 -11.009765,10.951172 -6.082032,0 -11.015625,-4.904297 -11.015625,-10.951172 0,-6.052734 4.933593,-10.951172 11.015625,-10.951172 6.082031,0 11.009765,4.898438 11.009765,10.951172 z m 0,0"
+     transform="scale(0.666667)"
+     id="path249" />
+</svg>

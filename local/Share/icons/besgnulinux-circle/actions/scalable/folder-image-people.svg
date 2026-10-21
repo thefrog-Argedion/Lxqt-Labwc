@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1.1"
+   viewBox="0 0 16 16"
+   id="svg228"
+   sodipodi:docname="folder-image-people.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview230"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="8"
+     inkscape:cy="8.0338983"
+     inkscape:window-width="1432"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg228" />
+  <defs
+     id="defs222">
+    <style
+       id="current-color-scheme"
+       type="text/css">.ColorScheme-Text { color:#3cb371; } .ColorScheme-Highlight { color:#5294e2; }</style>
+  </defs>
+  <path
+     d="M 7.9514553,2 A 2.9095545,2.9644575 0 0 0 5.0419009,4.9644575 2.9095545,2.9644575 0 0 0 7.9514553,7.928915 2.9095545,2.9644575 0 0 0 10.86101,4.9644575 2.9095545,2.9644575 0 0 0 7.9514553,2 Z m 0,1.4822287 A 1.4547772,1.4822287 0 0 1 9.4062325,4.9644575 1.4547772,1.4822287 0 0 1 7.9514553,6.4466862 1.4547772,1.4822287 0 0 1 6.4966781,4.9644575 1.4547772,1.4822287 0 0 1 7.9514553,3.4822287 Z m 0,5.1878007 A 6.5464976,3.7055719 0 0 0 2.859735,10.053838 v 0.09843 1.482229 h 0.2969201 9.5949839 0.291238 V 10.152265 10.046597 A 6.5464976,3.7055719 0 0 0 7.951157,8.6700516 Z"
+     class="ColorScheme-Text"
+     fill="currentColor"
+     id="path224"
+     style="stroke-width:0.734219" />
+  <path
+     style="fill:none;stroke:#3cb371;stroke-width:2.22032;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+     d="m 23.003906,12.035156 c 0,6.046875 -4.927734,10.951172 -11.009765,10.951172 -6.082032,0 -11.015625,-4.904297 -11.015625,-10.951172 0,-6.052734 4.933593,-10.951172 11.015625,-10.951172 6.082031,0 11.009765,4.898438 11.009765,10.951172 z m 0,0"
+     transform="scale(0.666667)"
+     id="path226" />
+</svg>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<openbox_menu>
+  <menu id="root-menu"
+        label="Applications"
+        execute="labwc-menu-generator --pipemenu" />
+</openbox_menu>

@@ -1,0 +1,77 @@
+--[[
+
+#=====================================================================================
+# Date    : March 21 2023
+# Author  : thefrog
+# Version : 1.0.0
+# License : Distributed under the terms of GNU GPL version 2 or later
+#=====================================================================================
+# CONKY
+# For commands in conky.config section:
+# http://conky.sourceforge.net/config_settings.html
+#
+# For commands in conky.text section:
+# http://conky.sourceforge.net/variables.html
+#
+#======================================================================================
+
+]]
+conky.config = {
+xinerama_head = 1,
+	background = true,
+	update_interval = 1,
+	double_buffer = true,
+	draw_shades = false,
+	no_buffers = true,
+	own_window = true,
+	own_window_class = "Conky",
+	own_window_type = 'normal',
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_transparent = true,
+	own_window_argb_visual = true,
+	own_window_argb_value = 100,
+	use_xft = true,
+
+	alignment = 'middle_left',
+	gap_x = 10,
+	minimum_width = 250,
+	imlib_cache_size=10,
+	total_run_times = 0,
+-------------------------------------
+--  Color Scheme
+-------------------------------------
+
+	
+default_color = '02FF00',
+	color4 = 'ff0000', -- red
+	color1 = '02FF00', --green
+	color3 = 'e8ab49', -- orange
+	color2 = 'b58bf0', -- purple
+	color5 = '#0f0ef0',  --  blue
+	color6 = 'b13916',  --  red-autumn
+	color7 = 'a8a6a9',   -- offwhite
+	color8 = '8e8e95',   -- grayish
+	color9 = '000000',  -- black
+	
+
+	
+}
+conky.text = [[
+${image /home/thefrog/.config/conky/images/myne/backgrounds/osnfo.png -s 250x400}
+${image $HOME/.config/conky/images/myne/icons/os.svg -p 5,10 -s 40x40}
+$alignr${color4}${voffset -25}${execi 6000 lsb_release -d | grep 'Descr'|awk {'print $2 " " $3" " $4" " $5'}}
+${image $HOME/.config/conky/images/myne/icons/kernel-mono.svg -p 5,50 -s 40x48}
+$alignr${color4}${kernel}
+${image $HOME/.config/conky/images/myne/icons/update.png -p 5,100 -s 40x40} 
+$alignr${execpi 12000 checkupdates | wc -l} - ${execpi 3600 paru -Qu | wc -l}
+${color5}$hr
+${color4}CPU  ${alignr}${color4}(${execpi 122 inxi -s | grep "System" | awk {'print $4, "°", $5'}})
+${color4}${execi 1000 cat /proc/cpuinfo|grep 'model name'|sed -e 's/model name.*: //'| uniq | cut -c 1-25}
+${color4}Freq ${alignr}${color4}${freq_g} Ghz
+$alignc${color4}${cpu cpu0} %
+${color5}${cpubar cpu0}
+$alignc${color4}${voffset 12}${mem} / ${memperc} % RAM
+${color5}${membar}
+$alignc${color4}${voffset 12}${fs_free /} / ${fs_free_perc /} % /(root)
+${color5}${fs_bar /}
+]]

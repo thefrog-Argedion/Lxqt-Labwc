@@ -1,0 +1,57 @@
+--[[
+#=====================================================================================
+# Date    : October 20 2026
+# Author  : thefrog
+# Version : 1.0.0
+# License : Distributed under the terms of GNU GPL version 2 or later
+# Update  : September 21 2026
+#=====================================================================================
+]]
+
+conky.config = {
+	background = true,
+	update_interval = 1,
+	double_buffer = true,
+	draw_shades = false,
+	no_buffers = true,
+	out_to_x = false,
+	out_to_wayland = true,
+	own_window = true,                    -- needed / recommended
+	own_window_type = 'desktop',          -- or 'normal' if desktop doesn't work in labwc
+	own_window_argb_visual = true,
+	own_window_argb_value = 150,
+	-- own_window_colour = '#000000',     -- optional if you want a solid background
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	use_xft = true,
+	font = 'Tahoma :bold:size=10',          -- add an explicit font (very important)
+	alignment = 'middle_right',
+	gap_x = 0,   -- start (adjust this number)
+	gap_y = 0,
+	minimum_width = 300,
+	minimum_height = 100,                 
+	imlib_cache_size = 10,
+	total_run_times = 0,
+	-------------------------------------
+	--  Color Scheme
+	-------------------------------------
+	default_color = '#02FF00',
+	color1 = '#02FF00', -- green
+	color2 = '#b58bf0', -- purple
+	color3 = '#ffa500', -- orange
+	color4 = '#ff0000', -- red
+	color5 = '#0f0ef0', -- blue
+	color6 = '#b13916', -- red-autumn
+	color7 = '#a8a6a9', -- offwhite
+	color8 = '#8e8e95', -- grayish
+	color9 = '#3b1956', -- deep purple
+}
+
+conky.text = [[
+${alignc}${color2}${font Tahoma :bold:size=11}Bluetooth Battery Percentages
+${color4}Keychron K10 Max${alignr}${color7}${execi 30 bluetoothctl info FE:49:DA:28:A5:DE | grep -oP 'Battery Percentage: 0x[0-9a-f]+ \(\K[0-9]+' || echo "N/A"}%
+${color4}Nulea BT5.0 Mouse${alignr}${color7}${execi 30 bluetoothctl info CC:42:5A:7B:0E:D9 | grep -oP 'Battery Percentage: 0x[0-9a-f]+ \(\K[0-9]+' || echo "N/A"}%
+${color4}JBL Tune Buds${alignr}${color7}${execi 30 bluetoothctl info 00:A4:1C:57:DC:BD | grep -oP 'Battery Percentage: 0x[0-9a-f]+ \(\K[0-9]+' || echo "N/A"}%
+${alignc}${color2}${font Tahoma :bold:size=11}Mobile Battery Percentages
+${color4}Moto G Play 2023${alignr}${color7}${execi 60 /home/thefrog/bin/mobile_battery.sh}
+${color4}Lenovo M10 Plus 3rd Gen${alignr}${color7}${execi 60 /home/thefrog/bin/tablet_battery.sh}
+]]

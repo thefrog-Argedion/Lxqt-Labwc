@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1.1"
+   viewBox="0 0 16 16"
+   id="svg206"
+   sodipodi:docname="folder-gnome.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview208"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="8"
+     inkscape:cy="8.0338983"
+     inkscape:window-width="1432"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg206" />
+  <defs
+     id="defs200">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+   .ColorScheme-Text { color:#3cb371; } .ColorScheme-Highlight { color:#5294e2; }
+  </style>
+  </defs>
+  <path
+     style="fill:currentColor;stroke-width:0.825157"
+     class="ColorScheme-Text"
+     d="m 10.903922,2.8458935 c -2.4452518,0 -2.9053576,3.2970925 -1.5281792,3.2970925 1.3745352,0 3.9749182,-3.2970925 1.5281792,-3.2970925 z M 7.1460883,3.6701666 c -0.038824,0 -0.081778,0.00412 -0.1247325,0.00824 C 5.6212134,3.846561 6.1127088,6.1009481 6.8586254,6.142986 7.5797608,6.1841996 8.3694576,3.6767607 7.1469143,3.6701666 Z m -2.552472,0.8242731 c -0.099951,-0.00412 -0.211467,0.00907 -0.3345474,0.040389 C 2.9489651,4.8653626 4.0599926,6.230359 4.7935186,6.1380403 5.459309,6.0547887 5.555956,4.5331806 4.5936163,4.4944397 Z M 2.7672358,6.142986 C 2.6499376,6.1413374 2.5227271,6.1668899 2.3880821,6.2295347 1.3109223,6.7372869 2.7515409,7.9621568 3.3851157,7.772574 3.9393904,7.6060708 3.5858441,6.1619443 2.7672358,6.142986 Z M 7.7912277,6.9672591 C 5.8632439,6.936761 3.3206843,7.84511 2.8861858,9.6700507 2.4169936,11.645834 4.821604,14.385717 7.3278177,14.385717 c 1.2332818,0 2.6558927,-0.553087 2.9218783,-1.878518 0.202381,-1.010559 -2.5534632,-0.575343 -2.4601204,0.09314 0.1115158,0.802017 -0.465062,0.674255 -1.1878495,0.157436 C 4.4787963,11.088625 10.409949,10.292377 10.007666,8.0445841 9.882933,7.3447762 8.9478531,6.9870417 7.7912277,6.9689077 Z"
+     id="path202" />
+  <path
+     style="fill:none;stroke:#3cb371;stroke-width:2.22032;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+     d="m 23.003906,12.035156 c 0,6.046875 -4.927734,10.951172 -11.009765,10.951172 -6.082032,0 -11.015625,-4.904297 -11.015625,-10.951172 0,-6.052734 4.933593,-10.951172 11.015625,-10.951172 6.082031,0 11.009765,4.898438 11.009765,10.951172 z m 0,0"
+     transform="scale(0.666667)"
+     id="path204" />
+</svg>

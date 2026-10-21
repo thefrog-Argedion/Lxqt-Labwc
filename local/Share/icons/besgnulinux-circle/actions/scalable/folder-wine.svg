@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1.1"
+   viewBox="0 0 16 16"
+   id="svg250"
+   sodipodi:docname="folder-wine.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview252"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="8"
+     inkscape:cy="8.0338983"
+     inkscape:window-width="1432"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg250" />
+  <defs
+     id="defs236">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+   .ColorScheme-Text { color:#ff0000; } .ColorScheme-Highlight { color:#5294e2; }
+  </style>
+  </defs>
+  <g
+     id="g246"
+     transform="matrix(0.69173984,0,0,0.67729623,2.2175159,2.2832332)"
+     style="fill:#ff0000">
+    <rect
+       style="fill:#ff0000"
+       class="ColorScheme-Text"
+       width="6"
+       height="6"
+       x="2"
+       y="2"
+       rx="1"
+       ry="1"
+       id="rect238" />
+    <rect
+       style="fill:#ff0000"
+       class="ColorScheme-Text"
+       width="6"
+       height="6"
+       x="9"
+       y="2"
+       rx="1"
+       ry="1"
+       id="rect240" />
+    <rect
+       style="fill:#ff0000"
+       class="ColorScheme-Text"
+       width="6"
+       height="6"
+       x="9"
+       y="9"
+       rx="1"
+       ry="1"
+       id="rect242" />
+    <rect
+       style="fill:#ff0000"
+       class="ColorScheme-Text"
+       width="6"
+       height="6"
+       x="2"
+       y="9"
+       rx="1"
+       ry="1"
+       id="rect244" />
+  </g>
+  <path
+     style="fill:none;stroke:#ff0000;stroke-width:2.22032;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+     d="m 23.003906,12.035156 c 0,6.046875 -4.927734,10.951172 -11.009765,10.951172 -6.082032,0 -11.015625,-4.904297 -11.015625,-10.951172 0,-6.052734 4.933593,-10.951172 11.015625,-10.951172 6.082031,0 11.009765,4.898438 11.009765,10.951172 z m 0,0"
+     transform="scale(0.666667)"
+     id="path248" />
+</svg>

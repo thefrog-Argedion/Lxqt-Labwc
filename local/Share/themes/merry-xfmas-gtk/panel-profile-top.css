@@ -1,0 +1,75 @@
+#applicationsmenu-a button>box>image, #whiskermenu-b button>box>image, #thunar-tpa-c button>image{
+	margin-bottom: 3px;
+	margin-top: 0px;
+}
+#applicationsmenu-a button>box>label, #whiskermenu-b button>box>label, #systemload-d label{
+	margin-bottom: 7px;
+	margin-top: 0px;
+}
+#tasklist-e button>box>image, #directorymenu-f button>image, #showdesktop-g button>image, #windowmenu-h button>image, #pulseaudio-i button>image, #xkb-j button>image{
+	margin-bottom: 7px;
+	margin-top: 0px;
+}
+#tasklist-e button>box>label{
+	margin-bottom: 13px;
+	margin-top: 0px;
+}
+#appmenu-k menuitem>label{
+	margin-top: -12px;
+}
+#actions-l button{
+	margin-top: 0px;
+}
+#actions-l button>label{
+	margin-top: -5px;
+}
+#tasklist-e :prelight, #applicationsmenu-a button:prelight, #whiskermenu-b button:prelight, #directorymenu-f button:hover, #showdesktop-g button:hover, #windowmenu-h button:hover, #actions-l button:hover{
+	background: linear-gradient(rgba(255,255,127,0.5),rgba(0,0,0,0),rgba(0,0,0,0));
+	background-blend-mode: overlay;
+}
+#tasklist-e :checked, #applicationsmenu-a button:checked, #whiskermenu-b button:checked, #appmenu-k menuitem:hover, #directorymenu-f button:checked, #showdesktop-g button:checked, #windowmenu-h button:checked, #actions-l button:checked{
+	background: linear-gradient(rgba(255,255,127,1.0),rgba(0,0,0,0),rgba(0,0,0,0));
+	background-blend-mode: overlay;
+}
+.xfce4-panel #tasklist-e window>menu>menuitem:hover, #appmenu-k window>menu>menuitem:hover{
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(255,255,127,0.5));
+	background-blend-mode: overlay;
+}
+#clock-m button{
+	background-image: url("asset/csdtitlebarbutton-top.png");
+	background-size: 100% 100%;
+}
+#clock-m button:hover{
+	background-image: url("asset/csdtitlebarbutton-top-prelight.png");
+	background-size: 100% 100%;
+}
+#clock-m button:checked{
+	background-image: url("asset/csdtitlebarbutton-top-toggled.png");
+	background-size: 100% 100%;
+}
+#clock-m button:checked:hover{
+	background-image: url("asset/csdtitlebarbutton-top-pressed.png");
+	background-size: 100% 100%;
+}
+#systray-n button#sn-button, #systray-n box>widget{
+	margin-bottom: 8px;
+	margin-top: 2px;
+}
+#power-manager-plugin-o button{
+	margin-top: -3px;
+	margin-bottom: 0px;
+	min-width: 16px;
+	-gtk-icon-transform: none;
+}
+#systray-n button#sn-button{
+	margin-bottom: 8px;
+	margin-top: 2px;
+}
+#systray-n>box{
+	margin-bottom: 2px;
+	margin-top: -1px;
+}
+#systray-n button.toggle.flat{
+	margin-bottom: 5px;
+	margin-top: 4px;
+}

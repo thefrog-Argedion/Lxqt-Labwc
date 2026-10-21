@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Bluetooth Manager
+Comment=Blueman Bluetooth Manager
+Icon=/home/thefrog/.local/share/themes/Christmas/icons/bluetooth.png
+Exec=blueman-manager
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;GNOME;Settings;HardwareSettings;

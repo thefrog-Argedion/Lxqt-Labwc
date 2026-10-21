@@ -1,0 +1,8 @@
+JBL TUNE BUDS - 00:A4:1C:57:DC:BD
+Keychron K10 Max - FE:49:DA:28:A5:DE
+Nulea BT5.0 Mouse - CC:42:5A:7B:0E:D9
+
+replace the XX with the approprate characters for the device you wish to display. 
+
+${execi 30 bluetoothctl info XX:XX:XX:XX:XX:XX | grep -oP 'Battery Percentage: 0x[0-9a-f]+ \(\K[0-9]+' || echo "N/A"}%
+

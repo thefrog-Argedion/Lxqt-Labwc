@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64px"
+   height="64px"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="mimetype-bluetooth.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.6875"
+     inkscape:cx="32"
+     inkscape:cy="32.135593"
+     inkscape:window-width="1432"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <defs
+     id="defs7">
+    <linearGradient
+       id="linear0"
+       gradientUnits="userSpaceOnUse"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1"
+       gradientTransform="matrix(44,0,0,64,10,0)">
+      <stop
+         offset="0"
+         style="stop-color:#f8c3c3;stop-opacity:1;"
+         id="stop2" />
+      <stop
+         offset="1"
+         style="stop-color:#c60606;stop-opacity:1;"
+         id="stop4" />
+    </linearGradient>
+  </defs>
+  <g
+     id="surface1"
+     transform="matrix(0.81550116,0,0,0.54469855,5.4197865,14.729716)">
+    <path
+       style="fill:url(#linear0);fill-rule:nonzero;stroke:none"
+       d="m 20.652344,0 c -3.359375,0.0429688 -5.808594,-0.078125 -7.820313,1.03125 -1,0.550781 -1.800781,1.484375 -2.238281,2.65625 C 10.15625,4.859375 10,6.246094 10,8 v 48 c 0,1.753906 0.15625,3.140625 0.59375,4.3125 0.4375,1.171875 1.238281,2.109375 2.238281,2.660156 2.011719,1.109375 4.460938,0.992188 7.820313,1.027344 h 22.703125 c 3.351562,-0.04297 5.800781,0.08203 7.8125,-1.027344 1,-0.550781 1.800781,-1.488281 2.238281,-2.660156 C 53.84375,59.140625 54,57.753906 54,56 V 8 C 54,6.246094 53.84375,4.859375 53.40625,3.6875 52.96875,2.515625 52.167969,1.582031 51.167969,1.03125 49.15625,-0.078125 46.707031,0.0351562 43.347656,0 Z M 30,5.207031 l 16.957031,16.960938 -11.753906,9.875 11.753906,9.875 L 30,58.871094 V 36.417969 l -9.707031,8.15625 -2.585938,-3.070313 11.277344,-9.460937 -11.277344,-9.46875 2.585938,-3.070313 L 30,27.667969 Z m 4,9.664063 V 27.828125 L 41.042969,21.90625 Z M 34,36.25 v 12.957031 l 7.042969,-7.035156 z m 0,0"
+       id="path9" />
+  </g>
+  <path
+     style="fill-rule:evenodd;fill:#ff4500;fill-opacity:1;stroke-width:4.904;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%, 0%, 0%);stroke-opacity:0.309804;stroke-miterlimit:4"
+     d="M 253.03125 7.84375 C 117.625 7.84375 7.84375 117.625 7.84375 253.0625 C 7.84375 388.46875 117.625 498.25 253.03125 498.25 C 388.46875 498.25 498.21875 388.46875 498.21875 253.0625 C 498.21875 117.625 388.4375 7.84375 253.03125 7.84375 Z M 253.03125 34.15625 C 373.9375 34.15625 471.9375 132.15625 471.9375 253.0625 C 471.9375 373.96875 373.9375 471.96875 253.03125 471.96875 C 132.125 471.96875 34.125 373.96875 34.125 253.0625 C 34.125 132.15625 132.125 34.15625 253.03125 34.15625 Z M 253.03125 34.15625 "
+     transform="matrix(0.125,0,0,0.125,0,0)"
+     id="path12" />
+</svg>
