@@ -141,8 +141,8 @@ ${color2}${upspeedgraph eno1 20, 175 000000 FFA500}$color ${color2}$alignr${down
 ${color4}UP:${color7}  ${upspeed eno1}/s$color      ${alignr}${color7}${downspeed eno1}/s$color :${color4}DN${else}${endif}
 ${color3}$hr
 ${alignc}${color2}Bluetooth Battery Status
-${color4}Keychron K10 Max${alignr}${color7}${execi 30 bluetoothctl info FE:49:DA:28:A5:DE | grep -oP 'Battery Percentage: 0x[0-9a-f]+ \(\K[0-9]+' || echo "N/A"}%
-${color4}Nulea BT5.0 Mouse${alignr}${color7}${execi 30 bluetoothctl info CC:42:5A:7B:0E:D9 | grep -oP 'Battery Percentage: 0x[0-9a-f]+ \(\K[0-9]+' || echo "N/A"}%
+${color4}Keychron K10 Max${alignr}${color7}${execi 30 bluetoothctl info XX:XX:XX:XX:XX:XX | grep -oP 'Battery Percentage: 0x[0-9a-f]+ \(\K[0-9]+' || echo "N/A"}%
+${color4}Nulea BT5.0 Mouse${alignr}${color7}${execi 30 bluetoothctl info XX:XX:XX:XX:XX:XX | grep -oP 'Battery Percentage: 0x[0-9a-f]+ \(\K[0-9]+' || echo "N/A"}%
 ${alignc}${color2}Mobile Battery Status
 ${color4}Moto G Play 2023${alignr}${color7}${execi 60 /home/thefrog/bin/mobile_battery.sh}
 ${color4}Lenovo M10 Plus 3rd Gen${alignr}${color7}${execi 60 /home/thefrog/bin/tablet_battery.sh}
